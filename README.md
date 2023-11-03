@@ -27,7 +27,7 @@ cargo build --release
 cp ./target/release ../binaries/extended-parachain-template-node
 ```
 
-Download the:
+Download the:<br>
 [Zombienet executable](https://github.com/paritytech/zombienet/releases)
 
 
