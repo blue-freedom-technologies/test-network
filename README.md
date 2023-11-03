@@ -73,6 +73,12 @@ cumulus_based = true
   command = "../binaries/extended-parachain-template-node"
 ```
 
+Spawn a local testing network:
+
+```bash
+zombienet-linux-x64 spawn config.toml -p native
+```
+
 Functional pallets:
 
  - [pallet_assets](https://paritytech.github.io/substrate/master/pallet_assets/index.html)
