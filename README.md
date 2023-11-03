@@ -1,6 +1,6 @@
 ## Chain
 
-Create a local test network:
+### Create a local test network
 
 Create the directories:
 ```bash
