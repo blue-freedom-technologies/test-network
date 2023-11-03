@@ -30,8 +30,10 @@ cp ./target/release ../binaries/extended-parachain-template-node
 Download the:<br>
 [Zombienet executable](https://github.com/paritytech/zombienet/releases)
 
-
-
+```bash
+chmod +x zombienet-linux-x64
+sudo cp zombienet-linux-x64 /usr/local/bin
+```
 
 
 
