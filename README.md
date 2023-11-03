@@ -1,5 +1,8 @@
 ## Chain
 
+Create a local test network:
+
+mkdir test_network
 
 Functional pallets:
 
