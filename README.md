@@ -15,7 +15,7 @@ Add the polkadot binaries(relay chain):
 git clone https://github.com/paritytech/polkadot-sdk
 cd polkadot-sdk
 cargo build --release
-cp ./target/release/polkadot ../binaries/polkadot
+cp ./target/release ../binaries/polkadot
 ```
 
 Add the parachain binaries(parachain node):
@@ -24,8 +24,7 @@ Add the parachain binaries(parachain node):
 git clone https://github.com/paritytech/extended-parachain-template
 cd extended-parachain-template
 cargo build --release
-cp ./target/release/polkadot ../binaries/polkadot
-cp ./target/release/extended-parachain-template ../binaries/extended-parachain-template-node
+cp ./target/release ../binaries/extended-parachain-template-node
 ```
 
 Functional pallets:
