@@ -70,7 +70,7 @@ Note: use the "-c 1" is using more than one parachain.
 ![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/19d25bfe-0c9b-40a5-9911-ae2b74ebdecb)
 
 <hr>
-https://docs.substrate.io/tutorials/build-a-parachain/
+https://docs.substrate.io/tutorials/build-a-parachain/<br>
 https://wiki.polkadot.network/docs/build-pdk#your-go-to-overview-for-developing-a-parachain
 <hr>
 
