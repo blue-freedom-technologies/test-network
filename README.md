@@ -2,7 +2,13 @@
 
 Create a local test network:
 
+```bash
 mkdir test_network
+cd test_network
+git clone https://github.com/paritytech/polkadot-sdk
+mkdir binaries
+```
+
 
 Functional pallets:
 
