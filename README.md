@@ -60,13 +60,12 @@ cumulus_based = true
   command = "./binaries/node/parachain-template-node"
 ```
 
-![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/2dc29217-22c8-4e75-8165-80508f20aa87)
-
 Spawn a local testing network:
 
 ```bash
- ./zombienet-linux-x64 spawn config.toml -p native -c 1
+ zombienet-linux-x64 spawn config.toml -p native -c 1
 ```
+Note: use the "-c 1" is using more than one parachain.
 
 ![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/19d25bfe-0c9b-40a5-9911-ae2b74ebdecb)
 
