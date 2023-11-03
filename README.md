@@ -2,6 +2,7 @@
 
 
 Functional pallets:
+
  -[pallet_assets](https://paritytech.github.io/substrate/master/pallet_assets/index.html)
  -[pallet_collective](https://paritytech.github.io/substrate/master/pallet_collective/index.html)
  -[pallet_utility](https://paritytech.github.io/substrate/master/pallet_utility/index.html)
