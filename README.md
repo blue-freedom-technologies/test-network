@@ -73,6 +73,8 @@ cumulus_based = true
   command = "../binaries/extended-parachain-template-node"
 ```
 
+![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/2dc29217-22c8-4e75-8165-80508f20aa87)
+
 Spawn a local testing network:
 
 ```bash
