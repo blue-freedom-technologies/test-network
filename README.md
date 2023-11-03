@@ -82,6 +82,9 @@ Spawn a local testing network:
  ./zombienet-linux-x64 spawn config.toml -p native -c 1
 ```
 
+![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/5c9ae50a-bbb4-43c8-8d74-6c6c1c3f1e78)
+
+
 Functional pallets:
 
  - [pallet_assets](https://paritytech.github.io/substrate/master/pallet_assets/index.html)
