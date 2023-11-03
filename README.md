@@ -39,7 +39,7 @@ config.toml
 ```text
 [relaychain]
 
-default_command = "../binaries/polkadot"
+default_command = "./binaries/polkadot/polkadot"
 default_args = [ "-lparachain=debug" ]
 
 chain = "rococo-local"
@@ -61,16 +61,17 @@ id = 1000
 cumulus_based = true
 
   [parachains.collator]
-  name = "parachain-A-1000-collator01"
-  command = "../binaries/extended-parachain-template-node"
-
-[[parachains]]
+  name = "parachain-node1-1000-collator"
+  command = "./binaries/node/parachain-template-node"
+ 
+ [[parachains]]
 id = 1001
 cumulus_based = true
 
   [parachains.collator]
-  name = "parachain-B-1001-collator01"
-  command = "../binaries/extended-parachain-template-node"
+  name = "parachain-node2-1001-collator"
+  command = "./binaries/node/parachain-template-node"
+
 ```
 
 ![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/2dc29217-22c8-4e75-8165-80508f20aa87)
@@ -78,7 +79,7 @@ cumulus_based = true
 Spawn a local testing network:
 
 ```bash
- ./zombienet-linux-x64 spawn config.toml -p native
+ ./zombienet-linux-x64 spawn config.toml -p native -c 1
 ```
 
 Functional pallets:
