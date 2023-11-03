@@ -63,7 +63,7 @@ cumulus_based = true
 Spawn a local testing network:
 
 ```bash
- zombienet-linux-x64 spawn config.toml -p native -c 1
+ zombienet-linux-x64 spawn config.toml -p native
 ```
 Note: use the "-c 1" is using more than one parachain.
 
