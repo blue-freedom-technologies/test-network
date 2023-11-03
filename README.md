@@ -9,7 +9,7 @@ cd test_network
 mkdir binaries
 ```
 
-Add the polkadot binaries:
+Add the polkadot binaries(relay chain):
 
 ```bash
 git clone https://github.com/paritytech/polkadot-sdk
@@ -18,7 +18,7 @@ cargo build --release
 cp ./target/release/polkadot ../binaries/polkadot
 ```
 
-Add the parachain binaries:
+Add the parachain binaries(parachain node):
 
 ```bash
 git clone https://github.com/paritytech/extended-parachain-template
