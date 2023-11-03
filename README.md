@@ -49,4 +49,5 @@ References:<br>
 
 [Extended Parachain Template](https://github.com/paritytech/extended-parachain-template/)<br>
 [Substrate Parachain Template](https://github.com/substrate-developer-hub/substrate-parachain-template)<br>
+[Simulate Parachains](https://docs.substrate.io/test/simulate-parachains/)
 [Parachain Templates (EPT & FPT)](https://www.youtube.com/watch?v=zZvR1ii8X30)<br>
