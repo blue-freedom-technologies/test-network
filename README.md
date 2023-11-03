@@ -2,12 +2,23 @@
 
 Create a local test network:
 
+Create the directories:
 ```bash
 mkdir test_network
 cd test_network
-git clone https://github.com/paritytech/polkadot-sdk
 mkdir binaries
 ```
+
+Add the polkadot binaries:
+
+```bash
+git clone https://github.com/paritytech/polkadot-sdk
+cd polkadot-sdk
+cargo build --release
+cp ./target/release/polkadot ../binaries/polkadot
+```
+
+Add the parachain binaries:
 
 
 Functional pallets:
