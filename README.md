@@ -76,7 +76,7 @@ cumulus_based = true
 Spawn a local testing network:
 
 ```bash
-zombienet-linux-x64 spawn config.toml -p native
+ ./zombienet-linux-x64 spawn config.toml -p native
 ```
 
 Functional pallets:
