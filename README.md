@@ -20,6 +20,13 @@ cp ./target/release/polkadot ../binaries/polkadot
 
 Add the parachain binaries:
 
+```bash
+git clone https://github.com/paritytech/extended-parachain-template
+cd extended-parachain-template
+cargo build --release
+cp ./target/release/polkadot ../binaries/polkadot
+cp ./target/release/extended-parachain-template ../binaries/extended-parachain-template-node
+```
 
 Functional pallets:
 
