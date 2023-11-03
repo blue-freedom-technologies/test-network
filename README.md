@@ -34,6 +34,8 @@ chmod +x zombienet-linux-x64
 sudo cp zombienet-linux-x64 /usr/local/bin
 ```
 
+config.toml
+
 ```text
 [relaychain]
 
