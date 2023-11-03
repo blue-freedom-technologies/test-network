@@ -38,40 +38,26 @@ config.toml
 
 ```text
 [relaychain]
-
 default_command = "./binaries/polkadot/polkadot"
 default_args = [ "-lparachain=debug" ]
-
 chain = "rococo-local"
 
   [[relaychain.nodes]]
   name = "alice"
+  validator = true
 
   [[relaychain.nodes]]
   name = "bob"
-
-  [[relaychain.nodes]]
-  name = "charlie"
-
-  [[relaychain.nodes]]
-  name = "dave"
-
+  validator = true
+ 
 [[parachains]]
 id = 1000
+addToGenesis = true
 cumulus_based = true
 
   [parachains.collator]
-  name = "parachain-node1-1000-collator"
+  name = "node-collator01"
   command = "./binaries/node/parachain-template-node"
- 
- [[parachains]]
-id = 1001
-cumulus_based = true
-
-  [parachains.collator]
-  name = "parachain-node2-1001-collator"
-  command = "./binaries/node/parachain-template-node"
-
 ```
 
 ![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/2dc29217-22c8-4e75-8165-80508f20aa87)
@@ -82,7 +68,7 @@ Spawn a local testing network:
  ./zombienet-linux-x64 spawn config.toml -p native -c 1
 ```
 
-![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/5c9ae50a-bbb4-43c8-8d74-6c6c1c3f1e78)
+![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/19d25bfe-0c9b-40a5-9911-ae2b74ebdecb)
 
 
 https://wiki.polkadot.network/docs/build-pdk#your-go-to-overview-for-developing-a-parachain
