@@ -34,8 +34,42 @@ chmod +x zombienet-linux-x64
 sudo cp zombienet-linux-x64 /usr/local/bin
 ```
 
+```text
+[relaychain]
 
+default_command = "../binaries/polkadot"
+default_args = [ "-lparachain=debug" ]
 
+chain = "rococo-local"
+
+  [[relaychain.nodes]]
+  name = "alice"
+
+  [[relaychain.nodes]]
+  name = "bob"
+
+  [[relaychain.nodes]]
+  name = "charlie"
+
+  [[relaychain.nodes]]
+  name = "dave"
+
+[[parachains]]
+id = 1000
+cumulus_based = true
+
+  [parachains.collator]
+  name = "parachain-A-1000-collator01"
+  command = "../binaries/extended-parachain-template-node"
+
+[[parachains]]
+id = 1001
+cumulus_based = true
+
+  [parachains.collator]
+  name = "parachain-B-1001-collator01"
+  command = "../binaries/extended-parachain-template-node"
+```
 
 Functional pallets:
 
