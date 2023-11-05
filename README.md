@@ -67,6 +67,14 @@ Spawn a local testing network:
 ```
 Note: use the "-c 1" if using more than one parachain.
 
+
+```bash
+./target/release/parachain-template-node export-genesis-state --chain raw-parachain-chainspec.json para-2000-genesis-state
+./binaries/node/parachain-template-node build-spec --disable-default-bootnode > plain-parachain-chainspec.json
+./binaries/node/parachain-template-node build-spec --chain plain-parachain-chainspec.json --disable-default-bootnode --raw > raw-parachain-chainspec.json
+```
+
+
 ![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/19d25bfe-0c9b-40a5-9911-ae2b74ebdecb)
 
 <hr>
