@@ -67,8 +67,11 @@ Spawn a local testing network:
 ```
 Note: use the "-c 1" if using more than one parachain.
 
+![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/2889795d-2e01-4a44-b073-178a13e1a3f2)
 
 Open a [Substrate Portal](https://polkadot.js.org/apps/#/explorer)
+
+![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/371eaf9e-afd6-4b76-b389-c09b21efbc6e)
 
 
 <hr>
