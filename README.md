@@ -51,12 +51,12 @@ chain = "rococo-local"
   validator = true
  
 [[parachains]]
-id = 1000
+id = 2000
 addToGenesis = true
 cumulus_based = true
 
   [parachains.collator]
-  name = "node-collator01"
+  name = "node-parachain-collator01"
   command = "./binaries/node/parachain-template-node"
 ```
 
