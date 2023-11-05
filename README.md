@@ -69,9 +69,10 @@ Note: use the "-c 1" if using more than one parachain.
 
 
 ```bash
-./target/release/parachain-template-node export-genesis-state --chain raw-parachain-chainspec.json para-2000-genesis-state
 ./binaries/node/parachain-template-node build-spec --disable-default-bootnode > plain-parachain-chainspec.json
 ./binaries/node/parachain-template-node build-spec --chain plain-parachain-chainspec.json --disable-default-bootnode --raw > raw-parachain-chainspec.json
+./binaries/node/parachain-template-node export-genesis-wasm --chain raw-parachain-chainspec.json para-2000-wasm
+./binaries/node/parachain-template-node export-genesis-state --chain raw-parachain-chainspec.json para-2000-genesis-state
 ```
 
 
