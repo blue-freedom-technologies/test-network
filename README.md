@@ -79,14 +79,12 @@ https://docs.substrate.io/tutorials/build-a-parachain/<br>
 https://wiki.polkadot.network/docs/build-pdk#your-go-to-overview-for-developing-a-parachain
 <hr>
 
-[frame-pallets](https://docs.substrate.io/reference/frame-pallets/)
-
 Functional pallets:
 
- - [pallet_assets](https://paritytech.github.io/substrate/master/pallet_assets/index.html)
- - [pallet_collective](https://paritytech.github.io/substrate/master/pallet_collective/index.html)
- - [pallet_utility](https://paritytech.github.io/substrate/master/pallet_utility/index.html)
- - [pallet_contracts](https://paritytech.github.io/polkadot-sdk/master/pallet_contracts/index.html)
+ - [pallet_assets](https://paritytech.github.io/substrate/master/pallet_assets/index.html)/[frame-assets](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/assets)
+ - [pallet_collective](https://paritytech.github.io/substrate/master/pallet_collective/index.html)/[frame-collective](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/collective)
+ - [pallet_utility](https://paritytech.github.io/substrate/master/pallet_utility/index.html)/[frame-utility](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/utility)
+ - [pallet_contracts](https://paritytech.github.io/polkadot-sdk/master/pallet_contracts/index.html)/[frame-contracts](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/contracts)
 
 <hr>
 References:<br>
