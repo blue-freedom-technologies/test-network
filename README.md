@@ -79,6 +79,8 @@ https://docs.substrate.io/tutorials/build-a-parachain/<br>
 https://wiki.polkadot.network/docs/build-pdk#your-go-to-overview-for-developing-a-parachain
 <hr>
 
+[frame-pallets](https://docs.substrate.io/reference/frame-pallets/)
+
 Functional pallets:
 
  - [pallet_assets](https://paritytech.github.io/substrate/master/pallet_assets/index.html)
