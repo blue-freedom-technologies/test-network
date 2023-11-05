@@ -65,7 +65,7 @@ Spawn a local testing network:
 ```bash
  zombienet-linux-x64 spawn config.toml -p native
 ```
-Note: use the "-c 1" is using more than one parachain.
+Note: use the "-c 1" if using more than one parachain.
 
 ![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/19d25bfe-0c9b-40a5-9911-ae2b74ebdecb)
 
