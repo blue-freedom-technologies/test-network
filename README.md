@@ -8,6 +8,14 @@ cd polkadot-sdk
 cargo build --release
 ```
 
+[plain-local-chainspec](https://docs.substrate.io/assets/tutorials/relay-chain-specs/plain-local-chainspec.json/)<br>
+[raw-local-chainspec.json](https://docs.substrate.io/assets/tutorials/relay-chain-specs/raw-local-chainspec.json/)<br>
+
+
+```bash
+./target/release/polkadot --alice --validator --base-path /tmp/relay/alice --chain /tmp/raw-local-chainspec.json --port 30333 --rpc-port 9944
+```
+
 <hr>
 
 ### Create a local test network
