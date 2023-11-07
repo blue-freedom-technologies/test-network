@@ -7,7 +7,7 @@ cd test_network
 mkdir binaries
 ```
 
-### The relay chain node
+### The local relay chain node
 
 ```bash
 git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
@@ -23,6 +23,8 @@ cp ./target/release ../binaries/polkadot
 ```bash
 ../test_network/binaries/polkadot --alice --validator --base-path ./test_network/tmp/relay/alice --chain /tmp/raw-local-chainspec.json --port 30333 --rpc-port 9944
 ```
+
+ ### The local parachain
 
 <hr>
 
