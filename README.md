@@ -97,3 +97,4 @@ References:<br>
 [Parachain Templates (EPT & FPT)](https://www.youtube.com/watch?v=zZvR1ii8X30)<br>
 [Zombienet](https://github.com/paritytech/zombienet/)<br>
 [Astar](https://github.com/AstarNetwork/Astar/tree/master)<br>
+[Kusama](https://kusama.network/)<br>
