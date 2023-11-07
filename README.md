@@ -1,11 +1,19 @@
 ## test-network
 
+Create the directories:
+```bash
+mkdir test_network
+cd test_network
+mkdir binaries
+```
+
 ### The relay chain node
 
 ```bash
 git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
 cd polkadot-sdk
 cargo build --release
+cp ./target/release ../binaries/polkadot
 ```
 
 [plain-local-chainspec](https://docs.substrate.io/assets/tutorials/relay-chain-specs/plain-local-chainspec.json/)<br>
@@ -13,19 +21,13 @@ cargo build --release
 
 
 ```bash
-./target/release/polkadot --alice --validator --base-path /tmp/relay/alice --chain /tmp/raw-local-chainspec.json --port 30333 --rpc-port 9944
+../test_network/binaries/polkadot --alice --validator --base-path ./test_network/tmp/relay/alice --chain /tmp/raw-local-chainspec.json --port 30333 --rpc-port 9944
 ```
 
 <hr>
 
 ### Create a local test network
 
-Create the directories:
-```bash
-mkdir test_network
-cd test_network
-mkdir binaries
-```
 
 Add the polkadot binaries(relay chain):
 
