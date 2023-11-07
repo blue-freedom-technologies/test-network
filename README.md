@@ -1,4 +1,14 @@
-## Chain
+## test-network
+
+### The relay chain node
+
+```bash
+git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
+cd polkadot-sdk
+cargo build --release
+```
+
+<hr>
 
 ### Create a local test network
 
