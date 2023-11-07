@@ -26,6 +26,12 @@ cp ./target/release ../binaries/polkadot
 
  ### The local parachain
 
+```bash
+git clone --depth 1 --branch polkadot-v1.0.0 https://github.com/substrate-developer-hub/substrate-parachain-template.git
+cd substrate-parachain-template
+git switch -c test-network
+```
+
 <hr>
 
 ### Create a local test network
