@@ -25,10 +25,6 @@ cp -r ./target/release/ ../binaries/polkadot
 [raw-local-chainspec.json](https://docs.substrate.io/assets/tutorials/relay-chain-specs/raw-local-chainspec.json/)<br>
 
 
-```bash
-../test_network/binaries/polkadot --alice --validator --base-path ./test_network/tmp/relay/alice --chain /tmp/raw-local-chainspec.json --port 30333 --rpc-port 9944
-```
-
  ### The local parachain
 
 ```bash
@@ -36,6 +32,10 @@ git clone --depth 1 --branch polkadot-v1.0.0 https://github.com/substrate-develo
 cd substrate-parachain-template
 git switch -c test-network
 ```
+
+
+
+
 
 <hr>
 
