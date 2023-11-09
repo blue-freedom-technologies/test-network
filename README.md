@@ -31,6 +31,8 @@ cp -r ./target/release/ ../binaries/polkadot
 git clone --depth 1 --branch polkadot-v1.0.0 https://github.com/substrate-developer-hub/substrate-parachain-template.git
 cd substrate-parachain-template
 git switch -c test-network
+cargo build --release
+cp -r ./target/release/ ../binaries/parachain
 ```
 
 
