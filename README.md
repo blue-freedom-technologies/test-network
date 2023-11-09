@@ -16,6 +16,8 @@ cargo build --release
 cp -r ./target/release/ ../binaries/polkadot
 ```
 
+[Download raw-local-chainspec.json](https://docs.substrate.io/assets/tutorials/relay-chain-specs/raw-local-chainspec.json/)
+
 ```bash
 ./binaries/polkadot/polkadot --alice --validator --base-path ./tmp/relay/alice --chain ./tmp/raw_sample_chain_specification_file.json --port 30333 --rpc-port 9944
 ./binaries/polkadot/polkadot --bob --validator --base-path ./tmp/relay/bob --chain ./tmp/raw_sample_chain_specification_file.json --port 30334 --rpc-port 9945
