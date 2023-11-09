@@ -35,8 +35,9 @@ cargo build --release
 cp -r ./target/release/ ../binaries/parachain
 ```
 
-
-
+```bash
+./binaries/parachain/parachain-template-node build-spec --chain plain-parachain-chainspec.json --disable-default-bootnode --raw > raw-parachain-chainspec.json
+```
 
 
 <hr>
