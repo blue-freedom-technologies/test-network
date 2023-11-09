@@ -7,7 +7,7 @@ cd test_network
 mkdir binaries
 ```
 
-### The local relay chain node
+### The relay chain node
 
 ```bash
 git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
@@ -20,14 +20,22 @@ Download [raw-local-chainspec.json](https://docs.substrate.io/assets/tutorials/r
 
 ```bash
 ./binaries/polkadot/polkadot --alice --validator --base-path ./tmp/relay/alice --chain ./tmp/raw-local-chainspec.json --port 30333 --rpc-port 9944
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/75031d03-2363-412d-b782-89fd5eef219b)
+
+```bash
 ./binaries/polkadot/polkadot --bob --validator --base-path ./tmp/relay/bob --chain ./tmp/raw-local-chainspec.json --port 30334 --rpc-port 9945
 ```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/8522dbeb-24bf-4fb9-ad22-a3bf28f02f67)
+
+### The parachain node
 
 [plain-local-chainspec](https://docs.substrate.io/assets/tutorials/relay-chain-specs/plain-local-chainspec.json/)<br>
 [raw-local-chainspec.json](https://docs.substrate.io/assets/tutorials/relay-chain-specs/raw-local-chainspec.json/)<br>
 
-
- ### The local parachain
+ 
 
 ```bash
 git clone --depth 1 --branch polkadot-v1.0.0 https://github.com/substrate-developer-hub/substrate-parachain-template.git
