@@ -35,6 +35,14 @@ cargo build --release
 cp -r ./target/release/ ../binaries/parachain
 ```
 
+Generate the plain text chain specification for the parachain node:
+
+```bash
+./binaries/parachain/parachain-template-node build-spec --disable-default-bootnode > plain-parachain-chainspec.json
+```
+
+Generate a raw chain specification file from the modified plain text chain specification file:
+
 ```bash
 ./binaries/parachain/parachain-template-node build-spec --chain plain-parachain-chainspec.json --disable-default-bootnode --raw > raw-parachain-chainspec.json
 ```
