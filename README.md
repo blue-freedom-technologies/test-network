@@ -47,7 +47,11 @@ Generate a raw chain specification file from the modified plain text chain speci
 ./binaries/parachain/parachain-template-node build-spec --chain plain-parachain-chainspec.json --disable-default-bootnode --raw > raw-parachain-chainspec.json
 ```
 
-
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
 <hr>
 
 ### Create a local test network
