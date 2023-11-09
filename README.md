@@ -188,6 +188,19 @@ Generate a raw chain specification file from the modified plain text chain speci
 ./binaries/parachain/parachain-template-node build-spec --chain plain-parachain-chainspec.json --disable-default-bootnode --raw > raw-parachain-chainspec.json
 ```
 
+Export the WebAssembly runtime for the parachain.
+
+```bash
+./binaries/parachain/parachain-template-node export-genesis-wasm --chain ./tmp/raw-parachain-chainspec.json para-2000-wasm
+```
+
+Generate a parachain genesis state.
+
+```bash
+./binaries/parachain/parachain-template-node export-genesis-state --chain ./tmp/raw-parachain-chainspec.json para-2000-genesis-state
+```
+
+
 Start a collator node
 
 ```bash
