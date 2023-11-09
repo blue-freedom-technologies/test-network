@@ -13,7 +13,7 @@ mkdir binaries
 git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
 cd polkadot-sdk
 cargo build --release
-cp ./target/release ../binaries/polkadot
+cp -r ./target/release/ ../binaries/polkadot
 ```
 
 [plain-local-chainspec](https://docs.substrate.io/assets/tutorials/relay-chain-specs/plain-local-chainspec.json/)<br>
