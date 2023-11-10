@@ -1,5 +1,89 @@
 ## test-network
 
+# Relay Chain
+
+Clone
+
+```bash
+git clone https://github.com/paritytech/polkadot-sdk
+```
+
+Compile Polkadot
+
+```bash
+cargo build --release --bin polkadot
+```
+
+Generate a raw chain spec
+
+```bash
+./target/release/polkadot build-spec --chain rococo-local --disable-default-bootnode --raw > rococo-local-cfde.json
+```
+
+Alice
+
+```bash
+./target/release/polkadot --chain rococo-local-cfde.json --alice --tmp
+```
+
+Bob (In a separate terminal)
+```bash
+./target/release/polkadot --chain rococo-local-cfde.json --bob --tmp --port 30334
+```
+
+## Parachain
+
+Clone
+
+```bash
+git clone https://github.com/paritytech/polkadot-sdk
+```
+
+```bash
+cargo build --release --bin polkadot-parachain
+```
+
+Export genesis state
+
+```bash
+./target/release/polkadot-parachain export-genesis-state > genesis-state
+```
+
+# Export genesis wasm
+
+```bash
+./target/release/polkadot-parachain export-genesis-wasm > genesis-wasm
+```
+
+Collator1
+
+```bash
+./target/release/polkadot-parachain --collator --alice --force-authoring --tmp --port 40335 --rpc-port 9946 -- --chain ../polkadot/rococo-local-cfde.json --port 30335
+```
+
+Collator2
+
+```bash
+./target/release/polkadot-parachain --collator --bob --force-authoring --tmp --port 40336 --rpc-port 9947 -- --chain ../polkadot/rococo-local-cfde.json --port 30336
+```
+
+Parachain Full Node 1
+
+```bash
+./target/release/polkadot-parachain --tmp --port 40337 --rpc-port 9948 -- --chain ../polkadot/rococo-local-cfde.json --port 30337
+```
+
+
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
 Create the directories:
 ```bash
 mkdir test_network
