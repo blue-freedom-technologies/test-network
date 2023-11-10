@@ -193,3 +193,4 @@ References:<br>
 Examples:<br>
 https://github.com/paritytech/cumulus/blob/master/parachains/runtimes/contracts/contracts-rococo/Cargo.toml<br>
 https://github.com/paritytech/trappist/blob/e51c1fead095341210e2a7a5a5971900f476636c/runtime/trappist/src/contracts.rs<br>
+https://github.com/paritytech/trappist/tree/main/runtime/trappist
