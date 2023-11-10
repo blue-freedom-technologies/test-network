@@ -188,7 +188,7 @@ References:<br>
 [Zombienet](https://github.com/paritytech/zombienet/)<br>
 [Astar](https://github.com/AstarNetwork/Astar/tree/master)<br>
 [Kusama](https://kusama.network/)<br>
-
+[Overview of Polkadot and its Design Considerations](https://arxiv.org/abs/2005.13456.pdf)<br>
 
 Examples:<br>
 https://github.com/paritytech/cumulus/blob/master/parachains/runtimes/contracts/contracts-rococo/Cargo.toml<br>
