@@ -5,12 +5,13 @@
 Clone
 
 ```bash
-git clone https://github.com/paritytech/polkadot-sdk
+git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
 ```
 
 Compile Polkadot
 
 ```bash
+cd polkadot-sdk
 cargo build --release --bin polkadot
 ```
 
