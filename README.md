@@ -14,6 +14,10 @@ Compile Polkadot
 cargo build --release --bin polkadot
 ```
 
+```bash
+cp -r ./target/release/ ../binaries/polkadot
+```
+
 Generate a raw chain spec
 
 ```bash
@@ -41,6 +45,10 @@ git clone https://github.com/paritytech/polkadot-sdk
 
 ```bash
 cargo build --release --bin polkadot-parachain
+```
+
+```bash
+cp -r ./target/release/ ../binaries/polkadot-parachain
 ```
 
 Export genesis state
