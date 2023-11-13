@@ -44,6 +44,11 @@ git clone https://github.com/paritytech/polkadot-sdk
 ```
 
 ```bash
+cd  cumulus/polkadot-parachain
+```
+
+
+```bash
 cargo build --release --bin polkadot-parachain
 ```
 
