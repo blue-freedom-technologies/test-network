@@ -2,6 +2,9 @@
 
 [The Parity Polkadot Blockchain SDK](https://github.com/paritytech/polkadot-sdk)
 
+This directory currently contains runtimes for the Polkadot, Kusama, Westend, and Rococo networks. In the future, these will be relocated to the runtimes repository.
+https://github.com/paritytech/polkadot-sdk/tree/master/polkadot 
+
 # Relay Chain
 
 Clone
