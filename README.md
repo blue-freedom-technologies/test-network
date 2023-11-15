@@ -8,7 +8,7 @@
 polkadot key generate --scheme Sr25519 --password-interactive
 ```
 
-Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura) for one node.
+Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura) for node I.
 
 ```text
 Key password:polkadot2023
@@ -25,7 +25,7 @@ Secret phrase:       dish reveal swallow tonight city early exhibit return able 
 polkadot key inspect --password-interactive --scheme Ed25519 "dish reveal swallow tonight city early exhibit return able entry estate host"
 ```
 
-Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) for one node.
+Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) for node I.
 
 ```text
 Key password:polkadot2023 
