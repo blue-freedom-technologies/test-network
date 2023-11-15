@@ -4,6 +4,8 @@
 
 ### Chain specification
 
+Generate keys for node I
+
 ```bash
 polkadot key generate --scheme Sr25519 --password-interactive
 ```
@@ -42,6 +44,36 @@ Secret phrase:       dish reveal swallow tonight city early exhibit return able 
 
 ```bash
 polkadot build-spec --disable-default-bootnode --chain rococo-local > dev-blue-freedom-spec.json
+```
+
+Generate keys for node II
+
+```bash
+polkadot key generate --scheme Sr25519 --password-interactive
+```
+
+```text
+Key password:nodeII2023
+Secret phrase:       agree destroy want saddle diagram gallery critic address daughter flee retire pet
+  Network ID:        substrate
+  Secret seed:       0x514f375ec23492e7d63873011ea2ffbb4e89f28d11c52767b7c16204cd75a11f
+  Public key (hex):  0xa8267c75604afbfc520dba8462a01bef8ab8f7d0c45b2b34ae275fe20afde309
+  Account ID:        0xa8267c75604afbfc520dba8462a01bef8ab8f7d0c45b2b34ae275fe20afde309
+  Public key (SS58): 5FsBLMkJSbx53fFYAV4aZ4gzeANztBTV1kJPPWnzuuVxkaoK
+  SS58 Address:      5FsBLMkJSbx53fFYAV4aZ4gzeANztBTV1kJPPWnzuuVxkaoK
+```
+
+polkadot key inspect --password-interactive --scheme Ed25519 "agree destroy want saddle diagram gallery critic address daughter flee retire pet"
+
+```text
+Key password: 
+Secret phrase:       agree destroy want saddle diagram gallery critic address daughter flee retire pet
+  Network ID:        substrate
+  Secret seed:       0x514f375ec23492e7d63873011ea2ffbb4e89f28d11c52767b7c16204cd75a11f
+  Public key (hex):  0x03fd5af7fb0521fd46631c23d28a85463edbe333b3c39dad1f626a5446759805
+  Account ID:        0x03fd5af7fb0521fd46631c23d28a85463edbe333b3c39dad1f626a5446759805
+  Public key (SS58): 5C9wGDEMPhBCtCJHHEmsVtV5GndNDVsggRpcNDHxrYo8kcjX
+  SS58 Address:      5C9wGDEMPhBCtCJHHEmsVtV5GndNDVsggRpcNDHxrYo8kcjX
 ```
 
 <hr>
