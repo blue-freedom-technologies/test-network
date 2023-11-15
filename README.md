@@ -38,10 +38,10 @@ Secret phrase:       dish reveal swallow tonight city early exhibit return able 
   SS58 Address:      5FTYJJ9x5wRxPYqeSjDbP4RhjMgpwQDpgbttWrgmm6jb4qHZ
 ```
 
-
+./target/release/node-template build-spec --disable-default-bootnode --chain local > customSpec.json
 
 ```bash
-polkadot build-spec > dev-blue-freedom-spec.json
+polkadot build-spec --disable-default-bootnode --chain local > dev-blue-freedom-spec.json
 ```
 
 <hr>
