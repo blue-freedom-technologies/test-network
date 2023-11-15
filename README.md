@@ -63,7 +63,9 @@ Secret phrase:       agree destroy want saddle diagram gallery critic address da
   SS58 Address:      5FsBLMkJSbx53fFYAV4aZ4gzeANztBTV1kJPPWnzuuVxkaoK
 ```
 
+```bash
 polkadot key inspect --password-interactive --scheme Ed25519 "agree destroy want saddle diagram gallery critic address daughter flee retire pet"
+```
 
 ```text
 Key password: 
