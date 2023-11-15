@@ -85,6 +85,12 @@ polkadot build-spec --disable-default-bootnode --chain rococo-local > dev-blue-f
 ```
 
 
+Convert the dev-blue-freedom-spec.json chain specification to the raw format with the file name dev-blue-freedom-spec-raw.json
+
+```bash
+polkadot build-spec --chain=dev-blue-freedom-spec.json --raw --disable-default-bootnode > dev-blue-freedom-spec-raw.json
+```
+
 <hr>
 <hr><hr><hr><hr><hr>
 
