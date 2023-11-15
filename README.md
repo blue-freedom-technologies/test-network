@@ -40,13 +40,9 @@ Secret phrase:       dish reveal swallow tonight city early exhibit return able 
   SS58 Address:      5FTYJJ9x5wRxPYqeSjDbP4RhjMgpwQDpgbttWrgmm6jb4qHZ
 ```
 
-./target/release/node-template build-spec --disable-default-bootnode --chain local > customSpec.json
-
-```bash
-polkadot build-spec --disable-default-bootnode --chain rococo-local > dev-blue-freedom-spec.json
-```
-
 Generate keys for node II
+
+Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura) for node II.
 
 ```bash
 polkadot key generate --scheme Sr25519 --password-interactive
@@ -63,6 +59,8 @@ Secret phrase:       agree destroy want saddle diagram gallery critic address da
   SS58 Address:      5FsBLMkJSbx53fFYAV4aZ4gzeANztBTV1kJPPWnzuuVxkaoK
 ```
 
+Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) for node II.
+
 ```bash
 polkadot key inspect --password-interactive --scheme Ed25519 "agree destroy want saddle diagram gallery critic address daughter flee retire pet"
 ```
@@ -77,6 +75,15 @@ Secret phrase:       agree destroy want saddle diagram gallery critic address da
   Public key (SS58): 5C9wGDEMPhBCtCJHHEmsVtV5GndNDVsggRpcNDHxrYo8kcjX
   SS58 Address:      5C9wGDEMPhBCtCJHHEmsVtV5GndNDVsggRpcNDHxrYo8kcjX
 ```
+
+
+
+
+
+```bash
+polkadot build-spec --disable-default-bootnode --chain rococo-local > dev-blue-freedom-spec.json
+```
+
 
 <hr>
 <hr><hr><hr><hr><hr>
