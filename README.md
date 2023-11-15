@@ -4,6 +4,19 @@
 
 ### Chain specification
 
+polkadot key generate --scheme Sr25519 --password-interactive
+
+```text
+Key password: polkadot2023
+Secret phrase:       dish reveal swallow tonight city early exhibit return able entry estate host
+  Network ID:        substrate
+  Secret seed:       0x4122f08c02f51053676519275a30a91ebff531cb48f7710671662b531decc50a
+  Public key (hex):  0x40268e2a126891c85036b6688020f0cfd53d890c03111be2bdb0944a6bdd550a
+  Account ID:        0x40268e2a126891c85036b6688020f0cfd53d890c03111be2bdb0944a6bdd550a
+  Public key (SS58): 5DWpNi7UFMdhGviBxLsfTvg95HrQME5UV8dUBY8rcXGcdJfD
+  SS58 Address:      5DWpNi7UFMdhGviBxLsfTvg95HrQME5UV8dUBY8rcXGcdJfD
+```
+
 ```bash
 polkadot build-spec > dev-blue-freedom-spec.json
 ```
