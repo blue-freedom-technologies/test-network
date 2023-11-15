@@ -41,7 +41,7 @@ Secret phrase:       dish reveal swallow tonight city early exhibit return able 
 ./target/release/node-template build-spec --disable-default-bootnode --chain local > customSpec.json
 
 ```bash
-polkadot build-spec --disable-default-bootnode --chain local > dev-blue-freedom-spec.json
+polkadot build-spec --disable-default-bootnode --chain rococo-local > dev-blue-freedom-spec.json
 ```
 
 <hr>
