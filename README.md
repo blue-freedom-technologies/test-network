@@ -4,10 +4,14 @@
 
 ### Chain specification
 
+```bash
 polkadot key generate --scheme Sr25519 --password-interactive
+```
+
+Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura) for one node.
 
 ```text
-Key password: polkadot2023
+Key password:polkadot2023
 Secret phrase:       dish reveal swallow tonight city early exhibit return able entry estate host
   Network ID:        substrate
   Secret seed:       0x4122f08c02f51053676519275a30a91ebff531cb48f7710671662b531decc50a
@@ -16,6 +20,25 @@ Secret phrase:       dish reveal swallow tonight city early exhibit return able 
   Public key (SS58): 5DWpNi7UFMdhGviBxLsfTvg95HrQME5UV8dUBY8rcXGcdJfD
   SS58 Address:      5DWpNi7UFMdhGviBxLsfTvg95HrQME5UV8dUBY8rcXGcdJfD
 ```
+
+```bash
+polkadot key inspect --password-interactive --scheme Ed25519 "dish reveal swallow tonight city early exhibit return able entry estate host"
+```
+
+Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) for one node.
+
+```text
+Key password:polkadot2023 
+Secret phrase:       dish reveal swallow tonight city early exhibit return able entry estate host
+  Network ID:        substrate
+  Secret seed:       0x4122f08c02f51053676519275a30a91ebff531cb48f7710671662b531decc50a
+  Public key (hex):  0x961f2b4968cf18e802cbc75924495968c005c42b802f7ae8b2bb0db23fdc61b1
+  Account ID:        0x961f2b4968cf18e802cbc75924495968c005c42b802f7ae8b2bb0db23fdc61b1
+  Public key (SS58): 5FTYJJ9x5wRxPYqeSjDbP4RhjMgpwQDpgbttWrgmm6jb4qHZ
+  SS58 Address:      5FTYJJ9x5wRxPYqeSjDbP4RhjMgpwQDpgbttWrgmm6jb4qHZ
+```
+
+
 
 ```bash
 polkadot build-spec > dev-blue-freedom-spec.json
