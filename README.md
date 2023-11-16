@@ -2,6 +2,10 @@
 
 [The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
 
+
+Parachain node for smart contracts
+https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/cumulus/parachains/runtimes/contracts/contracts-rococo/README.md
+
 ### Chain specification
 
 Generate keys for node I
