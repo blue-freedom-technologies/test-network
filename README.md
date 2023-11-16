@@ -91,6 +91,10 @@ Convert the dev-blue-freedom-spec.json chain specification to the raw format wit
 polkadot build-spec --chain=dev-blue-freedom-spec.json --raw --disable-default-bootnode > dev-blue-freedom-spec-raw.json
 ```
 
+```bash
+git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
+```
+
 <hr>
 <hr><hr><hr><hr><hr>
 
