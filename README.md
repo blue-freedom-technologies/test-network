@@ -48,7 +48,7 @@ polkadot --chain rococo-local-spec.json --bob --tmp --port 30334
 
 ## Parachain
 
-Clone the repo to get the [Cumulus SDK](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/cumulus)
+#### Clone the repo to get the [Cumulus SDK](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/cumulus)
 
 ```bash
 git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
@@ -56,21 +56,21 @@ git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.gi
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b6c5acb2-6e82-49ea-b760-3c8ce330e373)
 
-Compile the polkadot parachain node
+#### Compile the polkadot parachain node
 
 ```bash
 cd polkadot-sdk/cumulus/polkadot-parachain
 cargo build --release --bin polkadot-parachain
 ```
 
-Copy the polkadot-parachain binary
+#### Copy the polkadot-parachain binary
 
 ```bash
 cd ../../../
 cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 ```
 
-Export genesis state
+#### Export genesis state
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain export-genesis-state > genesis-state-polkadot-parachain
@@ -78,7 +78,7 @@ Export genesis state
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/7d2ccb5b-bf95-4c9e-aac4-5907de30cad6)
 
-Export genesis wasm
+#### Export genesis wasm
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm > genesis-wasm-parachain
@@ -86,7 +86,7 @@ Export genesis wasm
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/74bca697-6a2c-4282-a0bd-a53e773e689d)
 
-Start the collator node alice
+#### Start the collator node alice
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --collator --alice --force-authoring --tmp --port 40335 --rpc-port 9946 -- --chain ./rococo-local-spec.json --port 30335
@@ -94,8 +94,7 @@ Start the collator node alice
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/344fc6f6-4a37-40f4-8995-eb49af680916)
 
-
-Start the collator node bob
+#### Start the collator node bob
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --collator --bob --force-authoring --tmp --port 40336 --rpc-port 9947 -- --chain ./rococo-local-spec.json --port 30336
@@ -103,16 +102,14 @@ Start the collator node bob
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/74a4b62d-b377-4f74-b5ff-cca89d096e1b)
 
-
-Parachain Full Node
+#### Parachain Full Node
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --tmp --port 40337 --rpc-port 9948 -- --chain ./rococo-local-spec.json --port 30337
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9ce6bfa7-7653-4765-86bf-27f440448384)
 
-
-Register the new parachain in using the [Polkadot.js UI](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo)
+####  kRegister the new parachain in using the [Polkadot.js UI](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo)
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b6a54d16-4e52-4313-850a-6b655f3af7d7)
 
