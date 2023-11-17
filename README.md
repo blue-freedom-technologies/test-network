@@ -78,12 +78,11 @@ Export genesis wasm
 ```
 
 
-Start the collator node01
+Start the collator node I
 
 ```bash
-./target/release/polkadot-parachain --collator --alice --force-authoring \
-  --tmp --port 40335 --rpc-port 9946 -- --chain ../polkadot/rococo-local-cfde.json --port 30335
-
+./binaries/polkadot-parachain --collator --alice --force-authoring --tmp --port 40335 --rpc-port 9946 -- --chain ../polkadot/rococo-local-cfde.json --port 30335
+```
 
 <hr>
 
