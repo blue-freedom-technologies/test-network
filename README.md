@@ -68,13 +68,13 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 Export genesis state
 
 ```bash
-./binaries/polkadot-parachain export-genesis-state > genesis-state-polkadot-parachain
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-state > genesis-state-polkadot-parachain
 ```
 
 Export genesis wasm
 
 ```bash
-./binaries/polkadot-parachain export-genesis-wasm > genesis-wasm-parachain
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm > genesis-wasm-parachain
 ```
 
 Start the collator node alice
