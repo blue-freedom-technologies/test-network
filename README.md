@@ -68,8 +68,25 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 Export genesis state
 
 ```bash
-./target/release/polkadot-parachain export-genesis-state > genesis-state
+./binaries/polkadot-parachain export-genesis-state > genesis-state-polkadot-parachain
 ```
+
+Export genesis wasm
+
+```bash
+./binaries/polkadot-parachain export-genesis-wasm > genesis-wasm-parachain
+```
+
+
+Start the collator node01
+
+```bash
+./target/release/polkadot-parachain --collator --alice --force-authoring \
+  --tmp --port 40335 --rpc-port 9946 -- --chain ../polkadot/rococo-local-cfde.json --port 30335
+
+
+<hr>
+
 
 [The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
 
