@@ -14,6 +14,8 @@ Table of Contents
   - [Export genesis wasm](https://github.com/blue-freedom-technologies/test-network#export-genesis-wasm)
   - [Start the collator node alice](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-alice)
   - [Start the collator node bob](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-bob)
+  - [Parachain full node](https://github.com/blue-freedom-technologies/test-network#parachain-full-node)
+  - [Register the new parachain in using the polkadot.js UI](https://github.com/blue-freedom-technologies/test-network#register-the-new-parachain-in-using-the-polkadotjs-ui)
   
 <hr>
 
