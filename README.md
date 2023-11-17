@@ -14,11 +14,12 @@ cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1
 
 ## Relay Chain
 
-##### Create the directories
+#### Create the directories
 
 ```bash
 mkdir test-network
 cd test-network
+mkdir binaries
 ```
 
 #### Generate a raw chain spec
@@ -29,7 +30,7 @@ polkadot build-spec --chain rococo-local --disable-default-bootnode --raw > roco
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/5bb28f46-fd7a-4a34-a883-3b9350c217a5)
 
-### Start the Alice node(new terminal)
+#### Start the Alice node(new terminal)
  
 ```bash
 polkadot --chain rococo-local-spec.json --alice --tmp
@@ -37,7 +38,7 @@ polkadot --chain rococo-local-spec.json --alice --tmp
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/d328d1a6-3e0c-4838-ba45-edbc6b2f0387)
 
-### Start the Bob node(new terminal)
+#### Start the Bob node(new terminal)
  
 ```bash
 polkadot --chain rococo-local-spec.json --bob --tmp --port 30334
