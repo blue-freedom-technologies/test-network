@@ -100,6 +100,9 @@ Parachain Full Node I
 ./binaries/polkadot-parachain/polkadot-parachain --tmp --port 40337 --rpc-port 9948 -- --chain ./rococo-local-spec.json --port 30337
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9ce6bfa7-7653-4765-86bf-27f440448384)
+
+
 <hr>
 
 
