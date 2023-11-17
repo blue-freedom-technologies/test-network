@@ -41,6 +41,13 @@ polkadot --chain rococo-local-spec.json --bob --tmp --port 30334
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/fb5307e6-1b49-4b8a-9144-4b4006737049)
 
+## Parachain
+
+
+
+
+
+
 
 
 
