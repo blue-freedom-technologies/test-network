@@ -109,6 +109,9 @@ Parachain Full Node I
 
 Register the new parachain in using the [Polkadot.js UI](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo)
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b6a54d16-4e52-4313-850a-6b655f3af7d7)
+
+
 <hr>
 
 
