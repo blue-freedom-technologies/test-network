@@ -2,7 +2,7 @@
 
 Table of Contents
 - [Relay Chain](https://github.com/blue-freedom-technologies/test-network/edit/main/README.md#relay-chain)
-- [Parachain]()
+- [Parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain)
   
 <hr>
 
