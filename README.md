@@ -1,5 +1,11 @@
 # test-network
 
+Table of Contents
+- [Relay Chain](https://github.com/blue-freedom-technologies/test-network/edit/main/README.md#relay-chain)
+- [Parachain]()
+  
+<hr>
+
 Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot) via Cargo
 
 ```bash
