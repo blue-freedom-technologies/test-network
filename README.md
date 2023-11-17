@@ -43,7 +43,7 @@ polkadot --chain rococo-local-spec.json --bob --tmp --port 30334
 
 ## Parachain
 
-Clone the sdk repo to get the [Cumulus SDK](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/cumulus)
+Clone the repo to get the [Cumulus SDK](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/cumulus)
 
 ```bash
 git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
