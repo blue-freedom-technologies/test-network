@@ -103,6 +103,8 @@ Parachain Full Node I
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9ce6bfa7-7653-4765-86bf-27f440448384)
 
 
+Register the new parachain in using the [Polkadot.js UI](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo)
+
 <hr>
 
 
