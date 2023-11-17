@@ -90,7 +90,7 @@ Start the collator node alice
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/344fc6f6-4a37-40f4-8995-eb49af680916)
 
 
-Start the collator bob
+Start the collator node bob
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --collator --bob --force-authoring --tmp --port 40336 --rpc-port 9947 -- --chain ./rococo-local-spec.json --port 30336
@@ -99,7 +99,7 @@ Start the collator bob
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/74a4b62d-b377-4f74-b5ff-cca89d096e1b)
 
 
-Parachain Full Node I
+Parachain Full Node
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --tmp --port 40337 --rpc-port 9948 -- --chain ./rococo-local-spec.json --port 30337
 ```
