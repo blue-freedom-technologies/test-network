@@ -58,7 +58,16 @@ cd polkadot-sdk/cumulus/polkadot-parachain
 cargo build --release --bin polkadot-parachain
 ```
 
+```bash
+cd ../../../
+cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
+```
 
+Export genesis state
+
+```bash
+./target/release/polkadot-parachain export-genesis-state > genesis-state
+```
 
 [The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
 
