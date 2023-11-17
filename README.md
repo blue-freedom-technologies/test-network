@@ -6,7 +6,40 @@ Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-
 cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1.3.0 polkadot --locked
 ```
 
-Relay Chain
+## Relay Chain
+
+Create the directories:
+
+```bash
+mkdir test-network
+cd test-network
+```
+
+Generate a raw chain spec
+
+```bash
+polkadot build-spec --chain rococo-local --disable-default-bootnode --raw > rococo-local-spec.json
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/5bb28f46-fd7a-4a34-a883-3b9350c217a5)
+
+
+ Start the Alice validator(new terminal)
+ 
+```bash
+polkadot --chain rococo-local-spec.json --alice --tmp
+```
+
+
+Start the Bob validator(new terminal)
+ 
+```bash
+polkadot --chain rococo-local-cfde.json --bob --tmp --port 30334
+```
+
+
+
+
 
 [The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
 
