@@ -58,6 +58,8 @@ cd polkadot-sdk/cumulus/polkadot-parachain
 cargo build --release --bin polkadot-parachain
 ```
 
+Copy the polkadot-parachain binary
+
 ```bash
 cd ../../../
 cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
