@@ -71,11 +71,15 @@ Export genesis state
 ./binaries/polkadot-parachain/polkadot-parachain export-genesis-state > genesis-state-polkadot-parachain
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/7d2ccb5b-bf95-4c9e-aac4-5907de30cad6)
+
 Export genesis wasm
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm > genesis-wasm-parachain
 ```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/74bca697-6a2c-4282-a0bd-a53e773e689d)
 
 Start the collator node alice
 
