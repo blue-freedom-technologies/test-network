@@ -49,7 +49,14 @@ Clone the sdk repo to get the [Cumulus SDK](https://github.com/paritytech/polkad
 git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b6c5acb2-6e82-49ea-b760-3c8ce330e373)
 
+Compile the polkadot parachain node
+
+```bash
+cd polkadot-sdk/cumulus/polkadot-parachain
+cargo build --release --bin polkadot-parachain
+```
 
 
 
