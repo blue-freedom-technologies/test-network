@@ -26,7 +26,7 @@ Zombienet setup
   
 <hr>
 
-Introduction
+## Introduction
 
 All the setups demonstrated here were  done in [ubuntu-22-04-3-lts](https://fridge.ubuntu.com/2023/08/11/ubuntu-22-04-3-lts-released/).
 
