@@ -2,8 +2,7 @@
 
 Table of Contents
 
-
-Default 
+Default setup
 
 - [Relay Chain](https://github.com/blue-freedom-technologies/test-network/edit/main/README.md#relay-chain)
   - [Create the directories](https://github.com/blue-freedom-technologies/test-network#create-the-directories)
@@ -21,7 +20,7 @@ Default
   - [Parachain full node](https://github.com/blue-freedom-technologies/test-network#parachain-full-node)
   - [Register the new parachain in using the polkadot.js UI](https://github.com/blue-freedom-technologies/test-network#register-the-new-parachain-in-using-the-polkadotjs-ui)
 
-Zombienet
+Zombienet setup
   
 <hr>
 
