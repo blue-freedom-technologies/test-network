@@ -172,10 +172,33 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 
 <hr>
 
+A minimal configuration example with two validators and one parachain:
+
+```bash
+[settings]
+timeout = 1000
+
+[relaychain]
+default_image = "paritypr/polkadot-debug:master"
+chain = "rococo-local"
+
+  [[relaychain.nodes]]
+  name = "alice"
+
+  [[relaychain.nodes]]
+  name = "bob"
+
+[[parachains]]
+id = 100
+
+  [parachains.collator]
+  name = "collator01"
+  image = "paritypr/colander:master"
+  command = "adder-collator"
+```
 
 <hr>
 
-[The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
 
 
 [Parachain node for smart contracts](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/cumulus/parachains/runtimes/contracts/contracts-rococo/README.md)
