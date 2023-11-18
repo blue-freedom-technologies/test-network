@@ -41,6 +41,8 @@ chmod +x zombienet-linux-x64
 sudo cp zombienet-linux-x64 /usr/local/bin
 ```
 
+[Zombienet Book](https://paritytech.github.io/zombienet/intro.html)
+
 <hr>
 
 ## Relay Chain
