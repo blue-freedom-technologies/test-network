@@ -32,9 +32,7 @@ Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-
 cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1.3.0 polkadot --locked
 ```
 
-Zombienet setup
-
-Download the [Zombienet executable](https://github.com/paritytech/zombienet/releases) and execute:
+Install [Zombienet executable](https://github.com/paritytech/zombienet/releases)
 
 ```bash
 chmod +x zombienet-linux-x64
