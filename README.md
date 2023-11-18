@@ -4,7 +4,7 @@
 
 ## Introduction
 
-All the setups demonstrated in this document were done in [ubuntu-22-04-3-lts](https://fridge.ubuntu.com/2023/08/11/ubuntu-22-04-3-lts-released/).It's assumed that [Rust](https://www.rust-lang.org/tools/install) is installed and running.
+All the setups demonstrated in this document were done in [ubuntu-22-04-3-lts](https://fridge.ubuntu.com/2023/08/11/ubuntu-22-04-3-lts-released/). It's assumed that [Rust](https://www.rust-lang.org/tools/install) is installed and running.
 
 
 Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot) via Cargo
