@@ -1,30 +1,6 @@
 # test-network
 
-<hr>
 
-Table of Contents
-
-Default setup
-
-- [Relay Chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#relay-chain)
-  - [Create the directories](https://github.com/blue-freedom-technologies/test-network#create-the-directories)
-  - [Generate a raw chain spec](https://github.com/blue-freedom-technologies/test-network#generate-a-raw-chain-spec)
-  - [Start-the alice node](https://github.com/blue-freedom-technologies/test-network#start-the-alice-nodenew-terminal)
-  - [Start the bob node](https://github.com/blue-freedom-technologies/test-network#start-the-bob-nodenew-terminal)
-- [Parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain)
-  - [Clone the repo to get the Cumulus sdk](https://github.com/blue-freedom-technologies/test-network#clone-the-repo-to-get-the-cumulus-sdk)
-  - [Compile the polkadot parachain node](https://github.com/blue-freedom-technologies/test-network#compile-the-polkadot-parachain-node)
-  - [Copy the polkadot-parachain binary](https://github.com/blue-freedom-technologies/test-network#copy-the-polkadot-parachain-binary)
-  - [Export genesis state](https://github.com/blue-freedom-technologies/test-network#export-genesis-state)
-  - [Export genesis wasm](https://github.com/blue-freedom-technologies/test-network#export-genesis-wasm)
-  - [Start the collator node alice](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-alice)
-  - [Start the collator node bob](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-bob)
-  - [Parachain full node](https://github.com/blue-freedom-technologies/test-network#parachain-full-node)
-  - [Register the new parachain in using the polkadot.js UI](https://github.com/blue-freedom-technologies/test-network#register-the-new-parachain-in-using-the-polkadotjs-ui)
-
-Zombienet setup
-  
-<hr>
 
 ## Introduction
 
@@ -65,6 +41,30 @@ zombienet-linux-x64 version
 
 [Zombienet Book](https://paritytech.github.io/zombienet/intro.html)
 
+<hr>
+
+Table of Contents
+
+Default setup
+
+- [Relay Chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#relay-chain)
+  - [Create the directories](https://github.com/blue-freedom-technologies/test-network#create-the-directories)
+  - [Generate a raw chain spec](https://github.com/blue-freedom-technologies/test-network#generate-a-raw-chain-spec)
+  - [Start-the alice node](https://github.com/blue-freedom-technologies/test-network#start-the-alice-nodenew-terminal)
+  - [Start the bob node](https://github.com/blue-freedom-technologies/test-network#start-the-bob-nodenew-terminal)
+- [Parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain)
+  - [Clone the repo to get the Cumulus sdk](https://github.com/blue-freedom-technologies/test-network#clone-the-repo-to-get-the-cumulus-sdk)
+  - [Compile the polkadot parachain node](https://github.com/blue-freedom-technologies/test-network#compile-the-polkadot-parachain-node)
+  - [Copy the polkadot-parachain binary](https://github.com/blue-freedom-technologies/test-network#copy-the-polkadot-parachain-binary)
+  - [Export genesis state](https://github.com/blue-freedom-technologies/test-network#export-genesis-state)
+  - [Export genesis wasm](https://github.com/blue-freedom-technologies/test-network#export-genesis-wasm)
+  - [Start the collator node alice](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-alice)
+  - [Start the collator node bob](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-bob)
+  - [Parachain full node](https://github.com/blue-freedom-technologies/test-network#parachain-full-node)
+  - [Register the new parachain in using the polkadot.js UI](https://github.com/blue-freedom-technologies/test-network#register-the-new-parachain-in-using-the-polkadotjs-ui)
+
+Zombienet setup
+  
 <hr>
 
 ## Relay Chain
