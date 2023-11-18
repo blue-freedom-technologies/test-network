@@ -6,7 +6,7 @@ Table of Contents
 
 Default setup
 
-- [Relay Chain](https://github.com/blue-freedom-technologies/test-network/edit/main/README.md#relay-chain)
+- [Relay Chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#relay-chain)
   - [Create the directories](https://github.com/blue-freedom-technologies/test-network#create-the-directories)
   - [Generate a raw chain spec](https://github.com/blue-freedom-technologies/test-network#generate-a-raw-chain-spec)
   - [Start-the alice node](https://github.com/blue-freedom-technologies/test-network#start-the-alice-nodenew-terminal)
