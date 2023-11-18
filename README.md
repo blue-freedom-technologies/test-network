@@ -68,6 +68,8 @@ Zombienet setup
   
 <hr>
 
+# Default setup
+
 ## Relay Chain
 
 #### Create the directories
@@ -171,6 +173,17 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 
 
 <hr>
+
+# Zombienet setup
+
+## Relay Chain
+
+
+
+## Parachain
+
+
+
 
 A minimal configuration example with two validators and one parachain:
 
