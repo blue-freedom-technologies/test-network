@@ -184,6 +184,28 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 
 
 
+[relaychain]
+default_command = "./binaries/polkadot/polkadot"
+default_args = [ "-lparachain=debug" ]
+chain = "rococo-local"
+
+  [[relaychain.nodes]]
+  name = "alice"
+  validator = true
+
+  [[relaychain.nodes]]
+  name = "bob"
+  validator = true
+ 
+[[parachains]]
+id = 2000
+addToGenesis = true
+cumulus_based = true
+
+  [parachains.collator]
+  name = "node-parachain-collator01"
+  command = "./binaries/node/parachain-template-node"
+
 
 A minimal configuration example with two validators and one parachain:
 
