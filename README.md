@@ -32,6 +32,15 @@ Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-
 cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1.3.0 polkadot --locked
 ```
 
+Test the setup
+
+```bash
+polkadot --version
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/14efafe6-6391-4fe4-8c9b-324f837fc389)
+
+
 [The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
 
 Install [Zombienet executable](https://github.com/paritytech/zombienet/releases)
@@ -40,6 +49,15 @@ Install [Zombienet executable](https://github.com/paritytech/zombienet/releases)
 chmod +x zombienet-linux-x64
 sudo cp zombienet-linux-x64 /usr/local/bin
 ```
+
+Test the setup
+
+```bash
+zombienet-linux-x64 version
+
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/24fd7221-db5f-4063-94b4-c1ed72469a4b)
 
 [Zombienet Book](https://paritytech.github.io/zombienet/intro.html)
 
