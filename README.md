@@ -32,6 +32,8 @@ Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-
 cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1.3.0 polkadot --locked
 ```
 
+[The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
+
 Install [Zombienet executable](https://github.com/paritytech/zombienet/releases)
 
 ```bash
