@@ -203,6 +203,16 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2daf3a1e-e666-4dc5-a4fa-2829f3afb42d)
 
+## Parachain (Key generation option)
+
+Generate a random secret phrase and keys
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
+```
+
+
+
 <hr>
 
 [acquire-a-testnet-slot](https://docs.substrate.io/tutorials/build-a-parachain/acquire-a-testnet-slot/)
@@ -219,6 +229,16 @@ Spawn a local testing network:
  zombienet-linux-x64 spawn dev-rococo-local.toml -p native
 ```
 
+```text
+Key password: 
+Secret phrase:       airport crumble matter grunt vicious excite thing unable object opera second deer
+  Network ID:        substrate
+  Secret seed:       0xde2c289cf3a329580f2bfc98d3c298ff137443f18ea8e3d24917092d947b57f0
+  Public key (hex):  0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
+  Account ID:        0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
+  Public key (SS58): 5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
+  SS58 Address:      5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
+```
 
 
 [relaychain]
