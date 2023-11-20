@@ -175,6 +175,9 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 ./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain raw-parachain-chainspec.json para-2000-genesis-state
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/51b77976-166b-4789-aa8b-09ce19fc147d)
+
+
 #### Start the collator node alice
 
 ```bash
