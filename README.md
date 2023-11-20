@@ -53,6 +53,8 @@ Default setup
   - [Generate a raw chain spec](https://github.com/blue-freedom-technologies/test-network#generate-a-raw-chain-spec)
   - [Start-the alice node](https://github.com/blue-freedom-technologies/test-network#start-the-alice-nodenew-terminal)
   - [Start the bob node](https://github.com/blue-freedom-technologies/test-network#start-the-bob-nodenew-terminal)
+  - [Connect to the relay chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#connect-to-the-relay-chain)
+  - [Reserve a para id](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#reserve-a-parathread-id)
 - [Parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain)
   - [Clone the repo to get the Cumulus sdk](https://github.com/blue-freedom-technologies/test-network#clone-the-repo-to-get-the-cumulus-sdk)
   - [Compile the polkadot parachain node](https://github.com/blue-freedom-technologies/test-network#compile-the-polkadot-parachain-node)
