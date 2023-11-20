@@ -62,13 +62,14 @@ Default setup
   - [Copy the polkadot-parachain binary](https://github.com/blue-freedom-technologies/test-network#copy-the-polkadot-parachain-binary)
   - [Generate the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification)
   - [Modify the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#modify-the-plain-text-chain-specification)
-  - [Export genesis state](https://github.com/blue-freedom-technologies/test-network#export-genesis-state)
-  - [Export genesis wasm](https://github.com/blue-freedom-technologies/test-network#export-genesis-wasm)
-  - [Start the collator node alice](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-alice)
-  - [Start the collator node bob](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-bob)
-  - [Parachain full node](https://github.com/blue-freedom-technologies/test-network#parachain-full-node)
-  - [Register the new parachain in using the polkadot.js UI](https://github.com/blue-freedom-technologies/test-network#register-the-new-parachain-in-using-the-polkadotjs-ui)
-
+  - [Generate-a-raw-chain-specification-file-from-the-modified--plain-text-chain-specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-raw-chain-specification-file-from-the-modified--plain-text-chain-specification)
+  - [Export the webassembly runtime](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#export-the-webassembly-runtime)
+  - [Generate a parachain genesis state](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-parachain-genesis-state)
+  - [Start the collator node alice](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-collator-node-alice)
+  - [Register the parachain with the local relay chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#register-the-parachain-with-the-local-relay-chain)
+  - [Sudo transaction](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#sudo-transaction)
+  - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain)
+  
 Zombienet setup
   
 <hr>
