@@ -88,7 +88,7 @@ mkdir binaries
 #### Generate a raw chain spec
 
 ```bash
-polkadot build-spec --chain rococo-local --disable-default-bootnode --raw > rococo-local-spec.json
+polkadot build-spec --chain rococo-local --disable-default-bootnode --raw > ./tmp/raw-local-chainspec.json
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/5bb28f46-fd7a-4a34-a883-3b9350c217a5)
