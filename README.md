@@ -199,13 +199,13 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2e7ad33c-6591-4317-b016-a40baf0383c3)
 
-### Testing the parachain.
+#### Testing the parachain.
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2daf3a1e-e666-4dc5-a4fa-2829f3afb42d)
 
-[acquire-a-testnet-slot](https://docs.substrate.io/tutorials/build-a-parachain/acquire-a-testnet-slot/)
-
 <hr>
+
+[acquire-a-testnet-slot](https://docs.substrate.io/tutorials/build-a-parachain/acquire-a-testnet-slot/)
 
 # Zombienet setup
 
