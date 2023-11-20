@@ -148,9 +148,12 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > plain-parachain-chainspec.json
 ```
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/68d5909b-0b70-4777-9630-34b23edc12b4)
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9bff08d3-9b76-4ba4-a4bd-32a2816046e5)
+
+#### Modify the plain text chain specification
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/68d5909b-0b70-4777-9630-34b23edc12b4)
 
 #### Export genesis state
 
