@@ -169,22 +169,11 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9af0e96b-5e9e-4fb0-9d61-1a4ac7f4e4ce)
 
-
-#### Export genesis state
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-state > genesis-state-polkadot-parachain
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/7d2ccb5b-bf95-4c9e-aac4-5907de30cad6)
-
-#### Export genesis wasm
+#### Generate a parachain genesis state
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm > genesis-wasm-parachain
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain raw-parachain-chainspec.json para-2000-genesis-state
 ```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/74bca697-6a2c-4282-a0bd-a53e773e689d)
 
 #### Start the collator node alice
 
