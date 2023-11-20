@@ -211,7 +211,37 @@ Generate a random secret phrase and keys
 ./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
 ```
 
+```text
+Key password:ZAQ12wsx
+Secret phrase:       airport crumble matter grunt vicious excite thing unable object opera second deer
+  Network ID:        substrate
+  Secret seed:       0xde2c289cf3a329580f2bfc98d3c298ff137443f18ea8e3d24917092d947b57f0
+  Public key (hex):  0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
+  Account ID:        0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
+  Public key (SS58): 5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
+  SS58 Address:      5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
+```
 
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "airport crumble matter grunt vicious excite thing unable object opera second deer"
+```
+
+```text
+Key password:ZAQ12wsx
+Secret phrase:       airport crumble matter grunt vicious excite thing unable object opera second deer
+  Network ID:        substrate
+  Secret seed:       0xde2c289cf3a329580f2bfc98d3c298ff137443f18ea8e3d24917092d947b57f0
+  Public key (hex):  0xdd730ca1d5af8c2a714580a5e8207ae7924beb6a756c85b8155ec39342531165
+  Account ID:        0xdd730ca1d5af8c2a714580a5e8207ae7924beb6a756c85b8155ec39342531165
+  Public key (SS58): 5H54ci5AP1yttiAzmi72sBmrQ6zCdtYGzjXL8kS7mbwDe6Fu
+  SS58 Address:      5H54ci5AP1yttiAzmi72sBmrQ6zCdtYGzjXL8kS7mbwDe6Fu
+```
+
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec.json
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-key-option-chainspec.json
+```
 
 <hr>
 
