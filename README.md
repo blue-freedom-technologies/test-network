@@ -60,6 +60,8 @@ Default setup
   - [Clone the repo to get the Cumulus sdk](https://github.com/blue-freedom-technologies/test-network#clone-the-repo-to-get-the-cumulus-sdk)
   - [Compile the polkadot parachain node](https://github.com/blue-freedom-technologies/test-network#compile-the-polkadot-parachain-node)
   - [Copy the polkadot-parachain binary](https://github.com/blue-freedom-technologies/test-network#copy-the-polkadot-parachain-binary)
+  - [Generate the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification)
+  - [Modify the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#modify-the-plain-text-chain-specification)
   - [Export genesis state](https://github.com/blue-freedom-technologies/test-network#export-genesis-state)
   - [Export genesis wasm](https://github.com/blue-freedom-technologies/test-network#export-genesis-wasm)
   - [Start the collator node alice](https://github.com/blue-freedom-technologies/test-network#start-the-collator-node-alice)
