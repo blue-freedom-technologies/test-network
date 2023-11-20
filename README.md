@@ -184,9 +184,10 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 #### Start the collator node alice
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain --alice --collator --force-authoring --chain ./raw-parachain-chainspec.json --base-path /tmp/parachain/alice --port 40333 --rpc-port 8844 -- --execution wasm --chain ./raw-local-chainspec.json --port 30343 --rpc-port 9977
+./binaries/polkadot-parachain/polkadot-parachain --alice --collator --force-authoring --chain ./tmp/raw-parachain-chainspec.json --base-path /tmp/parachain/alice --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-local-chainspec.json --port 30343 --rpc-port 9977
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/56adcac9-36a1-4e2c-9198-341775870832)
 
 <hr>
 
