@@ -178,9 +178,13 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 
 ## Relay Chain
 
-
-
 ## Parachain
+
+Spawn a local testing network:
+
+```bash
+ zombienet-linux-x64 spawn config.toml -p native
+```
 
 
 
