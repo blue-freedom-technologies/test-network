@@ -104,17 +104,15 @@ polkadot --chain rococo-local-spec.json --bob --tmp --port 30334
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/fb5307e6-1b49-4b8a-9144-4b4006737049)
 
-
-
 #### Connect to the [relay chain](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/parachains/parathreads)
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/c3a9215f-5a38-4be7-a393-d9dc38fcc1f2)
 
-Reserve a parathread id
+#### Reserve a parathread id
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/29dc9f98-aee7-4f08-a477-35d1a4cd0dd9)
 
-Confirm the register
+#### Confirm the events
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/12760045-3ad6-4224-b2a7-176b9ee865ef)
 
