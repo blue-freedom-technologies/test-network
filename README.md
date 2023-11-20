@@ -148,7 +148,7 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 #### Generate the plain text chain specification
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > plain-parachain-chainspec.json
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec.json
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9bff08d3-9b76-4ba4-a4bd-32a2816046e5)
@@ -164,7 +164,7 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 #### Export the WebAssembly runtime
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain raw-parachain-chainspec.json para-2000-wasm
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chainspec.json para-2000-wasm
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9af0e96b-5e9e-4fb0-9d61-1a4ac7f4e4ce)
