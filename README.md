@@ -143,6 +143,14 @@ cd ../../../
 cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 ```
 
+#### Generate the plain text chain specification
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > plain-parachain-chainspec.json
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9bff08d3-9b76-4ba4-a4bd-32a2816046e5)
+
 #### Export genesis state
 
 ```bash
