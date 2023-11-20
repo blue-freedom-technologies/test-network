@@ -183,7 +183,7 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 Spawn a local testing network:
 
 ```bash
- zombienet-linux-x64 spawn config.toml -p native
+ zombienet-linux-x64 spawn dev-rococo-local.toml -p native
 ```
 
 
