@@ -110,7 +110,7 @@ polkadot --chain rococo-local-spec.json --bob --tmp --port 30334
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/c3a9215f-5a38-4be7-a393-d9dc38fcc1f2)
 
-#### Reserve a parathread id
+#### Reserve a paraid
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/29dc9f98-aee7-4f08-a477-35d1a4cd0dd9)
 
