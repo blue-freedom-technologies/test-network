@@ -168,7 +168,7 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 #### Export the WebAssembly runtime
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chainspec.json para-2000-wasm
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chainspec.json ./tmp/para-2000-wasm
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9af0e96b-5e9e-4fb0-9d61-1a4ac7f4e4ce)
@@ -176,7 +176,7 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 #### Generate a parachain genesis state
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain raw-parachain-chainspec.json para-2000-genesis-state
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain ./tmp/raw-parachain-chainspec.json ./tmp/para-2000-genesis-state
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/51b77976-166b-4789-aa8b-09ce19fc147d)
