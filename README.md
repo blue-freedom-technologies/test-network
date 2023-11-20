@@ -189,6 +189,16 @@ cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/56adcac9-36a1-4e2c-9198-341775870832)
 
+#### Register the parachain with the [local relay chain](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/sudo)
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/c33c46d7-06f4-4411-90fb-ff836981f8c5)
+
+#### Sudo transaction
+Note: We are bypassing the steps required to acquire a parachain or parathread slot which normally is a [parachain auction](https://wiki.polkadot.network/docs/learn-auction).
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2e7ad33c-6591-4317-b016-a40baf0383c3)
+
+
 <hr>
 
 # Zombienet setup
