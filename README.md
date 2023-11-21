@@ -237,7 +237,12 @@ Secret phrase:       airport crumble matter grunt vicious excite thing unable ob
   SS58 Address:      5H54ci5AP1yttiAzmi72sBmrQ6zCdtYGzjXL8kS7mbwDe6Fu
 ```
 
-./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec.json
+#### Generate the plain text chain specification
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec-private-network.json
+```
+
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-key-option-chainspec.json
