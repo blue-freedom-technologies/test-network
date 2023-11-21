@@ -205,7 +205,45 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ## Parachain (private network of trusted validators)
 
-Generate a random secret phrase and keys
+### Node I
+
+Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
+```
+
+```bash
+Key password:ZAQ12wsx
+Secret phrase:       sea decline anger behave eyebrow addict junior never brief island copy peanut
+  Network ID:        substrate
+  Secret seed:       0x4b69c4102e58f67f4539e1d96d6629480a0828f601c0db7e9eec277e13505306
+  Public key (hex):  0x0e882efd56adf1c592b1a4ae122538e7ec18f4f9beadf12929ca9ab98db96126
+  Account ID:        0x0e882efd56adf1c592b1a4ae122538e7ec18f4f9beadf12929ca9ab98db96126
+  Public key (SS58): 5CPkywRUTrqRqSz7t1kGXYTjbLpXge41kciyqXiw5aogB2j3
+  SS58 Address:      5CPkywRUTrqRqSz7t1kGXYTjbLpXge41kciyqXiw5aogB2j3
+```
+
+Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "sea decline anger behave eyebrow addict junior never brief island copy peanut"
+```
+
+```text
+Key password:ZAQ12wsx
+Secret phrase:       sea decline anger behave eyebrow addict junior never brief island copy peanut
+  Network ID:        substrate
+  Secret seed:       0x4b69c4102e58f67f4539e1d96d6629480a0828f601c0db7e9eec277e13505306
+  Public key (hex):  0xb80bbe9fd25ef2feb53a1db4486079b22399a2609a4b341e7d5ab764ba0b1927
+  Account ID:        0xb80bbe9fd25ef2feb53a1db4486079b22399a2609a4b341e7d5ab764ba0b1927
+  Public key (SS58): 5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ
+  SS58 Address:      5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ
+```
+
+### Node II
+
+Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
@@ -213,28 +251,30 @@ Generate a random secret phrase and keys
 
 ```text
 Key password:ZAQ12wsx
-Secret phrase:       airport crumble matter grunt vicious excite thing unable object opera second deer
+Secret phrase:       behind paper spike lonely ring blood alert ribbon window layer ring accuse
   Network ID:        substrate
-  Secret seed:       0xde2c289cf3a329580f2bfc98d3c298ff137443f18ea8e3d24917092d947b57f0
-  Public key (hex):  0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
-  Account ID:        0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
-  Public key (SS58): 5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
-  SS58 Address:      5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
+  Secret seed:       0x37a142e3c928633f1dec25ec6f49ecf257f60a31259b869b158953831eaf2ded
+  Public key (hex):  0x0837a14a96fd435884a029afaf388838bb3549c577a8932e7e77565b6b33451f
+  Account ID:        0x0837a14a96fd435884a029afaf388838bb3549c577a8932e7e77565b6b33451f
+  Public key (SS58): 5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV
+  SS58 Address:      5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV
 ```
 
+Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
+
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "airport crumble matter grunt vicious excite thing unable object opera second deer"
+./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "behind paper spike lonely ring blood alert ribbon window layer ring accuse"
 ```
 
 ```text
 Key password:ZAQ12wsx
-Secret phrase:       airport crumble matter grunt vicious excite thing unable object opera second deer
+Secret phrase:       behind paper spike lonely ring blood alert ribbon window layer ring accuse
   Network ID:        substrate
-  Secret seed:       0xde2c289cf3a329580f2bfc98d3c298ff137443f18ea8e3d24917092d947b57f0
-  Public key (hex):  0xdd730ca1d5af8c2a714580a5e8207ae7924beb6a756c85b8155ec39342531165
-  Account ID:        0xdd730ca1d5af8c2a714580a5e8207ae7924beb6a756c85b8155ec39342531165
-  Public key (SS58): 5H54ci5AP1yttiAzmi72sBmrQ6zCdtYGzjXL8kS7mbwDe6Fu
-  SS58 Address:      5H54ci5AP1yttiAzmi72sBmrQ6zCdtYGzjXL8kS7mbwDe6Fu
+  Secret seed:       0x37a142e3c928633f1dec25ec6f49ecf257f60a31259b869b158953831eaf2ded
+  Public key (hex):  0xab295beff45f85c14b812ff8896b0a789b5c5d2a363dec0177dd89da67879043
+  Account ID:        0xab295beff45f85c14b812ff8896b0a789b5c5d2a363dec0177dd89da67879043
+  Public key (SS58): 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY
+  SS58 Address:      5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY
 ```
 
 #### Generate the plain text chain specification
@@ -332,30 +372,13 @@ id = 100
 
 ### Chain specification
 
-Generate keys for node I
 
-```bash
-polkadot key generate --scheme Sr25519 --password-interactive
-```
-
-Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura) for node I.
-
-```text
-Key password:polkadot2023
-Secret phrase:       dish reveal swallow tonight city early exhibit return able entry estate host
-  Network ID:        substrate
-  Secret seed:       0x4122f08c02f51053676519275a30a91ebff531cb48f7710671662b531decc50a
-  Public key (hex):  0x40268e2a126891c85036b6688020f0cfd53d890c03111be2bdb0944a6bdd550a
-  Account ID:        0x40268e2a126891c85036b6688020f0cfd53d890c03111be2bdb0944a6bdd550a
-  Public key (SS58): 5DWpNi7UFMdhGviBxLsfTvg95HrQME5UV8dUBY8rcXGcdJfD
-  SS58 Address:      5DWpNi7UFMdhGviBxLsfTvg95HrQME5UV8dUBY8rcXGcdJfD
-```
 
 ```bash
 polkadot key inspect --password-interactive --scheme Ed25519 "dish reveal swallow tonight city early exhibit return able entry estate host"
 ```
 
-Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) for node I.
+
 
 ```text
 Key password:polkadot2023 
