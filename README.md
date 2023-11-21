@@ -241,6 +241,11 @@ Secret phrase:       sea decline anger behave eyebrow addict junior never brief 
   SS58 Address:      5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ
 ```
 
+```text
+Sr25519: 5CPkywRUTrqRqSz7t1kGXYTjbLpXge41kciyqXiw5aogB2j3 for aura.
+Ed25519: 5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ for grandpa.
+```
+
 ### Node II
 
 Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
@@ -277,11 +282,18 @@ Secret phrase:       behind paper spike lonely ring blood alert ribbon window la
   SS58 Address:      5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY
 ```
 
+```text
+Sr25519: 5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV for aura.
+Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
+```
+
 #### Generate the plain text chain specification
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec-private-network.json
 ```
+
+
 
 
 ```bash
