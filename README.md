@@ -293,13 +293,21 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec-private-network.json
 ```
 
-
-
+#### Convert the chain specification to raw format
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --chain=./tmp/plain-parachain-chainspec-private-network.json --raw --disable-default-bootnode > ./tmp/raw-parachain-chainspec-private-network
 ```
 
+#### Start the first node
+```bash
+./binaries/polkadot-parachain/polkadot-parachain  --base-path /tmp/node01   --chain ./tmp/raw-parachain-chainspec-private-network --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
+```
+
+#### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore 
+
+./target/release/node-template key insert --base-path /tmp/node01 --chain customSpecRaw.json --scheme Sr25519 --suri <your-secret-seed> --password-interactive  --key-type aura
+```
 <hr>
 
 [acquire-a-testnet-slot](https://docs.substrate.io/tutorials/build-a-parachain/acquire-a-testnet-slot/)
