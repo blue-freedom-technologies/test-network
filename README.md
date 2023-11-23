@@ -319,7 +319,7 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 ```
 
 ```bash
-cd tmp/node01/chains/local_testnet/keystore/
+ls -l ./tmp/node01/chains/local_testnet/keystore
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/1e5b9cbe-53aa-4068-be5e-42ce5f45cd61)
@@ -327,15 +327,11 @@ cd tmp/node01/chains/local_testnet/keystore/
 #### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore.
 
 ```bash
-cd ../../../../../
-```
-
-```bash
 ./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive --key-type gran
 ```
 
 ```bash
-cd tmp/node01/chains/local_testnet/keystore/
+ls -l ./tmp/node01/chains/local_testnet/keystore
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2d78dc67-545b-4995-b66f-4ed4d3ec3e4b)
@@ -368,6 +364,11 @@ Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) fro
 ./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type gran
 ```
 
+```bash
+ls -l ./tmp/node02/chains/local_testnet/keystore
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/61cead0b-9018-427c-934b-114157d9d736)
 
 <hr>
 
