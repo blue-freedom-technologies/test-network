@@ -312,7 +312,7 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p
 ```
 
-#### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore 
+#### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore.
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Sr25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive  --key-type aura
@@ -345,7 +345,7 @@ Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) fro
 #### Start the second blockchain node.
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30336 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p --password-interactive```
+./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30336 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p --password-interactive
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/4e9848ea-086f-498b-b991-dccae072ca24)
@@ -354,6 +354,18 @@ Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) fro
 
 ```text
 12D3KooWKaf2H6rj7fZ9y5KUCB7vaV8tDA6EUsithWRgW9R53u1L
+```
+
+#### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore.
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key insert --base-path /tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Sr25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type aura
+```
+
+#### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore.
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key insert --base-path /tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type gran
 ```
 
 
