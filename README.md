@@ -340,12 +340,12 @@ cd tmp/node01/chains/local_testnet/keystore/
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2d78dc67-545b-4995-b66f-4ed4d3ec3e4b)
 
-Copy the [peerid](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) "12D3KooWRZkCi5TKZ4NwdKYwqZGTLgwDYwz3XtaAuz2j6i25YxAT" from the node I.
+Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) from the node I.
 
 #### Start the second blockchain node.
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRZkCi5TKZ4NwdKYwqZGTLgwDYwz3XtaAuz2j6i25YxAT --password-interactive
+./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p --password-interactive
 ```
 
 <hr>
