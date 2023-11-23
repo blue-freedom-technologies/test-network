@@ -306,7 +306,8 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 
 #### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore 
 
-./target/release/node-template key insert --base-path /tmp/node01 --chain customSpecRaw.json --scheme Sr25519 --suri <your-secret-seed> --password-interactive  --key-type aura
+```bash
+./binaries/polkadot-parachain/polkadot-parachainte key insert --base-path /tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network --scheme Sr25519 --suri <your-secret-seed> --password-interactive  --key-type aura
 ```
 <hr>
 
