@@ -321,7 +321,15 @@ cd tmp/node01/chains/local_testnet/keystore/
 #### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore 
 
 ```bash
+cd ../../../../../
+```
+
+```bash
 ./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network --scheme Ed25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive --key-type gran
+```
+
+```bash
+cd tmp/node01/chains/local_testnet/keystore/
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2d78dc67-545b-4995-b66f-4ed4d3ec3e4b)
