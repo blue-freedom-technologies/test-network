@@ -318,14 +318,14 @@ cd tmp/node01/chains/local_testnet/keystore/
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/1e5b9cbe-53aa-4068-be5e-42ce5f45cd61)
 
-#### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore 
+#### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore.
 
 ```bash
 cd ../../../../../
 ```
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network --scheme Ed25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive --key-type gran
+./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive --key-type gran
 ```
 
 ```bash
@@ -333,6 +333,14 @@ cd tmp/node01/chains/local_testnet/keystore/
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2d78dc67-545b-4995-b66f-4ed4d3ec3e4b)
+
+Copy the [peerid](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) "12D3KooWRZkCi5TKZ4NwdKYwqZGTLgwDYwz3XtaAuz2j6i25YxAT" from the node I.
+
+#### Start the second blockchain node.
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRZkCi5TKZ4NwdKYwqZGTLgwDYwz3XtaAuz2j6i25YxAT --password-interactive
+```
 
 <hr>
 
