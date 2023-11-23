@@ -304,11 +304,20 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 ./binaries/polkadot-parachain/polkadot-parachain  --base-path /tmp/node01   --chain ./tmp/raw-parachain-chainspec-private-network --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/de49399d-c554-410c-ac96-30fbf6678ca9)
+
 #### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore 
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network --scheme Sr25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive  --key-type aura
 ```
+
+```bash
+cd tmp/node01/chains/local_testnet/keystore/
+```
+
+
+
 <hr>
 
 [acquire-a-testnet-slot](https://docs.substrate.io/tutorials/build-a-parachain/acquire-a-testnet-slot/)
