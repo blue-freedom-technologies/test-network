@@ -306,7 +306,7 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/28258dc5-86a0-4e78-b450-4b431a2f5f58)
 
-PeerId
+[PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
 
 ```text
 12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p
@@ -347,6 +347,15 @@ Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) fro
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30336 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p --password-interactive```
 ```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/4e9848ea-086f-498b-b991-dccae072ca24)
+
+[PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
+
+```text
+12D3KooWKaf2H6rj7fZ9y5KUCB7vaV8tDA6EUsithWRgW9R53u1L
+```
+
 
 <hr>
 
