@@ -345,7 +345,7 @@ Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) fro
 #### Start the second blockchain node.
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p --password-interactive
+./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30336 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p --password-interactive```
 ```
 
 <hr>
