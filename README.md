@@ -301,7 +301,7 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 
 #### Start the first node
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain  --base-path /tmp/node01   --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
+./binaries/polkadot-parachain/polkadot-parachain  --base-path ./tmp/node01   --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/28258dc5-86a0-4e78-b450-4b431a2f5f58)
