@@ -375,7 +375,7 @@ ls -l ./tmp/node02/chains/local_testnet/keystore
 
 
 
-
+https://docs.substrate.io/tutorials/build-a-blockchain/add-trusted-nodes/#enable-other-participants-to-join
 
 
 
