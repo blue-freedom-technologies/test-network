@@ -359,13 +359,13 @@ Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) fro
 #### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore.
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path /tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Sr25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type aura
+./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Sr25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type aura
 ```
 
 #### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore.
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path /tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type gran
+./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type gran
 ```
 
 
