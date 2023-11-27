@@ -298,6 +298,10 @@ Sr25519: 5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV for aura.
 Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 ```
 
+### Parachain Nodes
+
+We should have at least two validators (relay chain nodes) running for every collator (parachain block authoring nodes) on our network.
+
 #### Generate the plain text chain specification
 
 ```bash
@@ -310,7 +314,7 @@ Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --chain=./tmp/plain-parachain-chainspec-private-network.json --raw --disable-default-bootnode > ./tmp/raw-parachain-chainspec-private-network.json
 ```
 
-#### Start the first node
+#### Start the node I
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain  --base-path ./tmp/node01   --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
