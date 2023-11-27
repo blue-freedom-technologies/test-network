@@ -213,7 +213,7 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ### Node I
 
-Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
+#### Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
@@ -230,7 +230,7 @@ Secret phrase:       sea decline anger behave eyebrow addict junior never brief 
   SS58 Address:      5CPkywRUTrqRqSz7t1kGXYTjbLpXge41kciyqXiw5aogB2j3
 ```
 
-Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
+#### Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "sea decline anger behave eyebrow addict junior never brief island copy peanut"
