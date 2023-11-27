@@ -76,7 +76,12 @@ Default setup
   - [Node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-ii)
     - [Generate the Sr25519 key for producing blocks using aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-sr25519-key-for-producing-blocks-using-aura-1)
     - [Generate Ed25519 key for finalizing blocks using grandpa](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-ed25519-key-for-finalizing-blocks-using-grandpa-1)
-   
+  - [Start the parachain nodes](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-parachain-nodes)
+    - [Generate the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification-1)
+    - [Convert the chain specification to raw format](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#convert-the-chain-specification-to-raw-format)
+    - [Start the node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-node-i)
+      - [Add aura secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-aura-secret-to-the-keystore)
+      - [Add grandpa secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-secret-to-the-keystore)
 
 
 
