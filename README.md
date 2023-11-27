@@ -319,6 +319,16 @@ We should have at least two validators (relay chain nodes) running for every col
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec-private-network.json
 ```
 
+#### Modify the plain text chain specification
+
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2fd8b173-098b-40b0-bad0-4ad1d692f586)
+
+Modify aura field to specify the nodes with the authority to create blocks by adding the Sr25519 SS58 address keys for each network participant
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/27108a3c-2c87-48b7-aec5-9b88a906154e)
+
+
 #### Convert the chain specification to raw format
 
 ```bash
