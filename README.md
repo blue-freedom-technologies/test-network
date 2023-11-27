@@ -225,6 +225,8 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ### Node I
 
+Keys are generated in a **Air-gapped computer** that is deliberately separated from the internet for security reasons. This means that the computer does not have any physical or wireless connections to any other network that is connected to the internet.
+
 #### Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
 
 ```bash
@@ -265,6 +267,8 @@ Ed25519: 5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ for grandpa.
 ```
 
 ### Node II
+
+Keys are generated in a **Air-gapped computer** that is deliberately separated from the internet for security reasons. This means that the computer does not have any physical or wireless connections to any other network that is connected to the internet.
 
 #### Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
 
