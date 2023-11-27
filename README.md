@@ -254,7 +254,7 @@ Ed25519: 5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ for grandpa.
 
 ### Node II
 
-Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
+#### Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
@@ -271,7 +271,7 @@ Secret phrase:       behind paper spike lonely ring blood alert ribbon window la
   SS58 Address:      5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV
 ```
 
-Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
+#### Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "behind paper spike lonely ring blood alert ribbon window layer ring accuse"
