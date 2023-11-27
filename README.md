@@ -69,7 +69,13 @@ Default setup
   - [Register the parachain with the local relay chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#register-the-parachain-with-the-local-relay-chain)
   - [Sudo transaction](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#sudo-transaction)
   - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain)
-  
+- [Parachain (private network of trusted validators)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain-private-network-of-trusted-validators)
+  - [Node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-i)
+  - [Node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-ii)
+
+
+
+ 
 Zombienet setup
   
 <hr>
