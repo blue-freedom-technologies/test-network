@@ -82,7 +82,9 @@ Default setup
     - [Start the node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-node-i)
       - [Add aura secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-aura-secret-to-the-keystore)
       - [Add grandpa secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-secret-to-the-keystore)
-
+    - [Start the node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-node-ii)
+      - [Add aura secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-aura-secret-to-the-keystore-1)
+      - [Add grandpa secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-secret-to-the-keystore-1)
 
 
  
