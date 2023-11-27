@@ -321,13 +321,11 @@ We should have at least two validators (relay chain nodes) running for every col
 
 #### Modify the plain text chain specification
 
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2fd8b173-098b-40b0-bad0-4ad1d692f586)
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3e8d21ff-6dfb-4db1-9eea-431621485db8)
 
 Modify aura field to specify the nodes with the authority to create blocks by adding the Sr25519 SS58 address keys for each network participant
 
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/27108a3c-2c87-48b7-aec5-9b88a906154e)
-
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/25ef68b4-af34-4033-9dc9-62332195080d)
 
 #### Convert the chain specification to raw format
 
