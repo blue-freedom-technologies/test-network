@@ -298,7 +298,7 @@ Sr25519: 5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV for aura.
 Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
 ```
 
-### Parachain Nodes
+### Start the Parachain Nodes
 
 We should have at least two validators (relay chain nodes) running for every collator (parachain block authoring nodes) on our network.
 
