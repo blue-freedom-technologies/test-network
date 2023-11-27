@@ -71,6 +71,8 @@ Default setup
   - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain)
 - [Parachain (private network of trusted validators)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain-private-network-of-trusted-validators)
   - [Node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-i)
+    - [Generate the Sr25519 key for producing blocks using aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-sr25519-key-for-producing-blocks-using-aura)
+    - [Generate Ed25519 key for finalizing blocks using grandpa](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-ed25519-key-for-finalizing-blocks-using-grandpa)
   - [Node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-ii)
 
 
