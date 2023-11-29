@@ -221,7 +221,7 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2daf3a1e-e666-4dc5-a4fa-2829f3afb42d)
 
-## Private network of trusted validators
+## Relay Chain (Private network of trusted validators)
 
 ### Node I
 
@@ -230,40 +230,40 @@ Keys are generated in a **air-gapped computer** that is deliberately separated f
 #### Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
+polkadot key generate --scheme Sr25519 --password-interactive
 ```
 
 ```bash
-Key password:ZAQ12wsx
-Secret phrase:       sea decline anger behave eyebrow addict junior never brief island copy peanut
+Key password:********
+Secret phrase:       wasp pudding interest planet plug fluid slush better perfect rather apart rich
   Network ID:        substrate
-  Secret seed:       0x4b69c4102e58f67f4539e1d96d6629480a0828f601c0db7e9eec277e13505306
-  Public key (hex):  0x0e882efd56adf1c592b1a4ae122538e7ec18f4f9beadf12929ca9ab98db96126
-  Account ID:        0x0e882efd56adf1c592b1a4ae122538e7ec18f4f9beadf12929ca9ab98db96126
-  Public key (SS58): 5CPkywRUTrqRqSz7t1kGXYTjbLpXge41kciyqXiw5aogB2j3
-  SS58 Address:      5CPkywRUTrqRqSz7t1kGXYTjbLpXge41kciyqXiw5aogB2j3
+  Secret seed:       0x2ae747faf8ee10b161b124d7003eae01ed16e7905db94fb5489b3a9df6c38aeb
+  Public key (hex):  0xdaa19095c45af73d76f80f4e1c4eb27a781831d1779abe27969969912cc0c21b
+  Account ID:        0xdaa19095c45af73d76f80f4e1c4eb27a781831d1779abe27969969912cc0c21b
+  Public key (SS58): 5H1NHpUiKnsibP7Q7777RszrcQfZbfHx7JhU56xX6MSfXohX
+  SS58 Address:      5H1NHpUiKnsibP7Q7777RszrcQfZbfHx7JhU56xX6MSfXohX
 ```
 
 #### Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "sea decline anger behave eyebrow addict junior never brief island copy peanut"
+polkadot key inspect --password-interactive --scheme Ed25519 "wasp pudding interest planet plug fluid slush better perfect rather apart rich"
 ```
 
 ```text
-Key password:ZAQ12wsx
-Secret phrase:       sea decline anger behave eyebrow addict junior never brief island copy peanut
+Key password:********
+Secret phrase:       wasp pudding interest planet plug fluid slush better perfect rather apart rich
   Network ID:        substrate
-  Secret seed:       0x4b69c4102e58f67f4539e1d96d6629480a0828f601c0db7e9eec277e13505306
-  Public key (hex):  0xb80bbe9fd25ef2feb53a1db4486079b22399a2609a4b341e7d5ab764ba0b1927
-  Account ID:        0xb80bbe9fd25ef2feb53a1db4486079b22399a2609a4b341e7d5ab764ba0b1927
-  Public key (SS58): 5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ
-  SS58 Address:      5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ
+  Secret seed:       0x2ae747faf8ee10b161b124d7003eae01ed16e7905db94fb5489b3a9df6c38aeb
+  Public key (hex):  0xda2e9d5d15ec8a19e003bdcca060ad2605db9c9cafaf0f99a85d65e61d2d4f27
+  Account ID:        0xda2e9d5d15ec8a19e003bdcca060ad2605db9c9cafaf0f99a85d65e61d2d4f27
+  Public key (SS58): 5Gzn9GwG9aDNTzXjVDwsUtnoDJvwkeAakw5Dm9wkzNB1PA3A
+  SS58 Address:      5Gzn9GwG9aDNTzXjVDwsUtnoDJvwkeAakw5Dm9wkzNB1PA3A
 ```
 
 ```text
-Sr25519: 5CPkywRUTrqRqSz7t1kGXYTjbLpXge41kciyqXiw5aogB2j3 for aura.
-Ed25519: 5GE2A3pq4cBJApnawZdm9XWxPhGwLXzbRsWjocgZGBRiegHQ for grandpa.
+Sr25519: 5H1NHpUiKnsibP7Q7777RszrcQfZbfHx7JhU56xX6MSfXohX for aura.
+Ed25519: 5Gzn9GwG9aDNTzXjVDwsUtnoDJvwkeAakw5Dm9wkzNB1PA3A for grandpa.
 ```
 
 ### Node II
