@@ -96,6 +96,8 @@ Zombienet setup
 
 ## Relay Chain
 
+We should have at least two validators (relay chain nodes) running for every collator (parachain block authoring nodes) on our network.
+
 #### Create the directories
 
 ```bash
@@ -223,6 +225,8 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ## Relay Chain (Private network of trusted validators)
 
+We should have at least two validators (relay chain nodes) running for every collator (parachain block authoring nodes) on our network.
+
 ### Node I
 
 Keys are generated in a **air-gapped computer** that is deliberately separated from the internet for security reasons. This means that the computer does not have any physical or wireless connections to any other network that is connected to the internet.
@@ -311,7 +315,7 @@ Ed25519: 5FMtSTnHwwYonhH55u4h1DQvZYSBnKv3tRBfX8XLGxKuAsrx for grandpa.
 
 ### Start the Parachain Nodes
 
-We should have at least two validators (relay chain nodes) running for every collator (parachain block authoring nodes) on our network.
+
 
 #### Generate the plain text chain specification
 
