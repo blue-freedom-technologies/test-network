@@ -69,7 +69,7 @@ Default setup
   - [Register the parachain with the local relay chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#register-the-parachain-with-the-local-relay-chain)
   - [Sudo transaction](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#sudo-transaction)
   - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain)
-- [Private network of trusted validators](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#private-network-of-trusted-validators)
+- [Relay Chain(Private network of trusted validators)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#relay-chain-private-network-of-trusted-validators)
   - [Node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-i)
     - [Generate the Sr25519 key for producing blocks using aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-sr25519-key-for-producing-blocks-using-aura)
     - [Generate Ed25519 key for finalizing blocks using grandpa](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-ed25519-key-for-finalizing-blocks-using-grandpa)
