@@ -273,40 +273,40 @@ Keys are generated in a **air-gapped computer** that is deliberately separated f
 #### Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura).
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
+polkadot key generate --scheme Sr25519 --password-interactive
 ```
 
 ```text
-Key password:ZAQ12wsx
-Secret phrase:       behind paper spike lonely ring blood alert ribbon window layer ring accuse
+Key password:********
+Secret phrase:       steel seed timber fitness type armed delay ready unlock enter garment sport
   Network ID:        substrate
-  Secret seed:       0x37a142e3c928633f1dec25ec6f49ecf257f60a31259b869b158953831eaf2ded
-  Public key (hex):  0x0837a14a96fd435884a029afaf388838bb3549c577a8932e7e77565b6b33451f
-  Account ID:        0x0837a14a96fd435884a029afaf388838bb3549c577a8932e7e77565b6b33451f
-  Public key (SS58): 5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV
-  SS58 Address:      5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV
+  Secret seed:       0xe1966bcabb954981a50da6a226aa37df13776b065aa9ff7f2cb048bf851d2eba
+  Public key (hex):  0x8060acb6b71fefc935bf6dc58b58fe1586329a61d82ad024388e6b1e84309d77
+  Account ID:        0x8060acb6b71fefc935bf6dc58b58fe1586329a61d82ad024388e6b1e84309d77
+  Public key (SS58): 5Ey2hq7w9itfw82QLo1AkWKfw8oWMsGaW6Cr5y6wk9Lu2vuK
+  SS58 Address:      5Ey2hq7w9itfw82QLo1AkWKfw8oWMsGaW6Cr5y6wk9Lu2vuK
 ```
 
 #### Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget)
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain key inspect --password-interactive --scheme Ed25519 "behind paper spike lonely ring blood alert ribbon window layer ring accuse"
+polkadot key inspect --password-interactive --scheme Ed25519 "steel seed timber fitness type armed delay ready unlock enter garment sport"
 ```
 
 ```text
-Key password:ZAQ12wsx
-Secret phrase:       behind paper spike lonely ring blood alert ribbon window layer ring accuse
+Key password:********
+Secret phrase:       steel seed timber fitness type armed delay ready unlock enter garment sport
   Network ID:        substrate
-  Secret seed:       0x37a142e3c928633f1dec25ec6f49ecf257f60a31259b869b158953831eaf2ded
-  Public key (hex):  0xab295beff45f85c14b812ff8896b0a789b5c5d2a363dec0177dd89da67879043
-  Account ID:        0xab295beff45f85c14b812ff8896b0a789b5c5d2a363dec0177dd89da67879043
-  Public key (SS58): 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY
-  SS58 Address:      5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY
+  Secret seed:       0xe1966bcabb954981a50da6a226aa37df13776b065aa9ff7f2cb048bf851d2eba
+  Public key (hex):  0x91cf7f2223413db01956dc0cbe1efd66528af64501ba128922aebdde9a203fc9
+  Account ID:        0x91cf7f2223413db01956dc0cbe1efd66528af64501ba128922aebdde9a203fc9
+  Public key (SS58): 5FMtSTnHwwYonhH55u4h1DQvZYSBnKv3tRBfX8XLGxKuAsrx
+  SS58 Address:      5FMtSTnHwwYonhH55u4h1DQvZYSBnKv3tRBfX8XLGxKuAsrx
 ```
 
 ```text
-Sr25519: 5CFUmNSyBrbvjkpef4ESytTLP1dzPDiuNip1uKLQ1jgNVDbV for aura.
-Ed25519: 5Fw8LC11XHtc8aS8jUv7q4JAMAfzp7G2otdPSE4zdjFrq1KY for grandpa.
+Sr25519: 5Ey2hq7w9itfw82QLo1AkWKfw8oWMsGaW6Cr5y6wk9Lu2vuK for aura.
+Ed25519: 5FMtSTnHwwYonhH55u4h1DQvZYSBnKv3tRBfX8XLGxKuAsrx for grandpa.
 ```
 
 ### Start the Parachain Nodes
