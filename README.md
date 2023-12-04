@@ -318,14 +318,13 @@ Sr25519: 5Ey2hq7w9itfw82QLo1AkWKfw8oWMsGaW6Cr5y6wk9Lu2vuK for aura.
 Ed25519: 5FMtSTnHwwYonhH55u4h1DQvZYSBnKv3tRBfX8XLGxKuAsrx for grandpa.
 ```
 
-### Start the Parachain Nodes
-
-
+### Start the rococo-chain
 
 #### Generate the plain text chain specification
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec-private-network.json
+polkadot build-spec --chain rococo-local > rococo-chain-spec.json
 ```
 
 #### Modify the plain text chain specification
