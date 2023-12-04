@@ -320,6 +320,14 @@ Ed25519: 5FMtSTnHwwYonhH55u4h1DQvZYSBnKv3tRBfX8XLGxKuAsrx for grandpa.
 
 ### Start the rococo-chain
 
+https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot/node/service/chain-specs
+
+List of chain specs:
+- [rococo.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/rococo.json)
+- [rococo.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/rococo.json)
+- [rococo.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/rococo.json)
+- [rococo.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/rococo.json)
+
 #### Generate the plain text chain specification
 
 ```bash
