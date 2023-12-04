@@ -244,6 +244,7 @@ For each validador we need to generate a key.
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
+https://wiki.polkadot.network/docs/learn-cryptography#session-keys
 
 #### Generate the Sr25519 key for **producing blocks** using [babe](https://wiki.polkadot.network/docs/glossary#babe).
 
