@@ -427,8 +427,13 @@ For Node II([validator](https://wiki.polkadot.network/docs/maintain-guides-how-t
 },
 ```
 
+```bash
+polkadot build-spec --disable-default-bootnode --chain rococo-local > ./tmp/plain-relay-chain-spec-private-network.json
+```
 
-
+```bash
+polkadot build-spec --chain=./tmp/plain-relay-chain-spec-private-network.json --raw --disable-default-bootnode > ./tmp/raw-relay-chain-spec-private-network.json
+```
 
 
 
