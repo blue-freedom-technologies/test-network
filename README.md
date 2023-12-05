@@ -435,12 +435,15 @@ polkadot build-spec --disable-default-bootnode --chain rococo-local > ./tmp/plai
 polkadot build-spec --chain=./tmp/plain-relay-chain-spec-private-network.json --raw --disable-default-bootnode > ./tmp/raw-relay-chain-spec-private-network.json
 ```
 
+Node I validator 
 
+```bash
+polkadot --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
+```
 
-
-
-
-
+grandpa key using Ed25519 scheme.
+ 
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type aura
 
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
