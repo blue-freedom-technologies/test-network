@@ -233,20 +233,7 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 We should have at least two validators (relay chain nodes) running for every collator (parachain block authoring nodes) on our network.
 Keys are generated in a **air-gapped computer** that is deliberately separated from the internet for security reasons. This means that the computer does not have any physical or wireless connections to any other network that is connected to the internet.
 
-For each validador we need to generate a key.
-- grandpa (gran)->Ed25519
-- babe (babe)->Sr25519
-- im_online (imon)->Sr25519
-- para_validator (para)->Sr25519
-- para_assignment (asgn)->Sr25519
-- authority_discovery (audi)->Sr25519
-- beefy (beef)->Ecdsa
-
-https://spec.polkadot.network/chap-host-api#sect-crypto-api
-
-https://wiki.polkadot.network/docs/learn-cryptography#session-keys
-
-#### Generate the Sr25519 key for **producing blocks** using [babe](https://wiki.polkadot.network/docs/glossary#babe).
+#### Generate a session key using the Sr25519 scheme for Node I.
 
 ```bash
 polkadot key generate --scheme Sr25519 --password-interactive
@@ -262,6 +249,86 @@ Secret phrase:       sick cry forget enroll retreat female slab uncover remember
   Public key (SS58): 5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3
   SS58 Address:      5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq
 ```
+
+#### Derive the [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) key using Ed25519 scheme.
+
+```bash
+polkadot key inspect --password-interactive --scheme Ed25519 "sick cry forget enroll retreat female slab uncover remember neutral time stadium"
+```
+
+```text
+Key password:********
+Secret phrase:       sick cry forget enroll retreat female slab uncover remember neutral time stadium
+  Network ID:        substrate
+  Secret seed:       0x6f1a8e2665eeec408ad9efd4d5ae5e38737f8b7777d58d063364a61584a42d19
+  Public key (hex):  0xd020bc843ece07f62adafd6e73fd59fbb4983eb37308b00302b9b68784141a11
+  Account ID:        0xd020bc843ece07f62adafd6e73fd59fbb4983eb37308b00302b9b68784141a11
+  Public key (SS58): 5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx
+  SS58 Address:      5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx
+```
+
+#### Derive the [beefy](https://wiki.polkadot.network/docs/learn-consensus#bridging-beefyt) key using EdDSA scheme.
+
+```bash
+polkadot key inspect --password-interactive --scheme Ecdsa "sick cry forget enroll retreat female slab uncover remember neutral time stadium"
+```
+
+```text
+Key password:********
+Secret phrase:       sick cry forget enroll retreat female slab uncover remember neutral time stadium
+  Network ID:        substrate
+  Secret seed:       0x6f1a8e2665eeec408ad9efd4d5ae5e38737f8b7777d58d063364a61584a42d19
+  Public key (hex):  0x03e6f4ff962acbc87abca901754e5aa4caa78169150cd3caa0a9955b6e4a74a856
+  Account ID:        0x8dd3e3b15d3cf068ec8b23bcba4883a0ed0db744eabcd9e117b1a85001ff6a48
+  Public key (SS58): KWDw8nyTtutLkcAyJE6jFsaZFVPUkoZjzXF5U8XaYX4kAKGwD
+  SS58 Address:      5FGfZ3FhBZCQFNh1BZyNzC1Hv3aPhw2jATnKz9NbkNxLuNc6
+```
+
+#### Generate the Sr25519 key for **producing blocks** using [babe](https://wiki.polkadot.network/docs/glossary#babe).
+
+```bash
+polkadot key generate --scheme Sr25519 --password-interactive
+```
+
+```text
+Key password:********
+Secret phrase:       vanish street orphan print magic atom link census clever sound quote logic
+  Network ID:        substrate
+  Secret seed:       0xfeb1e206b7394fdff897a2243c8b2ae113e0b6fded4a9d2f42f691851dcc0745
+  Public key (hex):  0x2c9b041e0d7f686834958607c306b900701c07cf10265eb67d1aaf1cf2e23407
+  Account ID:        0x2c9b041e0d7f686834958607c306b900701c07cf10265eb67d1aaf1cf2e23407
+  Public key (SS58): 5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf
+  SS58 Address:      5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf
+```
+
+
+- grandpa (gran)->Ed25519
+- babe (babe)->Sr25519
+- im_online (imon)->Sr25519
+- para_validator (para)->Sr25519
+- para_assignment (asgn)->Sr25519
+- authority_discovery (audi)->Sr25519
+- beefy (beef)->EdDSA scheme
+
+
+
+
+For each validador we need to generate a key.
+- grandpa (gran)->Ed25519
+- babe (babe)->Sr25519
+- im_online (imon)->Sr25519
+- para_validator (para)->Sr25519
+- para_assignment (asgn)->Sr25519
+- authority_discovery (audi)->Sr25519
+- beefy (beef)->EdDSA scheme
+
+https://spec.polkadot.network/chap-host-api#sect-crypto-api
+
+https://wiki.polkadot.network/docs/learn-cryptography#session-keys
+
+
+
+
 
 
 #### Derive the Ed25519 key for **finality gadget for Polkadot** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget).
