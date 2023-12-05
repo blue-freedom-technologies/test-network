@@ -312,22 +312,22 @@ For Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to
 - authority_discovery (audi/Sr25519): 5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf
 
 ```text
-      "session": {
-        "keys": [
-          [
-            "5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3",
-            "5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3",
-            {
-              "grandpa": "5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx",
-              "babe": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
-              "im_online": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
-              "para_validator": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
-              "para_assignment": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
-              "authority_discovery": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
-              "beefy": "KWDw8nyTtutLkcAyJE6jFsaZFVPUkoZjzXF5U8XaYX4kAKGwD"
-            }
-          ]
-      },
+"session": {
+  "keys": [
+    [
+    "5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3",
+    "5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3",
+      {
+        "grandpa": "5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx",
+        "babe": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "im_online": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "para_validator": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "para_assignment": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "authority_discovery": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "beefy": "KWDw8nyTtutLkcAyJE6jFsaZFVPUkoZjzXF5U8XaYX4kAKGwD"
+      }
+    ]
+},
 ```
 
 
