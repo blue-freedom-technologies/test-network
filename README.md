@@ -330,11 +330,146 @@ For Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to
 },
 ```
 
+#### Generate a session key using the Sr25519 scheme for Node II([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)).
+
+```bash
+polkadot key generate --scheme Sr25519 --password-interactive
+```
+
+```text
+Key password:********
+Secret phrase:       voice now jewel reopen distance notice cry output dwarf broccoli hint gaze
+  Network ID:        substrate
+  Secret seed:       0xe05300a2a2233a5ae2620737f7c96e61b9d98e8e027cda8f467de3160cfe0320
+  Public key (hex):  0x6e7b0b13b3f316a794a644b50953b14b6238c7daddda688601a09e27dc662b13
+  Account ID:        0x6e7b0b13b3f316a794a644b50953b14b6238c7daddda688601a09e27dc662b13
+  Public key (SS58): 5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG
+  SS58 Address:      5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG
+```
+
+#### Derive the [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) key using Ed25519 scheme.
+
+```bash
+polkadot key inspect --password-interactive --scheme Ed25519 "voice now jewel reopen distance notice cry output dwarf broccoli hint gaze"
+```
+
+```text
+Key password:********
+Secret phrase:       voice now jewel reopen distance notice cry output dwarf broccoli hint gaze
+  Network ID:        substrate
+  Secret seed:       0xe05300a2a2233a5ae2620737f7c96e61b9d98e8e027cda8f467de3160cfe0320
+  Public key (hex):  0xf18e8c9d4ef09dc3cdb87ed3a893a711949349e5582e26f2bbfc22f3ea338e0d
+  Account ID:        0xf18e8c9d4ef09dc3cdb87ed3a893a711949349e5582e26f2bbfc22f3ea338e0d
+  Public key (SS58): 5HXRk4txhxjAGHPVTyPgpu1zDeWtGruJWyPmih5bDq1rSkZf
+  SS58 Address:      5HXRk4txhxjAGHPVTyPgpu1zDeWtGruJWyPmih5bDq1rSkZf
+```
+
+#### Derive the [beefy](https://wiki.polkadot.network/docs/learn-consensus#bridging-beefyt) key using EdDSA scheme.
+
+```bash
+polkadot key inspect --password-interactive --scheme Ecdsa "voice now jewel reopen distance notice cry output dwarf broccoli hint gaze"
+```
+
+```text
+Key password:********
+Secret phrase:       voice now jewel reopen distance notice cry output dwarf broccoli hint gaze
+  Network ID:        substrate
+  Secret seed:       0xe05300a2a2233a5ae2620737f7c96e61b9d98e8e027cda8f467de3160cfe0320
+  Public key (hex):  0x027742dd115c12ea392832333fc36bedc943df190b0fe585c310241fc5bd284f53
+  Account ID:        0x0f8fd6db89bfd4554c6efac2273b3f0621d88790262b881d958e113253fc2b7b
+  Public key (SS58): KW5d2JWTUEQTPFvLgDQVuj3w1Ww6cqrwCn8vN4pt7hbtm7i3H
+  SS58 Address:      5CR7Jd1YoKuKkEQ3dZn7X18tNcJFQPi4zVHTchJwGQTtyVmq
+```
+
+#### Generate the Sr25519 key for **producing blocks** using [babe](https://wiki.polkadot.network/docs/glossary#babe).
+
+```bash
+polkadot key generate --scheme Sr25519 --password-interactive
+```
+
+```text
+Key password:********
+Secret phrase:       expire sleep seminar sad eager faculty inflict great arm slice champion similar
+  Network ID:        substrate
+  Secret seed:       0xc35d77c56c05ff2365af8b8974403e1ac2c16c9da0958245efd63ea9a0f0372b
+  Public key (hex):  0x0ca09f828a324f1161064a9508057e742f87abd4fc8624a8485a18f90b13982a
+  Account ID:        0x0ca09f828a324f1161064a9508057e742f87abd4fc8624a8485a18f90b13982a
+  Public key (SS58): 5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K
+  SS58 Address:      5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K
+```
+
+For Node II([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) we will have :
+- key(Sr25519):```5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG```
+- grandpa (gran/Ed25519):```5HXRk4txhxjAGHPVTyPgpu1zDeWtGruJWyPmih5bDq1rSkZf```
+- beefy (beef/EdDSA):```KW5d2JWTUEQTPFvLgDQVuj3w1Ww6cqrwCn8vN4pt7hbtm7i3H```
+- babe (babe/Sr25519):```5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K```
+- im_online (imon/Sr25519):```5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K```
+- para_validator (para/Sr25519):```5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K```
+- para_assignment (asgn/Sr25519):```5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K```
+- authority_discovery (audi/Sr25519):```5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K```
+
+```text
+"session": {
+  "keys": [
+    [
+    "5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG",
+    "5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG",
+      {
+        "grandpa": "5HXRk4txhxjAGHPVTyPgpu1zDeWtGruJWyPmih5bDq1rSkZf",
+        "babe": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "im_online": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "para_validator": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "para_assignment": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "authority_discovery": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "beefy": "KW5d2JWTUEQTPFvLgDQVuj3w1Ww6cqrwCn8vN4pt7hbtm7i3H"
+      }
+    ]
+},
+```
+
+
+
+
+
+
+
+
+
+
 
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
 https://wiki.polkadot.network/docs/learn-cryptography#session-keys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
