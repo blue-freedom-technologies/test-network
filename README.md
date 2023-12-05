@@ -302,7 +302,7 @@ Secret phrase:       vanish street orphan print magic atom link census clever so
 ```
 
 For Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) we will have :
-- key(Sr25519):```text 5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3```
+- key(Sr25519):```5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3```
 - grandpa (gran/Ed25519): 5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx
 - beefy (beef/EdDSA): KWDw8nyTtutLkcAyJE6jFsaZFVPUkoZjzXF5U8XaYX4kAKGwD
 - babe (babe/Sr25519): 5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf
