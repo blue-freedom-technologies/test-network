@@ -87,7 +87,24 @@ Default setup
     - [Derive the beefy key using EdDSA scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-beefy-key-using-eddsa-scheme-1)
     - [Generate the babe key using Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-babe-key-using-sr25519-scheme-1)
     - [Node II(validator) keys](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-iivalidator-keys)
-
+  - [Start Node I validator](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-node-i-validator)
+    - [Add grandpa key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-key-to-the-keystore)
+    - [Add beefy key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-beefy-key-to-the-keystore)
+    - [Add babe key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-babe-key-to-the-keystore)
+    - [Add imon key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-imon-key-to-the-keystore)
+    - [Add para key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-para-key-to-the-keystore)
+    - [Add asgn key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-asgn-key-to-the-keystore)
+    - [Add audi key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-audi-key-to-the-keystore)
+    - [Restart Node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#restart-node-i)
+  - [Start Node II validator](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-node-ii-validator)
+    - [Add grandpa key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-key-to-the-keystore-1)
+    - [Add beefy key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-beefy-key-to-the-keystore-1)
+    - [Add babe key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-babe-key-to-the-keystore-1)
+    - [Add imon key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-imon-key-to-the-keystore-1)
+    - [Add para key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-para-key-to-the-keystore-1)
+    - [Add asgn key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-asgn-key-to-the-keystore-1)
+    - [Add audi key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-audi-key-to-the-keystore-1)
+    - [Restart Node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#restart-node-ii)
  
 Zombienet setup
   
