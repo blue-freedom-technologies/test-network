@@ -564,6 +564,37 @@ polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-
 polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
 ```
 
+## Parachain (Private network of trusted colatores)
+
+#### Clone the repo to get the [Cumulus SDK](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/cumulus)
+
+```bash
+git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b6c5acb2-6e82-49ea-b760-3c8ce330e373)
+
+#### Compile the polkadot parachain node
+
+```bash
+cd polkadot-sdk/cumulus/polkadot-parachain
+cargo build --release --bin polkadot-parachain
+```
+
+#### Copy the polkadot-parachain binary
+
+```bash
+cd ../../../
+cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
+```
+
+#### Generate the plain text chain specification
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec.json
+```
+
+
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
