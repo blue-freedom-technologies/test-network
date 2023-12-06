@@ -233,7 +233,11 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 We should have at least two validators (relay chain nodes) running for every collator (parachain block authoring nodes) on our network.
 Keys are generated in a **air-gapped computer** that is deliberately separated from the internet for security reasons. This means that the computer does not have any physical or wireless connections to any other network that is connected to the internet.
 
-#### Generate a session key using the Sr25519 scheme for Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)).
+### Session keys for Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot))
+
+[Session keys](https://wiki.polkadot.network/docs/learn-cryptography#session-keys) are hot keys that must be kept online by a validator to perform network operations.
+
+#### Generate a session key using the Sr25519 scheme. 
 
 ```bash
 polkadot key generate --scheme Sr25519 --password-interactive
@@ -330,7 +334,11 @@ For Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to
 },
 ```
 
-#### Generate a session key using the Sr25519 scheme for Node II([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)).
+### Session keys for Node II([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot))
+
+[Session keys](https://wiki.polkadot.network/docs/learn-cryptography#session-keys) are hot keys that must be kept online by a validator to perform network operations.
+
+#### Generate a session key using the Sr25519 scheme.
 
 ```bash
 polkadot key generate --scheme Sr25519 --password-interactive
@@ -546,7 +554,7 @@ polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-net
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
-https://wiki.polkadot.network/docs/learn-cryptography#session-keys
+
 
 <hr>
 <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
