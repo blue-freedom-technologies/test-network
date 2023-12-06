@@ -401,7 +401,7 @@ Secret phrase:       expire sleep seminar sad eager faculty inflict great arm sl
   SS58 Address:      5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K
 ```
 
-#### Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) keys:
+#### Node II([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) keys:
 - key(Sr25519):```5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG```
 - grandpa (gran/Ed25519):```5HXRk4txhxjAGHPVTyPgpu1zDeWtGruJWyPmih5bDq1rSkZf```
 - beefy (beef/EdDSA):```KW5d2JWTUEQTPFvLgDQVuj3w1Ww6cqrwCn8vN4pt7hbtm7i3H```
