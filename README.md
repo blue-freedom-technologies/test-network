@@ -267,7 +267,7 @@ Secret phrase:       sick cry forget enroll retreat female slab uncover remember
   SS58 Address:      5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx
 ```
 
-#### Derive the [beefy](https://wiki.polkadot.network/docs/learn-consensus#bridging-beefyt) key using EdDSA scheme.
+#### Derive the [beefy](https://wiki.polkadot.network/docs/learn-consensus#bridging-beefy) key using EdDSA scheme.
 
 ```bash
 polkadot key inspect --password-interactive --scheme Ecdsa "sick cry forget enroll retreat female slab uncover remember neutral time stadium"
@@ -441,15 +441,56 @@ Node I validator
 polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
-grandpa key using Ed25519 scheme.
- 
-polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type aura
+Add grandpa key to the keystore.
+
+ ```bash
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type gran
+```
+
+Add beefy key to the keystore.
+
+ ```bash
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type beef
+```
+
+Add babe key to the keystore.
+
+```bash
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type babe
+```
+
+Add imon key to the keystore.
+
+```bash
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type imon
+```
+
+Add para key to the keystore.
+
+```bash
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type para
+```
+
+Add asgn key to the keystore.
+
+```bash
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type asgn
+```
+
+Add audi key to the keystore.
+
+```bash
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type audi
+```
+
 
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
 https://wiki.polkadot.network/docs/learn-cryptography#session-keys
 
+<hr>
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 
 
 
