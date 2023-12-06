@@ -86,6 +86,7 @@ Default setup
     - [Derive the grandpa key using Ed25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-grandpa-key-using-ed25519-scheme-1)
     - [Derive the beefy key using EdDSA scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-beefy-key-using-eddsa-scheme-1)
     - [Generate the babe key using Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-babe-key-using-sr25519-scheme-1)
+    - [Node II(validator) keys](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-iivalidator-keys)
 
  
 Zombienet setup
