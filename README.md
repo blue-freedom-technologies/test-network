@@ -278,7 +278,7 @@ Secret phrase:       sick cry forget enroll retreat female slab uncover remember
   SS58 Address:      5FGfZ3FhBZCQFNh1BZyNzC1Hv3aPhw2jATnKz9NbkNxLuNc6
 ```
 
-#### Generate the Sr25519 key for **producing blocks** using [babe](https://wiki.polkadot.network/docs/glossary#babe).
+#### Generate the [babe](https://wiki.polkadot.network/docs/glossary#babe) key using Sr25519 scheme.
 
 ```bash
 polkadot key generate --scheme Sr25519 --password-interactive
@@ -295,8 +295,8 @@ Secret phrase:       vanish street orphan print magic atom link census clever so
   SS58 Address:      5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf
 ```
 
-For Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) we will have :
-- key(Sr25519):```5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3```
+#### Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) keys:
+- Id key(Sr25519):```5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3```
 - grandpa (gran/Ed25519):```5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx```
 - beefy (beef/EdDSA):```KWDw8nyTtutLkcAyJE6jFsaZFVPUkoZjzXF5U8XaYX4kAKGwD```
 - babe (babe/Sr25519):```5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf```
@@ -379,7 +379,7 @@ Secret phrase:       voice now jewel reopen distance notice cry output dwarf bro
   SS58 Address:      5CR7Jd1YoKuKkEQ3dZn7X18tNcJFQPi4zVHTchJwGQTtyVmq
 ```
 
-#### Generate the Sr25519 key for **producing blocks** using [babe](https://wiki.polkadot.network/docs/glossary#babe).
+#### Generate the [babe](https://wiki.polkadot.network/docs/glossary#babe) key using Sr25519 scheme.
 
 ```bash
 polkadot key generate --scheme Sr25519 --password-interactive
@@ -396,7 +396,7 @@ Secret phrase:       expire sleep seminar sad eager faculty inflict great arm sl
   SS58 Address:      5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K
 ```
 
-For Node II([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) we will have :
+#### Node I([validator](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot)) keys:
 - key(Sr25519):```5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG```
 - grandpa (gran/Ed25519):```5HXRk4txhxjAGHPVTyPgpu1zDeWtGruJWyPmih5bDq1rSkZf```
 - beefy (beef/EdDSA):```KW5d2JWTUEQTPFvLgDQVuj3w1Ww6cqrwCn8vN4pt7hbtm7i3H```
