@@ -609,14 +609,16 @@ Secret phrase:       elevator exotic trick couple pave trend rude income spider 
 #### Generate the plain text chain specification
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec.json
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chain-spec-private-network.json
 ```
 
-#### Generate the plain text chain specification
+#### Generate a raw chain specification file from the modified plain text chain specification
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chainspec.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chainspec.json
+./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec-private-network.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec-private-network.json
 ```
+
+Start the collator Node I
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chainspec.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
