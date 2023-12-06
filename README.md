@@ -450,37 +450,37 @@ polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-p
 Add beefy key to the keystore.
 
  ```bash
-polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type beef
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ecdsa --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type beef
 ```
 
 Add babe key to the keystore.
 
 ```bash
-polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type babe
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type babe
 ```
 
 Add imon key to the keystore.
 
 ```bash
-polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type imon
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type imon
 ```
 
 Add para key to the keystore.
 
 ```bash
-polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type para
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type para
 ```
 
 Add asgn key to the keystore.
 
 ```bash
-polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type asgn
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type asgn
 ```
 
 Add audi key to the keystore.
 
 ```bash
-polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type audi
+polkadot key insert --base-path /tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type audi
 ```
 
 
