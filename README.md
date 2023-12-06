@@ -75,22 +75,12 @@ Default setup
   - [Sudo transaction](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#sudo-transaction)
   - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain)
 - [Relay Chain(Private network of trusted validators)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#relay-chain-private-network-of-trusted-validators)
-  - [Node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-i)
-    - [Generate the Sr25519 key for producing blocks using aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-sr25519-key-for-producing-blocks-using-aura)
-    - [Generate Ed25519 key for finalizing blocks using grandpa](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-ed25519-key-for-finalizing-blocks-using-grandpa)
-  - [Node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-ii)
-    - [Generate the Sr25519 key for producing blocks using aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-sr25519-key-for-producing-blocks-using-aura-1)
-    - [Generate Ed25519 key for finalizing blocks using grandpa](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-ed25519-key-for-finalizing-blocks-using-grandpa-1)
-  - [Start the parachain nodes](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-parachain-nodes)
-    - [Generate the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification-1)
-    - [Convert the chain specification to raw format](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#convert-the-chain-specification-to-raw-format)
-    - [Start the node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-node-i)
-      - [Add aura secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-aura-secret-to-the-keystore)
-      - [Add grandpa secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-secret-to-the-keystore)
-    - [Start the node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-node-ii)
-      - [Add aura secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-aura-secret-to-the-keystore-1)
-      - [Add grandpa secret to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-secret-to-the-keystore-1)
-
+  - [Session keys for Node I(validator)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#session-keys-for-node-ivalidator)
+    - [Generate a session key using the Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-session-key-using-the-sr25519-scheme)
+    - [Derive the grandpa key using Ed25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-grandpa-key-using-ed25519-scheme)
+    - [Derive the beefy key using EdDSA scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-beefy-key-using-eddsa-scheme)
+    - [Generate the Sr25519 key for producing blocks using babe](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-sr25519-key-for-producing-blocks-using-babe)
+    - 
 
  
 Zombienet setup
