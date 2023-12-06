@@ -79,8 +79,13 @@ Default setup
     - [Generate a session key using the Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-session-key-using-the-sr25519-scheme)
     - [Derive the grandpa key using Ed25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-grandpa-key-using-ed25519-scheme)
     - [Derive the beefy key using EdDSA scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-beefy-key-using-eddsa-scheme)
-    - [Generate the Sr25519 key for producing blocks using babe](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-sr25519-key-for-producing-blocks-using-babe)
-    - 
+    - [Generate the babe key using Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-babe-key-using-sr25519-scheme)
+    - [Node I(validator) keys](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-ivalidator-keys)
+  - [Session keys for Node II(validator)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#session-keys-for-node-iivalidator)
+    - [Generate a session key using the Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-session-key-using-the-sr25519-scheme-1)
+    - [Derive the grandpa key using Ed25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-grandpa-key-using-ed25519-scheme-1)
+    - [Derive the beefy key using EdDSA scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-beefy-key-using-eddsa-scheme-1)
+    - [Generate the babe key using Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-babe-key-using-sr25519-scheme-1)
 
  
 Zombienet setup
