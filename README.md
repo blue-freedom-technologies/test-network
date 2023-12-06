@@ -588,11 +588,50 @@ cd ../../../
 cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 ```
 
+#### Generate a session key using the Sr25519 scheme.
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
+```
+
+```text
+Key password:********
+Secret phrase:       elevator exotic trick couple pave trend rude income spider leader first churn
+  Network ID:        substrate
+  Secret seed:       0xd3bb290be811bc5d9fb1762236edced9b43edac30e71a739dc3f90a8424d9a56
+  Public key (hex):  0xaabf7651b017d3ffbe23674ea434f297ea468ffee560cfb55b03cbe505cb8d2f
+  Account ID:        0xaabf7651b017d3ffbe23674ea434f297ea468ffee560cfb55b03cbe505cb8d2f
+  Public key (SS58): 5FvasdQkzcgBBWVMTjminfi3Nk4s9ymZEJLxrcB3L9KikpRm
+  SS58 Address:      5FvasdQkzcgBBWVMTjminfi3Nk4s9ymZEJLxrcB3L9KikpRm
+```
+
+
 #### Generate the plain text chain specification
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec.json
 ```
+
+#### Generate the plain text chain specification
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chainspec.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chainspec.json
+```
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chainspec.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
+```
+
+
+./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/parachain/coll01 --chain ./tmp/raw-parachain-chainspec.json --scheme Sr25519 --suri "elevator exotic trick couple pave trend rude income spider leader first churn" --password-interactive --key-type aura
+
+
+./target/release/node-template key insert --base-path /tmp/node01 \
+  --chain customSpecRaw.json \
+  --scheme Sr25519 \
+  --suri <your-secret-seed> \
+  --password-interactive \
+  --key-type aura
 
 
 
