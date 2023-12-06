@@ -435,108 +435,114 @@ polkadot build-spec --disable-default-bootnode --chain rococo-local > ./tmp/plai
 polkadot build-spec --chain=./tmp/plain-relay-chain-spec-private-network.json --raw --disable-default-bootnode > ./tmp/raw-relay-chain-spec-private-network.json
 ```
 
-Node I validator 
+#### Start Node I validator.
 
 ```bash
 polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
-Add grandpa key to the keystore.
+#### Add grandpa key to the keystore.
 
  ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type gran
 ```
 
-Add beefy key to the keystore.
+#### Add beefy key to the keystore.
 
  ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ecdsa --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type beef
 ```
 
-Add babe key to the keystore.
+#### Add babe key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type babe
 ```
 
-Add imon key to the keystore.
+#### Add imon key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type imon
 ```
 
-Add para key to the keystore.
+#### Add para key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type para
 ```
 
-Add asgn key to the keystore.
+#### Add asgn key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type asgn
 ```
 
-Add audi key to the keystore.
+#### Add audi key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type audi
 ```
 
-Restart Node I.
+#### Restart Node I.
 
 ```bash
 polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
-Node II validator
-
+#### Start Node II validator.
 
 ```bash
 polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
 ```
   
-Add grandpa key to the keystore.
+#### Add grandpa key to the keystore.
 
  ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "voice now jewel reopen distance notice cry output dwarf broccoli hint gaze" --password-interactive --key-type gran
 ```
 
-Add beefy key to the keystore.
+#### Add beefy key to the keystore.
 
  ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ecdsa --suri "voice now jewel reopen distance notice cry output dwarf broccoli hint gaze" --password-interactive --key-type beef
 ```
 
-Add babe key to the keystore.
+#### Add babe key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "expire sleep seminar sad eager faculty inflict great arm slice champion similar" --password-interactive --key-type babe
 ```
 
-Add imon key to the keystore.
+#### Add imon key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "expire sleep seminar sad eager faculty inflict great arm slice champion similar" --password-interactive --key-type imon
 ```
 
-Add para key to the keystore.
+#### Add para key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "expire sleep seminar sad eager faculty inflict great arm slice champion similar" --password-interactive --key-type para
 ```
 
-Add asgn key to the keystore.
+#### Add asgn key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "expire sleep seminar sad eager faculty inflict great arm slice champion similar" --password-interactive --key-type asgn
 ```
 
-Add audi key to the keystore.
+#### Add audi key to the keystore.
 
 ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "expire sleep seminar sad eager faculty inflict great arm slice champion similar" --password-interactive --key-type audi
 ```
+
+#### Restart Node II.
+
+```bash
+polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
+```
+
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
