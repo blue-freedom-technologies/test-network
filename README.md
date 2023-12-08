@@ -51,7 +51,7 @@ zombienet-linux-x64 version
 
 Table of Contents
 
-Default setup
+Manual setup
 
 - [Relay Chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#relay-chain)
   - [Create the directories](https://github.com/blue-freedom-technologies/test-network#create-the-directories)
@@ -129,8 +129,6 @@ Default setup
   - [Sudo transaction](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#sudo-transaction-1)
   - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain-1)
 
-
- 
 Zombienet setup
   
 <hr>
