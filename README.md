@@ -456,34 +456,35 @@ polkadot build-spec --disable-default-bootnode --chain rococo-local > ./tmp/plai
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/dedc7c48-91b5-47f2-af60-46a8d9c02b1e)
 
+Modify the local relay chain specification
 
 ```text
 "session": {
   "keys": [
     [
-      "5GNJqTPyNqANBkUVMN1LPPrxXnFouWXoe2wNSmmEoLctxiZY",
-      "5GNJqTPyNqANBkUVMN1LPPrxXnFouWXoe2wNSmmEoLctxiZY",
+      "5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3",
+      "5HeYFTPrAufPytrEGQUvSSLHbKSqb9e2NVaBRDTBvZ769kq3",
       {
-        "grandpa": "5FA9nQDVg267DEd8m1ZypXLBnvN7SFxYwV7ndqSYGiN9TTpu",
-        "babe": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
-        "im_online": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
-        "para_validator": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
-        "para_assignment": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
-        "authority_discovery": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
-        "beefy": "KW39r9CJjAVzmkf9zQ4YDb2hqfAVGdRqn53eRqyruqpxAP5YL"
+        "grandpa": "5GmbYPGYH1KxnHw1nXunNQjKJMfeFf2vtmAJJLKq9B856Nfx",
+        "babe": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "im_online": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "para_validator": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "para_assignment": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "authority_discovery": "5D5C1jcLDnzV4KXDsrbKpeM1bzBrCXJywAJk1DHraSdvBmQf",
+        "beefy": "KWDw8nyTtutLkcAyJE6jFsaZFVPUkoZjzXF5U8XaYX4kAKGwD"
       }
     ],
     [
-      "5HpG9w8EBLe5XCrbczpwq5TSXvedjrBGCwqxK1iQ7qUsSWFc",
-      "5HpG9w8EBLe5XCrbczpwq5TSXvedjrBGCwqxK1iQ7qUsSWFc",
+      "5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG",
+      "5EZZgACHStMKRERaEV6xdrB459SEunYxkNhWEiCBZB3WZ8WG",
       {
-        "grandpa": "5GoNkf6WdbxCFnPdAnYYQyCjAKPJgLNxXwPjwTh6DGg6gN3E",
-        "babe": "5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty",
-        "im_online": "5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty",
-        "para_validator": "5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty",
-        "para_assignment": "5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty",
+        "grandpa": "5HXRk4txhxjAGHPVTyPgpu1zDeWtGruJWyPmih5bDq1rSkZf",
+        "babe": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "im_online": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "para_validator": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
+        "para_assignment": "5CMG9U65GY9gR4qoKHdZbSfAu9NEUo2CXAg9uSeZiv1ENM1K",
         "authority_discovery": "5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty",
-        "beefy": "KWByAN7WfZABWS5AoWqxriRmF5f2jnDqy3rB5pfHLGkY93ibN"
+        "beefy": "KW5d2JWTUEQTPFvLgDQVuj3w1Ww6cqrwCn8vN4pt7hbtm7i3H"
       }
     ]
   ]
