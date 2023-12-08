@@ -890,21 +890,17 @@ Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) fro
 ls -l ./tmp/node02/chains/local_testnet/keystore
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/61cead0b-9018-427c-934b-114157d9d736)
 
-Connect to the [relay chain](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9945#/parachains/parathreads)
+#### Connect to the [relay chain](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9945#/parachains/parathreads)
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3cc114f2-2ceb-4dc2-91fa-1e3d9c6bb132)
 
-Reserve a paraid
+#### Reserve a paraid
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/df2ce41d-b55e-4c67-afce-f377a9d6a719)
 
-
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/61cead0b-9018-427c-934b-114157d9d736)
-
-
-Confirm the events
+#### Confirm the events
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/efd8ab26-6909-48cd-a68e-001cea620fb2)
 
