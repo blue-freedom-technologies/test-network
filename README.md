@@ -511,7 +511,7 @@ polkadot build-spec --chain=./tmp/plain-relay-chain-spec-private-network.json --
 polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/fb1eb7f6-2328-4078-a97d-02d562ebef88)
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/5dc54a7c-b9b0-4fd1-a488-72b1b9f213df)
 
 #### Add grandpa key to the keystore(in a new terminal).
 
@@ -572,13 +572,13 @@ polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-net
 [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
 
 ```bash
-12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe
+12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx
 ```
 
 ### Start Node II validator.
 
 ```bash
-polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe --password-interactive
+polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
 ```
   
 #### Add grandpa key to the keystore(in a new terminal).
