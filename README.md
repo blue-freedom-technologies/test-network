@@ -580,7 +580,9 @@ polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-net
 ```bash
 polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
 ```
-  
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/076ba4a4-22a1-4e3d-bd6a-a9ea0ef509dd)
+
 #### Add grandpa key to the keystore(in a new terminal).
 
  ```bash
@@ -634,7 +636,7 @@ ls -l ./tmp/node02/chains/rococo_local_testnet/keystore/
 #### Restart Node II.
 
 ```bash
-polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe --password-interactive
+polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
 ```
 
 ## Parachain (Private network of trusted collatores)
