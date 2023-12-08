@@ -111,6 +111,15 @@ Default setup
     - [Add audi key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-audi-key-to-the-keystore-1)
     - [Verify the seven files holding the keys created in the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#verify-the-seven-files-holding-the-keys-created-in-the-keystore-1)
     - [Restart Node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#restart-node-ii)
+- [Parachain (Private network of trusted collatores)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain-private-network-of-trusted-collatores)
+  - [Clone the repo to get the Cumulus sdk](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#clone-the-repo-to-get-the-cumulus-sdk-1)
+  - [Compile the polkadot parachain node](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#compile-the-polkadot-parachain-node-1)
+  - [Copy the polkadot-parachain binary]()
+  - [Generate the plain text chain specification]()
+  - [Modify the plain text chain specification]()
+  - [Generate-a-raw-chain-specification-file-from-the-modified--plain-text-chain-specification]()
+
+
  
 Zombienet setup
   
