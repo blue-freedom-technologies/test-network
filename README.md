@@ -649,6 +649,18 @@ ls -l ./tmp/node02/chains/rococo_local_testnet/keystore/
 polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
 ```
 
+#### Connect to the [relay chain](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9945#/parachains/parathreads)
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3cc114f2-2ceb-4dc2-91fa-1e3d9c6bb132)
+
+#### Reserve a paraid
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/df2ce41d-b55e-4c67-afce-f377a9d6a719)
+
+#### Confirm the events
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/efd8ab26-6909-48cd-a68e-001cea620fb2)
+
 ## Parachain (Private network of trusted collatores)
 
 #### Clone the repo to get the [Cumulus SDK](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/cumulus)
@@ -828,8 +840,6 @@ Modify aura field to specify the nodes with the authority to create blocks by ad
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/28258dc5-86a0-4e78-b450-4b431a2f5f58)
 
-
-
 ```text
 12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p
 ```
@@ -892,17 +902,6 @@ ls -l ./tmp/node02/chains/local_testnet/keystore
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/61cead0b-9018-427c-934b-114157d9d736)
 
-#### Connect to the [relay chain](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9945#/parachains/parathreads)
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3cc114f2-2ceb-4dc2-91fa-1e3d9c6bb132)
-
-#### Reserve a paraid
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/df2ce41d-b55e-4c67-afce-f377a9d6a719)
-
-#### Confirm the events
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/efd8ab26-6909-48cd-a68e-001cea620fb2)
 
 
 
