@@ -120,6 +120,14 @@ Default setup
   - [Modify the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#modify-the-plain-text-chain-specification-1)
   - [Generate a raw chain specification file from the modified plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-raw-chain-specification-file-from-the-modified-plain-text-chain-specification)
   - [Start the collator node](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-collator-node)
+  - [Add aura key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-aura-key-to-the-keystore)
+  - [Verify the file holding the key created in the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#verify-the-file-holding-the-key-created-in-the-keystore)
+  - [Restart collator node](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#restart-collator-node)
+  - [Export the webassembly runtime](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#export-the-webassembly-runtime-1)
+  - [Generate-a-parachain-genesis-state](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-parachain-genesis-state-1)
+  - [Register the parachain with the local relay chain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#register-the-parachain-with-the-local-relay-chain-1)
+  - [Sudo transaction](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#sudo-transaction-1)
+  - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain-1)
 
 
  
