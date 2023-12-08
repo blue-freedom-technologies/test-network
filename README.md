@@ -109,6 +109,7 @@ Default setup
     - [Add para key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-para-key-to-the-keystore-1)
     - [Add asgn key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-asgn-key-to-the-keystore-1)
     - [Add audi key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-audi-key-to-the-keystore-1)
+    - [Verify the seven files holding the keys created in the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#verify-the-seven-files-holding-the-keys-created-in-the-keystore-1)
     - [Restart Node II](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#restart-node-ii)
  
 Zombienet setup
