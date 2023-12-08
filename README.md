@@ -673,7 +673,7 @@ cd ../../../
 cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 ```
 
-#### Generate two session keys using the Sr25519 scheme.
+#### Generate two session keys using the Sr25519 scheme for [aura](https://wiki.polkadot.network/docs/glossary#aura)
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
@@ -710,6 +710,7 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/6e891bc6-6be5-48a0-8d8d-7b106bf35a14)
 
+#### Create a custom chain specification
 
 ```bash
 "aura": {
@@ -727,15 +728,35 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec-private-network.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec-private-network.json
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/82b24e19-adb8-4aa8-8055-cd89c1a00a99)
+
+
 Start the collator Node I
 
 ```bash
-./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chainspec.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
+./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chain-spec-private-network.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/f1b69a8e-acdf-4c93-b470-ae5520c2025d)
 
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/parachain/coll01 --chain ./tmp/raw-parachain-chainspec.json --scheme Sr25519 --suri "elevator exotic trick couple pave trend rude income spider leader first churn" --password-interactive --key-type aura
 
+```bash
+./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/parachain/coll01 --chain ./tmp/raw-parachain-chain-spec-private-network.json  --scheme Sr25519 --suri "elevator exotic trick couple pave trend rude income spider leader first churn" --password-interactive --key-type aura
+```
+
+#### Verify the seven files holding the keys created in the keystore.
+
+```bash
+ls -l ./tmp/parachain/coll01/chains/local_testnet/keystore/
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/e70b1064-14a9-4475-9b41-a21c80b6db7c)
+
+#### Restart Node II.
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chain-spec-private-network.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
+```
 
 ./target/release/node-template key insert --base-path /tmp/node01 \
   --chain customSpecRaw.json \
