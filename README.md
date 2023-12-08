@@ -561,7 +561,7 @@ polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-
 ls -l ./tmp/node01/chains/rococo_local_testnet/keystore/
 ```
 
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/31c41e30-3209-405d-8422-adc82c293ad6)
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/f5d984a3-78a6-4cef-92d2-ed8b5438a514)
 
 #### Restart Node I.
 
