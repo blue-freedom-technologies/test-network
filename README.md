@@ -117,7 +117,7 @@ Default setup
   - [Copy the polkadot-parachain binary](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#copy-the-polkadot-parachain-binary-1)
   - [Generate two session keys using the sr25519-scheme for aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-two-session-keys-using-the-sr25519-scheme-for-aura)
   - [Generate the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification-2)
-  - [Modify the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#create-a-custom-chain-specification-1)
+  - [Modify the plain text chain specification]()
   - [Generate a raw chain specification file from the modified plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-raw-chain-specification-file-from-the-modified-plain-text-chain-specification)
 
 
@@ -723,7 +723,7 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/6e891bc6-6be5-48a0-8d8d-7b106bf35a14)
 
-#### Create a custom chain specification
+#### Modify the plain text chain specification
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/0b056eab-f9b8-45da-a47b-86d517b2fac2)
 
@@ -737,7 +737,7 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 },
 ```
 
-#### Modify the plain text chain specification
+#### Generate a raw chain specification file from the modified plain text chain specification
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec-private-network.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec-private-network.json
