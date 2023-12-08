@@ -448,6 +448,8 @@ Secret phrase:       expire sleep seminar sad eager faculty inflict great arm sl
 },
 ```
 
+### Create a custom chain specification
+
 #### Generate a raw chain spec
 
 ```bash
@@ -456,7 +458,7 @@ polkadot build-spec --disable-default-bootnode --chain rococo-local > ./tmp/plai
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/dedc7c48-91b5-47f2-af60-46a8d9c02b1e)
 
-Modify the local relay chain specification
+#### Modify the local relay chain specification
 
 ```text
 "session": {
@@ -495,6 +497,8 @@ Modify the local relay chain specification
 ```bash
 polkadot build-spec --chain=./tmp/plain-relay-chain-spec-private-network.json --raw --disable-default-bootnode > ./tmp/raw-relay-chain-spec-private-network.json
 ```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/df6f6d77-ed39-4136-881b-1f83ef3207a4)
 
 ### Start Node I validator.
 
