@@ -673,7 +673,7 @@ cd ../../../
 cp -r ./polkadot-sdk/target/release/ ./binaries/polkadot-parachain
 ```
 
-#### Generate a session key using the Sr25519 scheme.
+#### Generate two session keys using the Sr25519 scheme.
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key generate --scheme Sr25519 --password-interactive
@@ -690,11 +690,35 @@ Secret phrase:       elevator exotic trick couple pave trend rude income spider 
   SS58 Address:      5FvasdQkzcgBBWVMTjminfi3Nk4s9ymZEJLxrcB3L9KikpRm
 ```
 
+```text
+Key password:********
+Key password: 
+Secret phrase:       enemy bus social knock parrot maple into actress pause brisk know bracket
+  Network ID:        substrate
+  Secret seed:       0x8b334e8c01fe1542ccb715ad7f3cb9f2585106a8dd78aa0698564c2c9f42a1e6
+  Public key (hex):  0x187e85ee44a439442b11d423f1aadbc3d1016f1208317326d1ad67d8bc9fe82c
+  Account ID:        0x187e85ee44a439442b11d423f1aadbc3d1016f1208317326d1ad67d8bc9fe82c
+  Public key (SS58): 5CcpbGUiNjeHH9tsCMQQBNwNxfTPGSWMV2i9uY9kx7MjCh9p
+  SS58 Address:      5CcpbGUiNjeHH9tsCMQQBNwNxfTPGSWMV2i9uY9kx7MjCh9p
+```
 
 #### Generate the plain text chain specification
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chain-spec-private-network.json
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/6e891bc6-6be5-48a0-8d8d-7b106bf35a14)
+
+
+```bash
+"aura": {
+  "authorities":
+    [
+      "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
+      "5CcpbGUiNjeHH9tsCMQQBNwNxfTPGSWMV2i9uY9kx7MjCh9p"
+    ]
+},
 ```
 
 #### Generate a raw chain specification file from the modified plain text chain specification
