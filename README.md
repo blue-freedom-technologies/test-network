@@ -785,6 +785,37 @@ ls -l ./tmp/parachain/coll01/chains/local_testnet/keystore/
 ```
 
 
+Register the parachain with the local [relay chain](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9945#/sudo)
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/d737761d-0cb5-41c4-9445-4741b9d8ed03)
+
+Sudo transaction
+
+Note: We are bypassing the steps required to acquire a parachain or parathread slot which normally is a parachain auction.
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/8db12fa5-6d64-485b-884b-400e33056495)
+
+Testing the parachain.
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/33d45b11-a5d8-4d62-b8b8-0d3f852cb93a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ./target/release/node-template key insert --base-path /tmp/node01 \
   --chain customSpecRaw.json \
   --scheme Sr25519 \
