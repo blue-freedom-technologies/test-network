@@ -99,6 +99,7 @@ Default setup
     - [Add para key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-para-key-to-the-keystore)
     - [Add asgn key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-asgn-key-to-the-keystore)
     - [Add audi key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-audi-key-to-the-keystore)
+    - [Verify the seven files holding the keys created in the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#verify-the-seven-files-holding-the-keys-created-in-the-keystore)
     - [Restart Node I](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#restart-node-i)
   - [Start Node II validator](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-node-ii-validator)
     - [Add grandpa key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-key-to-the-keystore-1)
