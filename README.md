@@ -563,6 +563,11 @@ ls -l ./tmp/node01/chains/rococo_local_testnet/keystore/
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/31c41e30-3209-405d-8422-adc82c293ad6)
 
+[PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
+
+```bash
+12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe
+```
 
 #### Restart Node I.
 
@@ -743,7 +748,7 @@ Modify aura field to specify the nodes with the authority to create blocks by ad
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/28258dc5-86a0-4e78-b450-4b431a2f5f58)
 
-[PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
+
 
 ```text
 12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p
