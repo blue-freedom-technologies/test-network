@@ -87,6 +87,8 @@ Default setup
     - [Derive the beefy key using EdDSA scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#derive-the-beefy-key-using-eddsa-scheme-1)
     - [Generate the babe key using Sr25519 scheme](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-babe-key-using-sr25519-scheme-1)
     - [Node II(validator) keys](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-iivalidator-keys)
+  - [Create a custom chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#create-a-custom-chain-specification)
+    - [Generate a raw chain spec](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-raw-chain-spec-1)
   - [Start Node I validator](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-node-i-validator)
     - [Add grandpa key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-key-to-the-keystore)
     - [Add beefy key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-beefy-key-to-the-keystore)
