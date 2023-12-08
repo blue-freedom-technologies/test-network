@@ -760,6 +760,19 @@ ls -l ./tmp/parachain/coll01/chains/local_testnet/keystore/
 ./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chain-spec-private-network.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
 ```
 
+#### Export the WebAssembly runtime
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chain-spec-private-network.json ./tmp/parachain-private-network-wasm
+```
+
+#### Generate a parachain genesis state
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain ./tmp/raw-parachain-chain-spec-private-network.json ./tmp/parachain-private-network-state
+```
+
+
 ./target/release/node-template key insert --base-path /tmp/node01 \
   --chain customSpecRaw.json \
   --scheme Sr25519 \
