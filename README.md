@@ -821,19 +821,6 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 
 
-
-
-
-
-./target/release/node-template key insert --base-path /tmp/node01 \
-  --chain customSpecRaw.json \
-  --scheme Sr25519 \
-  --suri <your-secret-seed> \
-  --password-interactive \
-  --key-type aura
-
-
-
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
 
@@ -852,130 +839,6 @@ List of [chain specs](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v
 - [westend.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/westend.json)
 - [wococo.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/wococo.json)
 
-#### Generate the plain text chain specification
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chainspec-private-network.json
-polkadot build-spec --chain rococo-local > rococo-chain-spec.json
-```
-
-#### Modify the plain text chain specification
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3e8d21ff-6dfb-4db1-9eea-431621485db8)
-
-Modify aura field to specify the nodes with the authority to create blocks by adding the Sr25519 SS58 address keys for each network participant
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/25ef68b4-af34-4033-9dc9-62332195080d)
-
-#### Convert the chain specification to raw format
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --chain=./tmp/plain-parachain-chainspec-private-network.json --raw --disable-default-bootnode > ./tmp/raw-parachain-chainspec-private-network.json
-```
-
-#### Start the node I
-```bash
-./binaries/polkadot-parachain/polkadot-parachain  --base-path ./tmp/node01   --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/28258dc5-86a0-4e78-b450-4b431a2f5f58)
-
-```text
-12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p
-```
-
-#### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore.
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Sr25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive  --key-type aura
-```
-
-```bash
-ls -l ./tmp/node01/chains/local_testnet/keystore
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/1e5b9cbe-53aa-4068-be5e-42ce5f45cd61)
-
-#### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore.
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node01 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "sea decline anger behave eyebrow addict junior never brief island copy peanut" --password-interactive --key-type gran
-```
-
-```bash
-ls -l ./tmp/node01/chains/local_testnet/keystore
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/2d78dc67-545b-4995-b66f-4ed4d3ec3e4b)
-
-Copy the [PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid) from the node I.
-
-#### Start the node II
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --port 30336 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRHQKBTnjmsmq1Jeq9CVQBXYgh5SZKJnyeNBH3VAxWA3p --password-interactive
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/4e9848ea-086f-498b-b991-dccae072ca24)
-
-[PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
-
-```text
-12D3KooWKaf2H6rj7fZ9y5KUCB7vaV8tDA6EUsithWRgW9R53u1L
-```
-
-#### Add [aura](https://wiki.polkadot.network/docs/glossary#aura) secret to the keystore.
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Sr25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type aura
-```
-
-#### Add [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) secret to the keystore.
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/node02 --chain ./tmp/raw-parachain-chainspec-private-network.json --scheme Ed25519 --suri "behind paper spike lonely ring blood alert ribbon window layer ring accuse" --password-interactive --key-type gran
-```
-
-```bash
-ls -l ./tmp/node02/chains/local_testnet/keystore
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/61cead0b-9018-427c-934b-114157d9d736)
-
-
-
-
-<hr>
-
-
-https://docs.substrate.io/tutorials/build-a-blockchain/add-trusted-nodes/#enable-other-participants-to-join
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -992,17 +855,6 @@ Spawn a local testing network:
 
 ```bash
  zombienet-linux-x64 spawn dev-rococo-local.toml -p native
-```
-
-```text
-Key password: 
-Secret phrase:       airport crumble matter grunt vicious excite thing unable object opera second deer
-  Network ID:        substrate
-  Secret seed:       0xde2c289cf3a329580f2bfc98d3c298ff137443f18ea8e3d24917092d947b57f0
-  Public key (hex):  0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
-  Account ID:        0xd85eeaaa1b26ac4f1ebeb9159def66b36d5dc339cdcf12c8e5828d553b33a245
-  Public key (SS58): 5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
-  SS58 Address:      5GxQPwioR7rSfCE9oU6eBGKncxXPXdkm7RkF36D3LDdwsuKw
 ```
 
 
@@ -1060,81 +912,6 @@ id = 100
 
 [Parachain node for smart contracts](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/cumulus/parachains/runtimes/contracts/contracts-rococo/README.md)
 
-### Chain specification
-
-
-
-```bash
-polkadot key inspect --password-interactive --scheme Ed25519 "dish reveal swallow tonight city early exhibit return able entry estate host"
-```
-
-
-
-```text
-Key password:polkadot2023 
-Secret phrase:       dish reveal swallow tonight city early exhibit return able entry estate host
-  Network ID:        substrate
-  Secret seed:       0x4122f08c02f51053676519275a30a91ebff531cb48f7710671662b531decc50a
-  Public key (hex):  0x961f2b4968cf18e802cbc75924495968c005c42b802f7ae8b2bb0db23fdc61b1
-  Account ID:        0x961f2b4968cf18e802cbc75924495968c005c42b802f7ae8b2bb0db23fdc61b1
-  Public key (SS58): 5FTYJJ9x5wRxPYqeSjDbP4RhjMgpwQDpgbttWrgmm6jb4qHZ
-  SS58 Address:      5FTYJJ9x5wRxPYqeSjDbP4RhjMgpwQDpgbttWrgmm6jb4qHZ
-```
-
-Generate keys for node II
-
-Generate the Sr25519 key for **producing blocks** using [aura](https://wiki.polkadot.network/docs/glossary#aura) for node II.
-
-```bash
-polkadot key generate --scheme Sr25519 --password-interactive
-```
-
-```text
-Key password:nodeII2023
-Secret phrase:       agree destroy want saddle diagram gallery critic address daughter flee retire pet
-  Network ID:        substrate
-  Secret seed:       0x514f375ec23492e7d63873011ea2ffbb4e89f28d11c52767b7c16204cd75a11f
-  Public key (hex):  0xa8267c75604afbfc520dba8462a01bef8ab8f7d0c45b2b34ae275fe20afde309
-  Account ID:        0xa8267c75604afbfc520dba8462a01bef8ab8f7d0c45b2b34ae275fe20afde309
-  Public key (SS58): 5FsBLMkJSbx53fFYAV4aZ4gzeANztBTV1kJPPWnzuuVxkaoK
-  SS58 Address:      5FsBLMkJSbx53fFYAV4aZ4gzeANztBTV1kJPPWnzuuVxkaoK
-```
-
-Generate Ed25519 key for **finalizing blocks** using [grandpa](https://wiki.polkadot.network/docs/glossary#grandpa-finality-gadget) for node II.
-
-```bash
-polkadot key inspect --password-interactive --scheme Ed25519 "agree destroy want saddle diagram gallery critic address daughter flee retire pet"
-```
-
-```text
-Key password: 
-Secret phrase:       agree destroy want saddle diagram gallery critic address daughter flee retire pet
-  Network ID:        substrate
-  Secret seed:       0x514f375ec23492e7d63873011ea2ffbb4e89f28d11c52767b7c16204cd75a11f
-  Public key (hex):  0x03fd5af7fb0521fd46631c23d28a85463edbe333b3c39dad1f626a5446759805
-  Account ID:        0x03fd5af7fb0521fd46631c23d28a85463edbe333b3c39dad1f626a5446759805
-  Public key (SS58): 5C9wGDEMPhBCtCJHHEmsVtV5GndNDVsggRpcNDHxrYo8kcjX
-  SS58 Address:      5C9wGDEMPhBCtCJHHEmsVtV5GndNDVsggRpcNDHxrYo8kcjX
-```
-
-
-
-
-
-```bash
-polkadot build-spec --disable-default-bootnode --chain rococo-local > dev-blue-freedom-spec.json
-```
-
-
-Convert the dev-blue-freedom-spec.json chain specification to the raw format with the file name dev-blue-freedom-spec-raw.json
-
-```bash
-polkadot build-spec --chain=dev-blue-freedom-spec.json --raw --disable-default-bootnode > dev-blue-freedom-spec-raw.json
-```
-
-```bash
-git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
-```
 
 <hr>
 <hr><hr><hr><hr><hr>
@@ -1142,102 +919,11 @@ git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.gi
 [The Parity Polkadot Blockchain SDK](https://github.com/paritytech/polkadot-sdk)
 
 
-
-
 This directory currently contains runtimes for the Polkadot, Kusama, Westend, and Rococo networks. In the future, these will be relocated to the runtimes repository.
 https://github.com/paritytech/polkadot-sdk/tree/master/polkadot 
 
 https://doc.deepernetwork.org/tutorials/v3/cumulus/start-relay/
 
-# Relay Chain
-
-
-Clone
-
-```bash
-git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
-```
-
-Compile Polkadot
-
-```bash
-cd polkadot-sdk
-cargo build --release --bin polkadot
-```
-
-```bash
-cp -r ./target/release/ ../binaries/polkadot
-```
-
-Generate a raw chain spec
-
-```bash
-./target/release/polkadot build-spec --chain rococo-local --disable-default-bootnode --raw > rococo-local-cfde.json
-```
-
-Alice
-
-```bash
-./target/release/polkadot --chain rococo-local-cfde.json --alice --tmp
-```
-
-Bob (In a separate terminal)
-```bash
-./target/release/polkadot --chain rococo-local-cfde.json --bob --tmp --port 30334
-```
-
-## Parachain
-
-Clone
-
-```bash
-git clone https://github.com/paritytech/polkadot-sdk
-```
-
-```bash
-cd  cumulus/polkadot-parachain
-```
-
-
-```bash
-cargo build --release --bin polkadot-parachain
-```
-
-```bash
-cp -r ./target/release/ ../binaries/polkadot-parachain
-```
-
-Export genesis state
-
-```bash
-./target/release/polkadot-parachain export-genesis-state > genesis-state
-```
-
-# Export genesis wasm
-
-```bash
-./target/release/polkadot-parachain export-genesis-wasm > genesis-wasm
-```
-
-Collator1
-
-```bash
-./target/release/polkadot-parachain --collator --alice --force-authoring --tmp --port 40335 --rpc-port 9946 -- --chain ../polkadot/rococo-local-cfde.json --port 30335
-```
-
-Collator2
-
-```bash
-./target/release/polkadot-parachain --collator --bob --force-authoring --tmp --port 40336 --rpc-port 9947 -- --chain ../polkadot/rococo-local-cfde.json --port 30336
-```
-
-Parachain Full Node 1
-
-```bash
-./target/release/polkadot-parachain --tmp --port 40337 --rpc-port 9948 -- --chain ../polkadot/rococo-local-cfde.json --port 30337
-```
-
-
 
 <hr>
 <hr>
@@ -1248,94 +934,6 @@ Parachain Full Node 1
 <hr>
 <hr>
 
-Create the directories:
-```bash
-mkdir test_network
-cd test_network
-mkdir binaries
-```
-
-### The relay chain node
-
-```bash
-git clone --branch polkadot-v1.3.0 https://github.com/paritytech/polkadot-sdk.git
-cd polkadot-sdk
-cargo build --release
-cp -r ./target/release/ ../binaries/polkadot
-```
-
-Download [raw-local-chainspec.json](https://docs.substrate.io/assets/tutorials/relay-chain-specs/raw-local-chainspec.json/)
-
-Start the "alice" validator
-
-```bash
-./binaries/polkadot/polkadot --alice --validator --base-path ./tmp/relay/alice --chain ./tmp/raw-local-chainspec.json --port 30333 --rpc-port 9944
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/75031d03-2363-412d-b782-89fd5eef219b)
-
-Start the "bob" validator
-
-```bash
-./binaries/polkadot/polkadot --bob --validator --base-path ./tmp/relay/bob --chain ./tmp/raw-local-chainspec.json --port 30334 --rpc-port 9945
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/8522dbeb-24bf-4fb9-ad22-a3bf28f02f67)
-
-### The parachain node
-
-[plain-local-chainspec](https://docs.substrate.io/assets/tutorials/relay-chain-specs/plain-local-chainspec.json/)<br>
-[raw-local-chainspec.json](https://docs.substrate.io/assets/tutorials/relay-chain-specs/raw-local-chainspec.json/)<br>
-
- 
-
-```bash
-git clone --depth 1 --branch polkadot-v1.0.0 https://github.com/substrate-developer-hub/substrate-parachain-template.git
-cd substrate-parachain-template
-git switch -c test-network
-cargo build --release
-cp -r ./target/release/ ../binaries/parachain
-```
-
-Create the [ParaId](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/parachains/parathreads)
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/71d8b140-a547-4d2d-b746-56bbf298a537)
-
-
-Generate the plain text chain specification for the parachain node:
-
-```bash
-./binaries/parachain/parachain-template-node build-spec --disable-default-bootnode > plain-parachain-chainspec.json
-```
-
-Generate a raw chain specification file from the modified plain text chain specification file:
-
-```bash
-./binaries/parachain/parachain-template-node build-spec --chain plain-parachain-chainspec.json --disable-default-bootnode --raw > raw-parachain-chainspec.json
-```
-
-Export the WebAssembly runtime for the parachain.
-
-```bash
-./binaries/parachain/parachain-template-node export-genesis-wasm --chain ./tmp/raw-parachain-chainspec.json para-2000-wasm
-```
-
-Generate a parachain genesis state.
-
-```bash
-./binaries/parachain/parachain-template-node export-genesis-state --chain ./tmp/raw-parachain-chainspec.json para-2000-genesis-state
-```
-
-
-Start a collator node
-
-```bash
-./binaries/parachain/parachain-template-node --alice --collator --force-authoring --chain ./tmp/raw-parachain-chainspec.json --base-path /tmp/parachain/alice --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-local-chainspec.json --port 30343 --rpc-port 9977
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/5a815d0d-6841-4230-bf30-4c5f9ec7c031)
-
-
 
 <hr>
 <hr>
@@ -1344,26 +942,6 @@ Start a collator node
 <hr>
 <hr>
 
-### Create a local test network
-
-
-Add the polkadot binaries(relay chain):
-
-```bash
-git clone https://github.com/paritytech/polkadot-sdk
-cd polkadot-sdk
-cargo build --release
-cp ./target/release ../binaries/polkadot
-```
-
-Add the parachain binaries(parachain node):
-
-```bash
-git clone https://github.com/paritytech/extended-parachain-template
-cd extended-parachain-template
-cargo build --release
-cp ./target/release ../binaries/extended-parachain-template-node
-```
 
 
 
