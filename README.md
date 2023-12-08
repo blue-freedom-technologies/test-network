@@ -117,8 +117,9 @@ Default setup
   - [Copy the polkadot-parachain binary](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#copy-the-polkadot-parachain-binary-1)
   - [Generate two session keys using the sr25519-scheme for aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-two-session-keys-using-the-sr25519-scheme-for-aura)
   - [Generate the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification-2)
-  - [Modify the plain text chain specification]()
+  - [Modify the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#modify-the-plain-text-chain-specification-1)
   - [Generate a raw chain specification file from the modified plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-raw-chain-specification-file-from-the-modified-plain-text-chain-specification)
+  - [Start the collator node](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-the-collator-node)
 
 
  
@@ -753,12 +754,13 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/f1b69a8e-acdf-4c93-b470-ae5520c2025d)
 
+#### Add aura key to the keystore.
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain key insert --base-path ./tmp/parachain/coll01 --chain ./tmp/raw-parachain-chain-spec-private-network.json  --scheme Sr25519 --suri "elevator exotic trick couple pave trend rude income spider leader first churn" --password-interactive --key-type aura
 ```
 
-#### Verify the seven files holding the keys created in the keystore.
+#### Verify the file holding the key created in the keystore.
 
 ```bash
 ls -l ./tmp/parachain/coll01/chains/local_testnet/keystore/
