@@ -712,6 +712,8 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 
 #### Create a custom chain specification
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/0b056eab-f9b8-45da-a47b-86d517b2fac2)
+
 ```bash
 "aura": {
   "authorities":
@@ -752,7 +754,7 @@ ls -l ./tmp/parachain/coll01/chains/local_testnet/keystore/
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/e70b1064-14a9-4475-9b41-a21c80b6db7c)
 
-#### Restart Node II.
+#### Restart Node I.
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chain-spec-private-network.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
