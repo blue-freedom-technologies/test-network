@@ -510,7 +510,9 @@ polkadot build-spec --chain=./tmp/plain-relay-chain-spec-private-network.json --
 polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
-#### Add grandpa key to the keystore.
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/fb1eb7f6-2328-4078-a97d-02d562ebef88)
+
+#### Add grandpa key to the keystore(in a new terminal.).
 
  ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type gran
@@ -551,6 +553,15 @@ polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-
 ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "vanish street orphan print magic atom link census clever sound quote logic" --password-interactive --key-type audi
 ```
+
+#### Verify the seven files holding the keys created in the keystore.
+
+```bash
+ls -l ./tmp/node01/chains/rococo_local_testnet/keystore/
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/31c41e30-3209-405d-8422-adc82c293ad6)
+
 
 #### Restart Node I.
 
