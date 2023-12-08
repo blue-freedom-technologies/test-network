@@ -513,7 +513,7 @@ polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-net
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/fb1eb7f6-2328-4078-a97d-02d562ebef88)
 
-#### Add grandpa key to the keystore(in a new terminal.).
+#### Add grandpa key to the keystore(in a new terminal).
 
  ```bash
 polkadot key insert --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "sick cry forget enroll retreat female slab uncover remember neutral time stadium" --password-interactive --key-type gran
@@ -563,25 +563,25 @@ ls -l ./tmp/node01/chains/rococo_local_testnet/keystore/
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/31c41e30-3209-405d-8422-adc82c293ad6)
 
-[PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
-
-```bash
-12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe
-```
-
 #### Restart Node I.
 
 ```bash
 polkadot --base-path ./tmp/node01 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30333 --rpc-port 9945 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode01 --password-interactive
 ```
 
+[PeerId](https://docs.libp2p.io/concepts/appendix/glossary/#peerid)
+
+```bash
+12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe
+```
+
 ### Start Node II validator.
 
 ```bash
-polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
+polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe --password-interactive
 ```
   
-#### Add grandpa key to the keystore.
+#### Add grandpa key to the keystore(in a new terminal).
 
  ```bash
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Ed25519 --suri "voice now jewel reopen distance notice cry output dwarf broccoli hint gaze" --password-interactive --key-type gran
@@ -623,10 +623,18 @@ polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-
 polkadot key insert --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --scheme Sr25519 --suri "expire sleep seminar sad eager faculty inflict great arm slice champion similar" --password-interactive --key-type audi
 ```
 
+#### Verify the seven files holding the keys created in the keystore.
+
+```bash
+ls -l ./tmp/node02/chains/rococo_local_testnet/keystore/
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3495be8f-23cb-4e22-a487-db79acf17d27)
+
 #### Restart Node II.
 
 ```bash
-polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWNq7DyDjscNDe8ASAQnVmRT9RaHqvvQ1UjRHkURbfbw87 --password-interactive
+polkadot --base-path ./tmp/node02 --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30334 --rpc-port 9946 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" --validator --rpc-methods Unsafe --name MyNode02 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWP3xqW9rmC2qUy7mLvK6GWjBUVCbWhLrJRDvcDvz2dbKe --password-interactive
 ```
 
 ## Parachain (Private network of trusted collatores)
