@@ -89,6 +89,8 @@ Default setup
     - [Node II(validator) keys](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#node-iivalidator-keys)
   - [Create a custom chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#create-a-custom-chain-specification)
     - [Generate a raw chain spec](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-raw-chain-spec-1)
+    - [Modify the local relay chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#modify-the-local-relay-chain-specification)
+    - [Generate the plain-text-chain-specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification-1)
   - [Start Node I validator](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#start-node-i-validator)
     - [Add grandpa key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-grandpa-key-to-the-keystore)
     - [Add beefy key to the keystore](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#add-beefy-key-to-the-keystore)
