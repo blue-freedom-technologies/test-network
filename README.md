@@ -114,10 +114,11 @@ Default setup
 - [Parachain (Private network of trusted collatores)](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#parachain-private-network-of-trusted-collatores)
   - [Clone the repo to get the Cumulus sdk](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#clone-the-repo-to-get-the-cumulus-sdk-1)
   - [Compile the polkadot parachain node](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#compile-the-polkadot-parachain-node-1)
-  - [Copy the polkadot-parachain binary]()
-  - [Generate the plain text chain specification]()
-  - [Modify the plain text chain specification]()
-  - [Generate-a-raw-chain-specification-file-from-the-modified--plain-text-chain-specification]()
+  - [Copy the polkadot-parachain binary](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#copy-the-polkadot-parachain-binary-1)
+  - [Generate two session keys using the sr25519-scheme for aura](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-two-session-keys-using-the-sr25519-scheme-for-aura)
+  - [Generate the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-the-plain-text-chain-specification-2)
+  - [Modify the plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#create-a-custom-chain-specification-1)
+  - [Generate a raw chain specification file from the modified plain text chain specification](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#generate-a-raw-chain-specification-file-from-the-modified-plain-text-chain-specification)
 
 
  
@@ -736,7 +737,7 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 },
 ```
 
-#### Generate a raw chain specification file from the modified plain text chain specification
+#### Modify the plain text chain specification
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec-private-network.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec-private-network.json
@@ -744,8 +745,7 @@ Secret phrase:       enemy bus social knock parrot maple into actress pause bris
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/82b24e19-adb8-4aa8-8055-cd89c1a00a99)
 
-
-Start the collator Node I
+#### Start the collator node
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chain-spec-private-network.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
@@ -766,7 +766,7 @@ ls -l ./tmp/parachain/coll01/chains/local_testnet/keystore/
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/e70b1064-14a9-4475-9b41-a21c80b6db7c)
 
-#### Restart Node I.
+#### Restart collator node.
 
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain --collator --force-authoring --chain ./tmp/raw-parachain-chain-spec-private-network.json --base-path ./tmp/parachain/coll01 --port 40333 --rpc-port 8844 -- --execution wasm --chain ./tmp/raw-relay-chain-spec-private-network.json --port 30343 --rpc-port 9977 --bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWRVmQxg1iqCb92GPLETct2t1qPNpscQXe8YkLdyfNnZwx --password-interactive
