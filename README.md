@@ -846,11 +846,27 @@ cumulus_based = true
   args = ["--force-authoring"]
 ```
 
+Generate the plain text chain specification
+
 ```bash
 ./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chain-spec.json
 ```
 
+Generate a raw chain specification file from the modified plain text chain specification
 
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec.json
+```
+
+Export the WebAssembly runtime
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-wasm
+```
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-genesis-state
+```
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
