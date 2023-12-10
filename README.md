@@ -872,8 +872,9 @@ genesis_state_path="./tmp/para-2000-genesis-state"
   args = ["--force-authoring"]
 ```
 
-
-
+```bash
+zombienet-linux-x64 spawn network-specification.toml -p native
+```
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
