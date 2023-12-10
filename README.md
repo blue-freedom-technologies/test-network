@@ -131,7 +131,7 @@ Manual setup
 
 Zombienet setup
 
-- Native
+- [Native](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#native)
   
 <hr>
 
@@ -814,7 +814,7 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ## Native
 
-A simple network specification with two relay chain nodes and one collator.
+A simple [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with two relay chain nodes and one collator.
 
 ```bash
 [relaychain]
