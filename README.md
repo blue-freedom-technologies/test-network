@@ -133,7 +133,7 @@ Zombienet setup
   
 <hr>
 
-# Default setup
+# Manual setup
 
 ## Relay Chain
 
@@ -808,11 +808,35 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 <hr>
 
+# Zombienet setup
 
+```bash
+[relaychain]
+default_image = "parity/polkadot:latest"
+default_command = "polkadot"
+chain = "rococo-local"
 
+  [[relaychain.nodes]]
+  name = "alice"
+  validator = true
 
+  [[relaychain.nodes]]
+  name = "bob"
+  validator = true
 
+[[parachains]]
+id = 2000
+cumulus_based = true
+chain = "asset-hub-rococo-local"
 
+  # run charlie as parachain collator
+  [[parachains.collators]]
+  name = "charlie"
+  validator = true
+  image = "parity/polkadot-parachain:latest"
+  command = "polkadot-parachain"
+  args = ["--force-authoring"]
+```bash
 
 
 
