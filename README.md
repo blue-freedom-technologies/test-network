@@ -130,6 +130,8 @@ Manual setup
   - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#testing-the-parachain-1)
 
 Zombienet setup
+
+- Native
   
 <hr>
 
