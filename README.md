@@ -817,7 +817,7 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 A simple [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with two relay chain nodes and one collator.
 
 ```bash
-polkadot build-spec --chain rococo-local --disable-default-bootnode> ./tmp/plain-relay-chainspec.json
+polkadot build-spec --chain rococo-local --disable-default-bootnode> ./tmp/plain-relay-chain-spec.json
 ```
 
 network-specification.toml
@@ -846,8 +846,9 @@ cumulus_based = true
   args = ["--force-authoring"]
 ```
 
-
-
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chain-spec.json
+```
 
 
 
