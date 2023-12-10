@@ -820,7 +820,32 @@ A simple [network specification](https://paritytech.github.io/zombienet/network-
 polkadot build-spec --chain rococo-local --disable-default-bootnode> ./tmp/plain-relay-chain-spec.json
 ```
 
-network-specification.toml
+#### Generate the plain text chain specification
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chain-spec.json
+```
+
+#### Generate a raw chain specification file from the modified plain text chain specification
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec.json
+```
+
+#### Export the WebAssembly runtime
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-wasm
+```
+
+#### Generate a parachain genesis state
+
+```bash
+./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-genesis-state
+```
+
+#### Create the network specification file
+
 ```bash
 [relaychain]
 default_command = "polkadot"
@@ -836,7 +861,8 @@ chain_spec_path="./tmp/plain-relay-chainspec.json"
 
 [[parachains]]
 id = 2000
-cumulus_based = true
+genesis_wasm_path="./tmp/para-2000-wasm"
+genesis_state_path="./tmp/para-2000-genesis-state"
 
   # run charlie as parachain collator
   [[parachains.collators]]
@@ -846,27 +872,8 @@ cumulus_based = true
   args = ["--force-authoring"]
 ```
 
-Generate the plain text chain specification
 
-```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chain-spec.json
-```
 
-Generate a raw chain specification file from the modified plain text chain specification
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec.json
-```
-
-Export the WebAssembly runtime
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-wasm
-```
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-genesis-state
-```
 
 https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
