@@ -849,7 +849,7 @@ polkadot build-spec --chain rococo-local --disable-default-bootnode> ./tmp/plain
 ```bash
 [relaychain]
 default_command = "polkadot"
-chain_spec_path="./tmp/plain-relay-chainspec.json"
+chain_spec_path="./tmp/plain-relay-chain-spec.json"
 
   [[relaychain.nodes]]
   name = "node01"
@@ -865,11 +865,11 @@ genesis_wasm_path="./tmp/para-2000-wasm"
 genesis_state_path="./tmp/para-2000-genesis-state"
 
   # run charlie as parachain collator
-  [[parachains.collators]]
+  [parachains.collator]
   name = "coll01"
-  validator = true
   command = "./binaries/polkadot-parachain/polkadot-parachain"
-  args = ["--force-authoring"]
+  args = ["--force-authoring","--chain ./tmp/raw-parachain-chain-spec.json"]
+  
 ```
 
 ```bash
