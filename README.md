@@ -951,6 +951,9 @@ cumulus_based = true
 zombienet-linux-x64 spawn network-specification-hrmp.toml -p native
 ```
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/addac525-6d55-49ce-93e5-33c37fb73a27)
+
+
 
 <hr>
 
