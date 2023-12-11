@@ -1,55 +1,13 @@
 # test-network
 
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/68949f9a-e38e-4378-9dfc-0a5ea4186c3e)
-
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/d57957d9-840d-444f-85b5-74b7ddbc2bbe)
-
-https://forum.polkadot.network/t/the-new-polkadot-community-testnet/4956
-
-## Introduction
-
 All the setups demonstrated in this document were done using [ubuntu-22-04-3-lts](https://fridge.ubuntu.com/2023/08/11/ubuntu-22-04-3-lts-released/). It's assumed that [Rust](https://www.rust-lang.org/tools/install) is installed and running.
 
+# Table of Contents
 
-Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot) via Cargo
+Requirements
 
-```bash
-cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1.3.0 polkadot --locked
-```
-
-Test the setup
-
-```bash
-polkadot --version
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/14efafe6-6391-4fe4-8c9b-324f837fc389)
-
-
-[The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
-
-Install [Zombienet executable](https://github.com/paritytech/zombienet/releases)
-
-```bash
-chmod +x zombienet-linux-x64
-sudo cp zombienet-linux-x64 /usr/local/bin
-```
-
-Test the setup
-
-```bash
-zombienet-linux-x64 version
-
-```
-
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/24fd7221-db5f-4063-94b4-c1ed72469a4b)
-
-[Zombienet Book](https://paritytech.github.io/zombienet/intro.html)
-
-<hr>
-
-Table of Contents
+- Polkadot SDK
+- Zombienet
 
 Manual setup
 
@@ -139,7 +97,48 @@ Zombienet setup
   - [Create the network specification file](https://github.com/blue-freedom-technologies/test-network#create-the-network-specification-file-1)
   - [Spawn a local testing network](https://github.com/blue-freedom-technologies/test-network#spawn-a-local-testing-network-1)
 
-  
+<hr>
+
+## Polkadot SDK
+
+Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot) via Cargo
+
+```bash
+cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1.3.0 polkadot --locked
+```
+
+Test the setup
+
+```bash
+polkadot --version
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/14efafe6-6391-4fe4-8c9b-324f837fc389)
+
+[The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
+
+<hr>
+
+## Zombienet
+
+Install [Zombienet executable](https://github.com/paritytech/zombienet/releases)
+
+```bash
+chmod +x zombienet-linux-x64
+sudo cp zombienet-linux-x64 /usr/local/bin
+```
+
+Test the setup
+
+```bash
+zombienet-linux-x64 version
+
+```
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/24fd7221-db5f-4063-94b4-c1ed72469a4b)
+
+[Zombienet Book](https://paritytech.github.io/zombienet/intro.html)
+
 <hr>
 
 # Manual setup
@@ -1034,3 +1033,11 @@ Examples:<br>
 https://github.com/paritytech/cumulus/blob/master/parachains/runtimes/contracts/contracts-rococo/Cargo.toml<br>
 https://github.com/paritytech/trappist/blob/e51c1fead095341210e2a7a5a5971900f476636c/runtime/trappist/src/contracts.rs<br>
 https://github.com/paritytech/trappist/tree/main/runtime/trappist
+
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/68949f9a-e38e-4378-9dfc-0a5ea4186c3e)
+
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/d57957d9-840d-444f-85b5-74b7ddbc2bbe)
+
+https://forum.polkadot.network/t/the-new-polkadot-community-testnet/4956
