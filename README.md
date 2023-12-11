@@ -812,7 +812,7 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 # Zombienet setup
 
-## Native
+## Simple network
 
 A simple [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with two relay chain validators nodes and one collator.
 
@@ -846,7 +846,6 @@ cumulus_based = true
 ```bash
 zombienet-linux-x64 spawn network-specification.toml -p native
 ```
-Note: use the "-c 1" if using more than one parachain.
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/55006985-f370-41bb-95ae-737241d3c4af)
 
@@ -854,6 +853,9 @@ Note: use the "-c 1" if using more than one parachain.
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3f0b54b9-5a23-40a0-b3c1-5076d6240d00)
 
+## Network with HRMP Channels
+
+#### Create the network specification file
 
 ```bash
 [settings]
@@ -952,6 +954,9 @@ zombienet-linux-x64 spawn network-specification-hrmp.toml -p native
 ```
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/28579bc6-7a4d-4b99-ba64-d2f1d93fbd73)
+
+
+#### Testing the parachains
 
 
 <hr>
