@@ -841,24 +841,24 @@ cumulus_based = true
   args = ["--force-authoring","-lparachain=debug"]
 ```
 
-Spawn a local testing network:
+#### Spawn a local testing network
 
 ```bash
 zombienet-linux-x64 spawn network-specification.toml -p native
 ```
 Note: use the "-c 1" if using more than one parachain.
 
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/55006985-f370-41bb-95ae-737241d3c4af)
 
+#### Testing the parachain
 
-
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3f0b54b9-5a23-40a0-b3c1-5076d6240d00)
 
 <hr>
-<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 
 
-https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
-### Start the rococo-chain
+
 
 List of [chain specs](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot/node/service/chain-specs):
 - [rococo.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/rococo.json)
