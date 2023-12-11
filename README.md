@@ -866,7 +866,6 @@ zombienet-linux-x64 spawn network-specification.toml -p native
 
 A [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with tree relay chain validators nodes and two parahachains with four collators. This type of setup is used for building with the [hrmp-channels](https://wiki.polkadot.network/docs/build-hrmp-channels)
 
-
 #### Create the network specification file
 
 ```bash
@@ -977,6 +976,8 @@ zombienet-linux-x64 spawn network-specification-hrmp.toml -p native
 
 A [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with two relay chain validators nodes and one [parahachain](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/cumulus/parachains/runtimes/contracts/contracts-rococo/) with one collator.This is a parachain node for [ink!](https://use.ink/) smart contracts. It contains a default configuration of Substrate's module for smart contracts ‒ the [pallet-contracts](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/substrate/frame/contracts).
 
+#### Create the network specification file
+
 ```bash
 [settings]
 node_spawn_timeout = 240
@@ -1000,17 +1001,9 @@ chain = "rococo-local"
 	ws_port = 9943
 	balance = 2000000000000
 
-	[[relaychain.nodes]]
-	name = "node03"
-	validator = true
-	rpc_port = 9934
-	ws_port = 9944
-	balance = 2000000000000
-
 [[parachains]]
 id = 1013
 cumulus_based = true
-contracts-rococo
 
 	[[parachains.collators]]
 	name = "collator01-1013"
@@ -1020,53 +1013,17 @@ contracts-rococo
 	ws_port = 8943
 	args = [
 		"-lparachain=debug,runtime::bridge-hub=trace,runtime::bridge=trace,runtime::bridge-dispatch=trace,bridge=trace,runtime::bridge-messages=trace,xcm=trace",
-		"--force-authoring"
+		"--force-authoring",
+                "--chain contracts-rococo"
 	]
-
-	# run bob as parachain collator
-	[[parachains.collators]]
-	name = "collator02-1013"
-	validator = true
-	command = "./binaries/polkadot-parachain/polkadot-parachain"
-	rpc_port = 8934
-	ws_port = 8944
-	args = [
-		"-lparachain=trace,runtime::bridge-hub=trace,runtime::bridge=trace,runtime::bridge-dispatch=trace,bridge=trace,runtime::bridge-messages=trace,xcm=trace",
-		"--force-authoring"
-	]
-
-[[parachains]]
-id = 1000
-cumulus_based = true
-
-	[[parachains.collators]]
-	name = "collator01-1000"
-	rpc_port = 9911
-	ws_port = 9910
-	command = "./binaries/polkadot-parachain/polkadot-parachain"
-	args = [
-		"-lparachain=debug,xcm=trace,runtime::bridge-transfer=trace"
-	]
-
-	[[parachains.collators]]
-	name = "collator02-1000"
-	command = "./binaries/polkadot-parachain/polkadot-parachain"
-	args = [
-		"-lparachain=debug,xcm=trace,runtime::bridge-transfer=trace"
-	]
-
-#[[hrmp_channels]]
-#sender = 1000
-#recipient = 1013
-#max_capacity = 4
-#max_message_size = 524288
-#
-#[[hrmp_channels]]
-#sender = 1013
-#recipient = 1000
-#max_capacity = 4
-#max_message_size = 524288
 ```
+
+#### Spawn a local testing network
+
+```bash
+zombienet-linux-x64 spawn network-specification-ink.toml -p native
+```
+
 <hr>
 References:<br>
 
