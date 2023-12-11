@@ -814,35 +814,7 @@ Note: We are bypassing the steps required to acquire a parachain or parathread s
 
 ## Native
 
-A simple [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with two relay chain nodes and one collator.
-
-```bash
-polkadot build-spec --chain rococo-local --disable-default-bootnode> ./tmp/plain-relay-chain-spec.json
-```
-
-#### Generate the plain text chain specification
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --disable-default-bootnode > ./tmp/plain-parachain-chain-spec.json
-```
-
-#### Generate a raw chain specification file from the modified plain text chain specification
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain build-spec --chain ./tmp/plain-parachain-chain-spec.json --disable-default-bootnode --raw > ./tmp/raw-parachain-chain-spec.json
-```
-
-#### Export the WebAssembly runtime
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-wasm --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-wasm
-```
-
-#### Generate a parachain genesis state
-
-```bash
-./binaries/polkadot-parachain/polkadot-parachain export-genesis-state --chain ./tmp/raw-parachain-chain-spec.json ./tmp/para-2000-genesis-state
-```
+A simple [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with two relay chain validators nodes and one collator.
 
 #### Create the network specification file
 
@@ -869,11 +841,14 @@ cumulus_based = true
   args = ["--force-authoring","-lparachain=debug"]
 ```
 
+Spawn a local testing network:
+
 ```bash
 zombienet-linux-x64 spawn network-specification.toml -p native
 ```
+Note: use the "-c 1" if using more than one parachain.
 
-https://spec.polkadot.network/chap-host-api#sect-crypto-api
+
 
 
 
@@ -881,7 +856,7 @@ https://spec.polkadot.network/chap-host-api#sect-crypto-api
 <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 
 
-
+https://spec.polkadot.network/chap-host-api#sect-crypto-api
 
 ### Start the rococo-chain
 
@@ -892,71 +867,8 @@ List of [chain specs](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v
 - [wococo.json](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/polkadot/node/service/chain-specs/wococo.json)
 
 
-
-
-
 [acquire-a-testnet-slot](https://docs.substrate.io/tutorials/build-a-parachain/acquire-a-testnet-slot/)
 
-# Zombienet setup
-
-## Relay Chain
-
-## Parachain
-
-Spawn a local testing network:
-
-```bash
- zombienet-linux-x64 spawn dev-rococo-local.toml -p native
-```
-
-
-[relaychain]
-default_command = "./binaries/polkadot/polkadot"
-default_args = [ "-lparachain=debug" ]
-chain = "rococo-local"
-
-  [[relaychain.nodes]]
-  name = "alice"
-  validator = true
-
-  [[relaychain.nodes]]
-  name = "bob"
-  validator = true
- 
-[[parachains]]
-id = 2000
-addToGenesis = true
-cumulus_based = true
-
-  [parachains.collator]
-  name = "node-parachain-collator01"
-  command = "./binaries/node/parachain-template-node"
-
-
-A minimal configuration example with two validators and one parachain:
-
-```bash
-[settings]
-timeout = 1000
-
-[relaychain]
-default_image = "paritypr/polkadot-debug:master"
-chain = "rococo-local"
-
-  [[relaychain.nodes]]
-  name = "alice"
-
-  [[relaychain.nodes]]
-  name = "bob"
-
-[[parachains]]
-id = 100
-
-  [parachains.collator]
-  name = "collator01"
-  image = "paritypr/colander:master"
-  command = "adder-collator"
-```
 
 <hr>
 
@@ -975,66 +887,6 @@ This directory currently contains runtimes for the Polkadot, Kusama, Westend, an
 https://github.com/paritytech/polkadot-sdk/tree/master/polkadot 
 
 https://doc.deepernetwork.org/tutorials/v3/cumulus/start-relay/
-
-
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-
-
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-
-
-
-
-config.toml
-
-```text
-[relaychain]
-default_command = "./binaries/polkadot/polkadot"
-default_args = [ "-lparachain=debug" ]
-chain = "rococo-local"
-
-  [[relaychain.nodes]]
-  name = "alice"
-  validator = true
-
-  [[relaychain.nodes]]
-  name = "bob"
-  validator = true
- 
-[[parachains]]
-id = 2000
-addToGenesis = true
-cumulus_based = true
-
-  [parachains.collator]
-  name = "node-parachain-collator01"
-  command = "./binaries/node/parachain-template-node"
-```
-
-Spawn a local testing network:
-
-```bash
- zombienet-linux-x64 spawn config.toml -p native
-```
-Note: use the "-c 1" if using more than one parachain.
-
-![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/2889795d-2e01-4a44-b073-178a13e1a3f2)
-
-Open a [Substrate Portal](https://polkadot.js.org/apps/#/explorer) and validate the 2000 Parachain Id.
-
-![image](https://github.com/blue-freedom-technologies/chain/assets/142290531/371eaf9e-afd6-4b76-b389-c09b21efbc6e)
 
 
 <hr>
