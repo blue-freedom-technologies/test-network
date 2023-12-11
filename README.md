@@ -860,6 +860,8 @@ zombienet-linux-x64 spawn network-specification.toml -p native
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/3f0b54b9-5a23-40a0-b3c1-5076d6240d00)
 
+<hr>
+
 ## Network with HRMP Channels
 
 A [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with tree relay chain validators nodes and two parahachains with four collators. This type of setup is used for building with the [hrmp-channels](https://wiki.polkadot.network/docs/build-hrmp-channels)
@@ -969,6 +971,102 @@ zombienet-linux-x64 spawn network-specification-hrmp.toml -p native
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b413f4d9-2200-4134-a827-f7e502d7a7c5)
 
+<hr>
+
+## Network with the contracts-rococo parachain
+
+A [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with two relay chain validators nodes and one [parahachain](https://github.com/paritytech/polkadot-sdk/blob/polkadot-v1.3.0/cumulus/parachains/runtimes/contracts/contracts-rococo/) with one collator.This is a parachain node for [ink!](https://use.ink/) smart contracts. It contains a default configuration of Substrate's module for smart contracts ‒ the [pallet-contracts](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/substrate/frame/contracts).
+
+```bash
+[settings]
+node_spawn_timeout = 240
+
+[relaychain]
+default_command = "polkadot"
+default_args = [ "-lparachain=debug,xcm=trace" ]
+chain = "rococo-local"
+
+	[[relaychain.nodes]]
+	name = "node01"
+	validator = true
+	rpc_port = 9932
+	ws_port = 9942
+	balance = 2000000000000
+
+	[[relaychain.nodes]]
+	name = "node02"
+	validator = true
+	rpc_port = 9933
+	ws_port = 9943
+	balance = 2000000000000
+
+	[[relaychain.nodes]]
+	name = "node03"
+	validator = true
+	rpc_port = 9934
+	ws_port = 9944
+	balance = 2000000000000
+
+[[parachains]]
+id = 1013
+cumulus_based = true
+contracts-rococo
+
+	[[parachains.collators]]
+	name = "collator01-1013"
+	validator = true
+	command = "./binaries/polkadot-parachain/polkadot-parachain"
+	rpc_port = 8933
+	ws_port = 8943
+	args = [
+		"-lparachain=debug,runtime::bridge-hub=trace,runtime::bridge=trace,runtime::bridge-dispatch=trace,bridge=trace,runtime::bridge-messages=trace,xcm=trace",
+		"--force-authoring"
+	]
+
+	# run bob as parachain collator
+	[[parachains.collators]]
+	name = "collator02-1013"
+	validator = true
+	command = "./binaries/polkadot-parachain/polkadot-parachain"
+	rpc_port = 8934
+	ws_port = 8944
+	args = [
+		"-lparachain=trace,runtime::bridge-hub=trace,runtime::bridge=trace,runtime::bridge-dispatch=trace,bridge=trace,runtime::bridge-messages=trace,xcm=trace",
+		"--force-authoring"
+	]
+
+[[parachains]]
+id = 1000
+cumulus_based = true
+
+	[[parachains.collators]]
+	name = "collator01-1000"
+	rpc_port = 9911
+	ws_port = 9910
+	command = "./binaries/polkadot-parachain/polkadot-parachain"
+	args = [
+		"-lparachain=debug,xcm=trace,runtime::bridge-transfer=trace"
+	]
+
+	[[parachains.collators]]
+	name = "collator02-1000"
+	command = "./binaries/polkadot-parachain/polkadot-parachain"
+	args = [
+		"-lparachain=debug,xcm=trace,runtime::bridge-transfer=trace"
+	]
+
+#[[hrmp_channels]]
+#sender = 1000
+#recipient = 1013
+#max_capacity = 4
+#max_message_size = 524288
+#
+#[[hrmp_channels]]
+#sender = 1013
+#recipient = 1000
+#max_capacity = 4
+#max_message_size = 524288
+```
 <hr>
 References:<br>
 
