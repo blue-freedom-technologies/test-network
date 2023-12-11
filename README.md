@@ -6,8 +6,8 @@ All the setups demonstrated in this document were done using [ubuntu-22-04-3-lts
 
 Requirements
 
-- Polkadot SDK
-- Zombienet
+- [Polkadot SDK](https://github.com/blue-freedom-technologies/test-network#polkadot-sdk)
+- [Zombienet](https://github.com/blue-freedom-technologies/test-network#zombienet)
 
 Manual setup
 
@@ -968,9 +968,8 @@ zombienet-linux-x64 spawn network-specification-hrmp.toml -p native
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b413f4d9-2200-4134-a827-f7e502d7a7c5)
 
-
 <hr>
-
+References:<br>
 
 
 
@@ -1015,8 +1014,6 @@ Functional pallets:
  - [pallet_utility](https://paritytech.github.io/substrate/master/pallet_utility/index.html)/[frame-utility](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/utility)
  - [pallet_contracts](https://docs.rs/pallet-contracts/24.0.0/pallet_contracts/)/[frame-contracts](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/contracts)/[crate](https://crates.io/crates/pallet-contracts)
 
-<hr>
-References:<br>
 
 [Extended Parachain Template](https://github.com/paritytech/extended-parachain-template/)<br>
 [Substrate Parachain Template](https://github.com/substrate-developer-hub/substrate-parachain-template)<br>
@@ -1024,7 +1021,6 @@ References:<br>
 [Simulate Parachains](https://docs.substrate.io/test/simulate-parachains/)<br>
 [Build a Parachain](https://docs.substrate.io/tutorials/build-a-parachain/)<br>
 [Parachain Templates (EPT & FPT)](https://www.youtube.com/watch?v=zZvR1ii8X30)<br>
-[Zombienet](https://github.com/paritytech/zombienet/)<br>
 [Astar](https://github.com/AstarNetwork/Astar/tree/master)<br>
 [Kusama](https://kusama.network/)<br>
 [Overview of Polkadot and its Design Considerations](https://arxiv.org/abs/2005.13456.pdf)<br>
