@@ -1,4 +1,4 @@
-# test-network
+# Local Test Networks
 
 All the setups demonstrated in this document were done using [ubuntu-22-04-3-lts](https://fridge.ubuntu.com/2023/08/11/ubuntu-22-04-3-lts-released/). It's assumed that [Rust](https://www.rust-lang.org/tools/install) is installed and running.
 
@@ -96,6 +96,7 @@ Zombienet setup
 - [Network with hrmp channels](https://github.com/blue-freedom-technologies/test-network#network-with-hrmp-channels)
   - [Create the network specification file](https://github.com/blue-freedom-technologies/test-network#create-the-network-specification-file-1)
   - [Spawn a local testing network](https://github.com/blue-freedom-technologies/test-network#spawn-a-local-testing-network-1)
+  - [Testing the parachains](https://github.com/blue-freedom-technologies/test-network#testing-the-parachains)
 
 <hr>
 
