@@ -131,7 +131,14 @@ Manual setup
 
 Zombienet setup
 
-- [Native](https://github.com/blue-freedom-technologies/test-network/blob/main/README.md#native)
+- [Simple-network](https://github.com/blue-freedom-technologies/test-network#simple-network)
+  - [Create the network specification file](https://github.com/blue-freedom-technologies/test-network#create-the-network-specification-file)
+  - [Spawn a local testing network](https://github.com/blue-freedom-technologies/test-network#spawn-a-local-testing-network)
+  - [Testing the parachain](https://github.com/blue-freedom-technologies/test-network#testing-the-parachain-2)
+- [Network with hrmp channels](https://github.com/blue-freedom-technologies/test-network#network-with-hrmp-channels)
+  - [Create the network specification file](https://github.com/blue-freedom-technologies/test-network#create-the-network-specification-file-1)
+  - [Spawn a local testing network](https://github.com/blue-freedom-technologies/test-network#spawn-a-local-testing-network-1)
+
   
 <hr>
 
@@ -855,6 +862,9 @@ zombienet-linux-x64 spawn network-specification.toml -p native
 
 ## Network with HRMP Channels
 
+A [network specification](https://paritytech.github.io/zombienet/network-definition-spec.html) with tree relay chain validators nodes and two parahachains with four collators. This type of setup is used for building with the [hrmp-channels](https://wiki.polkadot.network/docs/build-hrmp-channels)
+
+
 #### Create the network specification file
 
 ```bash
@@ -955,8 +965,9 @@ zombienet-linux-x64 spawn network-specification-hrmp.toml -p native
 
 ![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/28579bc6-7a4d-4b99-ba64-d2f1d93fbd73)
 
-
 #### Testing the parachains
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/b413f4d9-2200-4134-a827-f7e502d7a7c5)
 
 
 <hr>
