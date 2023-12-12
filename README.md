@@ -980,11 +980,11 @@ A [network specification](https://paritytech.github.io/zombienet/network-definit
 
 ```bash
 [settings]
-node_spawn_timeout = 240
+timeout = 1000
 
 [relaychain]
 default_command = "polkadot"
-default_args = [ "-lparachain=debug,xcm=trace" ]
+default_args = [ "-lparachain=debug" ]
 chain = "rococo-local"
 
 	[[relaychain.nodes]]
@@ -1002,19 +1002,19 @@ chain = "rococo-local"
 	balance = 2000000000000
 
 [[parachains]]
-id = 1013
+id = 2000
 cumulus_based = true
+chain = "contracts-rococo"
 
 	[[parachains.collators]]
-	name = "collator01-1013"
+	name = "collator01-2000"
 	validator = true
 	command = "./binaries/polkadot-parachain/polkadot-parachain"
 	rpc_port = 8933
 	ws_port = 8943
 	args = [
-		"-lparachain=debug,runtime::bridge-hub=trace,runtime::bridge=trace,runtime::bridge-dispatch=trace,bridge=trace,runtime::bridge-messages=trace,xcm=trace",
-		"--force-authoring",
-                "--chain contracts-rococo"
+	    "-lparachain=debug",
+            "--force-authoring"
 	]
 ```
 
