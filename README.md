@@ -1032,5 +1032,5 @@ References:<br>
 
 [Polkadot SDK(v1.3.0)](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0)<br>
 [Cumulus SDK](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/cumulus#cumulus-%EF%B8%8F)<br>
-[Polkado(v1.3.0](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot)<br>
+[Polkado(v1.3.0)](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot)<br>
 [Zombienet](https://github.com/paritytech/zombienet)<br>
