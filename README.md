@@ -1027,6 +1027,10 @@ chain = "contracts-rococo"
 zombienet-linux-x64 spawn network-specification-ink.toml -p native
 ```
 
+#### Testing the parachain
+
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/5f0e7ce2-b5f2-43cd-acf6-ffa4cb549c5d)
+
 <hr>
 References:<br>
 
