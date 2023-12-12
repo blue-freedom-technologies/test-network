@@ -97,6 +97,9 @@ Zombienet setup
   - [Create the network specification file](https://github.com/blue-freedom-technologies/test-network#create-the-network-specification-file-1)
   - [Spawn a local testing network](https://github.com/blue-freedom-technologies/test-network#spawn-a-local-testing-network-1)
   - [Testing the parachains](https://github.com/blue-freedom-technologies/test-network#testing-the-parachains)
+- [Network with the contracts rococo parachain](https://github.com/blue-freedom-technologies/test-network#network-with-the-contracts-rococo-parachain)
+  - [Create the network specification file](https://github.com/blue-freedom-technologies/test-network#create-the-network-specification-file-2)
+  - [Spawn a local testing network](https://github.com/blue-freedom-technologies/test-network#spawn-a-local-testing-network-2)
 
 <hr>
 
