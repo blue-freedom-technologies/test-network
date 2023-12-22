@@ -106,11 +106,10 @@ Zombienet setup
 
 ## Polkadot SDK
 
-Install [polkadot sdk](https://github.com/paritytech/polkadot-sdk/tree/polkadot-v1.3.0/polkadot) via Cargo
-
 ```bash
-cargo install --git https://github.com/paritytech/polkadot-sdk --tag polkadot-v1.3.0 polkadot --locked
+su root
 ```
+Follow the instructions in [here](https://github.com/paritytech/polkadot-sdk/tree/master/polkadot#debian-based-debian-ubuntu)
 
 Test the setup
 
@@ -118,7 +117,7 @@ Test the setup
 polkadot --version
 ```
 
-![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/14efafe6-6391-4fe4-8c9b-324f837fc389)
+![image](https://github.com/blue-freedom-technologies/test-network/assets/142290531/9bfd0772-6524-4f37-8385-3ff4baef4a56)
 
 [The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot-sdk/book/)
 
