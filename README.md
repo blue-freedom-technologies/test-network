@@ -106,10 +106,11 @@ Zombienet setup
 
 ## Polkadot SDK
 
+Login as root
 ```bash
 su root
 ```
-Follow the instructions in [here](https://github.com/paritytech/polkadot-sdk/tree/master/polkadot#debian-based-debian-ubuntu)
+And follow the instructions in [here](https://github.com/paritytech/polkadot-sdk/tree/master/polkadot#debian-based-debian-ubuntu)
 
 Test the setup
 
